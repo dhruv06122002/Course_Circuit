@@ -1,0 +1,942 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/Style.css" rel="stylesheet" />
+</head>
+<body>
+    <div id="wrapper">
+        <div class="main">
+            <header class="container-fluid topHeader">
+                <div class="row">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <ul class="list-inline">
+                                    <li><a href="#"><span class="glyphicon glyphicon-envelope"></span> courcecircuit@gmail.com</a></li>
+                                    <li><a href="#"><span class="glyphicon glyphicon-phone"></span>+91 000000000</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </header>
+            <nav class="navbar navbar-default">
+                <div class="container">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="../1_HTML,CSS,PHP for web-development.html">
+                            <img src="images/logo1.png" width="200"  />
+                        </a>
+                    </div>
+
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="navbar-collapse">
+                        <ul class="nav navbar-nav float-right">
+                             <li><a href="PAGE_0.html">Index</a></li>
+                            <li><a href="../../B_EXAM/Phase 3/SELECT EXAM.html">Assignments</a></li>
+                            <li><a href="../B_PHASE_1/PAGE_COLOR.html">Color Picker</a></li>
+                            <li><a href="../../A_MAIN/3_COMPILER.html">Compiler</a></li>
+                        </ul>
+                    </div><!-- /.navbar-collapse -->
+                </div><!-- /.container-fluid -->
+            </nav>
+             <section class="jumbotron">
+                <div class="container">
+                    <p><center><img src="PHASES/Advance CSS.png" height="150" width="150"></center></p>
+                    <p class="lead"><center><b><h3>Welcome to Phase 3 : Advance CSS</h3></b></center></p>
+                </div>
+            </section>
+           
+            <section class="container">
+                <div class="row">
+                <div class="col-sm-12">
+                        <div class="box2">
+                        <h1>CSS 2D Transforms</h1>
+                        </div>
+  </div>
+                        
+                                        <div class="col-sm-12">
+                        <div class="box6">
+							<p><h3>CSS 2D Transforms</h3><br><center>CSS transforms allow you to move, rotate, scale, and skew elements.</center></p>
+											
+											<h6>&nbsp;</h6>
+							<table class="roundedCorners1" align="center">
+											<tr>
+								<td align="center"><h4>CSS 2D Transforms Methods</h4></td>
+								</tr>
+								<tr>
+									<td align="center">With the CSS transform property you can use the following 2D transformation methods:</td>
+								</tr>
+								<tr>
+									<td align="center">
+										<code>translate()</code>
+										<code>rotate()</code>
+										<code>scaleX()</code>
+									</td>
+								</tr>
+								<tr>
+									<td align="center">
+										<code>scaleY()</code>
+										<code>scale()</code>
+										<code>skewX()</code>
+									</td>
+								</tr>
+								<tr>
+									<td align="center">
+										<code>skewY()</code>
+										<code>skew()</code>
+										<code>matrix()</code>
+									</td>
+								</tr>
+											</table>
+					</div></div></div></section>
+											<section class="container">
+                <div class="row">
+					<div class="col-sm-12">
+                        <div class="box6">
+											<table  class="roundedCorners" align="center">
+												<tr><td colspan="2" align="center"><h3>The translate() Method</h3></td></tr>
+												<tr><td colspan="2" align="center">The translate() method moves an element from its current position (according to the parameters given for the X-axis and the Y-axis).</td></tr>
+											<tr>
+												<td><br>&lt;!DOCTYPE html&gt;
+<br>&lt;html&gt;
+<br>&lt;head&gt;
+<br>&lt;style&gt; 
+<br>div.translate{
+<br>  width: 300px;
+<br>  height: 100px;
+<br>  background-color: yellow;
+<br>  border: 1px solid black;
+<br>  -ms-transform: translate(50px,100px); /* IE 9 */
+<br>  transform: translate(50px,100px); /* Standard syntax */
+<br>}
+<br>&lt;/style&gt;
+<br>&lt;/head&gt;
+<br>&lt;body&gt;
+<br>&lt;h1&gt;The translate() Method&lt;/h1&gt;
+<br>&lt;p&gt;The translate() method moves an element from its current position:&lt;/p&gt;
+<br>&lt;div class="translate"&gt;
+<br>This div element is moved 50 pixels to the right, and 100 pixels down from its current position.
+<br>&lt;/div&gt;
+<br>&lt;/body&gt;
+<br>&lt;/html&gt;</td>
+												<td>
+													<!DOCTYPE html>
+<html>
+<head>
+<style> 
+div.translate{
+  width: 300px;
+  height: 100px;
+  background-color: yellow;
+  border: 1px solid black;
+  -ms-transform: translate(50px,100px); /* IE 9 */
+  transform: translate(50px,100px); /* Standard syntax */
+}
+</style>
+</head>
+<body>
+<h1>The translate() Method</h1>
+<p>The translate() method moves an element from its current position:</p>
+<div class="translate">
+This div element is moved 50 pixels to the right, and 100 pixels down from its current position.
+</div>
+</body>
+</html></td>
+												</tr>
+							</table><h5>&nbsp;</h5>
+						</div></div></div></section>
+												
+												<section class="container">
+                <div class="row">
+					<div class="col-sm-12">
+                        <div class="box6">
+							<table  class="roundedCorners" align="center">
+												<tr><td colspan="2" align="center"><h3>The rotate() Method</h3></td></tr>
+												<tr><td colspan="2" align="center">The rotate() method rotates an element clockwise or counter-clockwise according to a given degree.</td></tr>
+											<tr>
+												<td><br>&lt;!DOCTYPE html&gt;
+<br>&lt;html&gt;
+<br>&lt;head&gt;
+<br>&lt;style&gt;
+<br>div.org {
+<br>  width: 300px;
+<br>  height: 100px;
+<br>  background-color: yellow;
+<br>  border: 1px solid black;
+<br>}
+<br>
+<br>div.rotate {
+<br>	width: 300px;
+<br>  height: 100px;
+<br>  background-color: yellow;
+<br>  border: 1px solid black;
+<br>  -ms-transform: rotate(20deg); /* IE 9 */
+<br>  transform: rotate(20deg); /* Standard syntax */
+<br>}
+<br>&lt;/style&gt;
+<br>&lt;/head&gt;
+<br>&lt;body&gt;
+<br>
+<br>&lt;h1&gt;The rotate() Method&lt;/h1&gt;
+<br>&lt;p&gt;The rotate() method rotates an element clockwise or counter-clockwise.&lt;/p&gt;
+<br>
+<br>&lt;div class="org"&gt;
+<br>This a normal div element.
+<br>&lt;/div&gt;
+<br>
+<br>&lt;div class="rotate"&gt;
+<br>This div element is rotated clockwise 20 degrees.
+<br>&lt;/div&gt;
+<br>
+<br>&lt;/body&gt;
+<br>&lt;/html&gt;</td>
+												<td><!DOCTYPE html>
+<html>
+<head>
+<style>
+div.org {
+  width: 300px;
+  height: 100px;
+  background-color: yellow;
+  border: 1px solid black;
+}
+
+div.rotate {
+	width: 300px;
+  height: 100px;
+  background-color: yellow;
+  border: 1px solid black;
+  -ms-transform: rotate(20deg); /* IE 9 */
+  transform: rotate(20deg); /* Standard syntax */
+}
+</style>
+</head>
+<body>
+
+<h1>The rotate() Method</h1>
+<p>The rotate() method rotates an element clockwise or counter-clockwise.</p>
+
+<div class="org">
+This a normal div element.
+</div>
+
+<div class="rotate">
+This div element is rotated clockwise 20 degrees.
+</div>
+
+</body>
+</html></td>
+												</tr>
+												</table><h5>&nbsp;</h5>
+						</div></div></div></section>
+												
+												<section class="container">
+                <div class="row">
+					<div class="col-sm-12">
+                        <div class="box6">
+							<table  class="roundedCorners" align="center">
+												<tr><td colspan="2" align="center"><h3>The scale() Method</h3></td></tr>
+												<tr><td colspan="2" align="center">The scale() method increases or decreases the size of an element (according to the parameters given for the width and height).</td></tr>
+											<tr>
+												<td><br>&lt;!DOCTYPE html&gt;
+<br>&lt;html&gt;
+<br>&lt;head&gt;
+<br>&lt;style&gt;
+<br>div.scale {
+<br>  margin: 150px;
+<br>  width: 200px;
+<br>  height: 100px;
+<br>  background-color: yellow;
+<br>  border: 1px solid black;
+<br>  -ms-transform: scale(2,3); /* IE 9 */
+<br>  transform: scale(2,3); /* Standard syntax */
+<br>}
+<br>&lt;/style&gt;
+<br>&lt;/head&gt;
+<br>&lt;body&gt;
+<br>
+<br>&lt;h1&gt;The scale() Method&lt;/h1&gt;
+<br>&lt;p&gt;The scale() method increases or decreases the size of an element.&lt;/p&gt;
+<br>
+<br>&lt;div class="scale"&gt;
+<br>This div element is two times of its original width, and three times of its original height.
+<br>&lt;/div&gt;
+<br>
+<br>&lt;/body&gt;
+<br>&lt;/html&gt;</td>
+												<td><!DOCTYPE html>
+<html>
+<head>
+<style>
+div.scale {
+  margin: 150px;
+  width: 200px;
+  height: 100px;
+  background-color: yellow;
+  border: 1px solid black;
+  -ms-transform: scale(2,3); /* IE 9 */
+  transform: scale(2,3); /* Standard syntax */
+}
+</style>
+</head>
+<body>
+
+<h1>The scale() Method</h1>
+<p>The scale() method increases or decreases the size of an element.</p>
+
+<div class="scale">
+This div element is two times of its original width, and three times of its original height.
+</div>
+
+</body>
+</html></td>
+												</tr>
+												
+								</table><h5>&nbsp;</h5>
+						</div></div></div></section>
+												
+												<section class="container">
+                <div class="row">
+					<div class="col-sm-12">
+                        <div class="box6">
+							<table  class="roundedCorners" align="center">
+												<tr><td colspan="2" align="center"><h3>The scaleX() Method</h3></td></tr>
+												<tr><td colspan="2" align="center">The scaleX() method increases or decreases the width of an element.</td></tr>
+												<tr>
+												<td><br>&lt;!DOCTYPE html&gt;
+<br>&lt;html&gt;
+<br>&lt;head&gt;
+<br>&lt;style&gt;
+<br>div.scaleX {
+<br>  margin: 150px;
+<br>  width: 200px;
+<br>  height: 100px;
+<br>  background-color: yellow;
+<br>  border: 1px solid black;
+<br>  -ms-transform: scaleX(2); /* IE 9 */
+<br>  transform: scaleX(2); /* Standard syntax */
+<br>}
+<br>&lt;/style&gt;
+<br>&lt;/head&gt;
+<br>&lt;body&gt;
+<br>
+<br>&lt;h1&gt;The scaleX() Method&lt;/h1&gt;
+<br>&lt;p&gt;The scaleX() method increases or decreases the width of an element.&lt;/p&gt;
+<br>
+<br>&lt;div class="scaleX"&gt;
+<br>This div element is two times of its original width.
+<br>&lt;/div&gt;
+<br>
+<br>&lt;/body&gt;
+<br>&lt;/html&gt;
+</td>
+												<td><!DOCTYPE html>
+<html>
+<head>
+<style>
+div.scaleX {
+  margin: 150px;
+  width: 200px;
+  height: 100px;
+  background-color: yellow;
+  border: 1px solid black;
+  -ms-transform: scaleX(2); /* IE 9 */
+  transform: scaleX(2); /* Standard syntax */
+}
+</style>
+</head>
+<body>
+
+<h1>The scaleX() Method</h1>
+<p>The scaleX() method increases or decreases the width of an element.</p>
+
+<div class="scaleX">
+This div element is two times of its original width.
+</div>
+
+</body>
+</html>
+</td>
+												</tr>
+												</table><h5>&nbsp;</h5>
+						</div></div></div></section>
+												
+												<section class="container">
+                <div class="row">
+					<div class="col-sm-12">
+                        <div class="box6">
+							<table  class="roundedCorners" align="center">
+												<tr><td colspan="2" align="center"><h3>The scaleY() Method</h3></td></tr>
+												<tr><td colspan="2" align="center">The scaleY() method increases or decreases the height of an element.
+
+</td></tr>
+											<tr>
+												<td><br>&lt;!DOCTYPE html&gt;
+<br>&lt;html&gt;
+<br>&lt;head&gt;
+<br>&lt;style&gt;
+<br>div.scaleY {
+<br>  margin: 150px;
+<br>  width: 200px;
+<br>  height: 100px;
+<br>  background-color: yellow;
+<br>  border: 1px solid black;
+<br>  -ms-transform: scaleY(3); /* IE 9 */
+<br>  transform: scaleY(3); /* Standard syntax */
+<br>}
+<br>&lt;/style&gt;
+<br>&lt;/head&gt;
+<br>&lt;body&gt;
+<br>
+<br>&lt;h1&gt;The scaleY() Method&lt;/h1&gt;
+<br>&lt;p&gt;The scaleY() method increases or decreases the height of an element.&lt;/p&gt;
+<br>
+<br>&lt;div class="scaleY"&gt;
+<br>This div element is three times of its original height.
+<br>&lt;/div&gt;
+<br>
+<br>&lt;/body&gt;
+<br>&lt;/html&gt;</td>
+												<td><!DOCTYPE html>
+<html>
+<head>
+<style>
+div.scaleY {
+  margin: 150px;
+  width: 200px;
+  height: 100px;
+  background-color: yellow;
+  border: 1px solid black;
+  -ms-transform: scaleY(3); /* IE 9 */
+  transform: scaleY(3); /* Standard syntax */
+}
+</style>
+</head>
+<body>
+
+<h1>The scaleY() Method</h1>
+<p>The scaleY() method increases or decreases the height of an element.</p>
+
+<div class="scaleY">
+This div element is three times of its original height.
+</div>
+
+</body>
+</html>
+</td>
+												</tr>
+												</table><h5>&nbsp;</h5>
+						</div></div></div></section>
+												
+												<section class="container">
+                <div class="row">
+					<div class="col-sm-12">
+                        <div class="box6">
+							<table  class="roundedCorners" align="center">
+												<tr><td colspan="2" align="center"><h3>The skew() Method</h3></td></tr>
+												<tr><td colspan="2" align="center">The skew() method skews an element along the X and Y-axis by the given angles.</td></tr>
+											<tr>
+												<td><br>&lt;!DOCTYPE html&gt;
+<br>&lt;html&gt;
+<br>&lt;head&gt;
+<br>&lt;style&gt;
+<br>div.skeworg {
+<br>  width: 300px;
+<br>  height: 100px;
+<br>  background-color: yellow;
+<br>  border: 1px solid black;
+<br>}
+<br>
+<br>div.skew {
+<br>width: 300px;
+<br> height: 100px;
+<br> background-color: yellow;
+<br> border: 1px solid black;
+<br>-ms-transform: skew(20deg,10deg); /* IE 9 */
+<br>  transform: skew(20deg,10deg); /* Standard syntax */
+<br>}
+<br>&lt;/style&gt;
+<br>&lt;/head&gt;
+<br>&lt;body&gt;
+<br>
+<br>&lt;h1&gt;The skew() Method&lt;/h1&gt;
+<br>&lt;p&gt;The skew() method skews an element into a given angle.&lt;/p&gt;
+<br>
+<br>&lt;div class="skeworg"&gt;
+<br>This a normal div element.
+<br>&lt;/div&gt;
+<br>
+<br>&lt;div class="skew"&gt;
+<br>This div element is skewed 20 degrees along the X-axis, and 10 degrees along the Y-axis.
+<br>&lt;/div&gt;
+<br>
+<br>&lt;/body&gt;
+<br>&lt;/html&gt;</td>
+												<td><!DOCTYPE html>
+<html>
+<head>
+<style>
+div.skeworg {
+  width: 300px;
+  height: 100px;
+  background-color: yellow;
+  border: 1px solid black;
+}
+
+div.skew {
+  width: 300px;
+  height: 100px;
+  background-color: yellow;
+  border: 1px solid black;
+  -ms-transform: skew(20deg,10deg); /* IE 9 */
+  transform: skew(20deg,10deg); /* Standard syntax */
+}
+</style>
+</head>
+<body>
+
+<h1>The skew() Method</h1>
+<p>The skew() method skews an element into a given angle.</p>
+
+<div class="skeworg">
+This a normal div element.
+</div>
+
+<div class="skew">
+This div element is skewed 20 degrees along the X-axis, and 10 degrees along the Y-axis.
+</div>
+
+</body>
+</html>
+</td>
+												</tr>
+												</table><h5>&nbsp;</h5>
+						</div></div></div></section>
+												
+												<section class="container">
+                <div class="row">
+					<div class="col-sm-12">
+                        <div class="box6">
+							<table  class="roundedCorners" align="center">
+												<tr><td colspan="2" align="center"><h3>The skewX() Method</h3></td></tr>
+												<tr><td colspan="2" align="center">The skewX() method skews an element along the X-axis by the given angle.</td></tr>
+											<tr>
+												<td><br>&lt;!DOCTYPE html&gt;
+<br>&lt;html&gt;
+<br>&lt;head&gt;
+<br>&lt;style&gt;
+<br>div.skewXorg {
+<br>  width: 300px;
+<br>  height: 100px;
+<br>  background-color: yellow;
+<br>  border: 1px solid black;
+<br>}
+<br>
+<br>div.skewX {
+<br>  width: 300px;
+<br>  height: 100px;
+<br>  background-color: yellow;
+<br>  border: 1px solid black;
+<br>  -ms-transform: skewX(20deg); /* IE 9 */
+<br>  transform: skewX(20deg); /* Standard syntax */
+<br>}
+<br>&lt;/style&gt;
+<br>&lt;/head&gt;
+<br>&lt;body&gt;
+<br>
+<br>&lt;h1&gt;The skewX() Method&lt;/h1&gt;
+<br>&lt;p&gt;The skewX() method skews an element along the X-axis by the given angle.&lt;/p&gt;
+<br>
+<br>&lt;div class="skewXorg"&gt;
+<br>This a normal div element.
+<br>&lt;/div&gt;
+<br>
+<br>&lt;div class="skewX"&gt;
+<br>This div element is skewed 20 degrees along the X-axis.
+<br>&lt;/div&gt;
+<br>
+<br>&lt;/body&gt;
+<br>&lt;/html&gt;
+</td>
+												<td><!DOCTYPE html>
+<html>
+<head>
+<style>
+div.skewXorg {
+  width: 300px;
+  height: 100px;
+  background-color: yellow;
+  border: 1px solid black;
+}
+
+div.skewX {
+  width: 300px;
+  height: 100px;
+  background-color: yellow;
+  border: 1px solid black;
+  -ms-transform: skewX(20deg); /* IE 9 */
+  transform: skewX(20deg); /* Standard syntax */
+}
+</style>
+</head>
+<body>
+
+<h1>The skewX() Method</h1>
+<p>The skewX() method skews an element along the X-axis by the given angle.</p>
+
+<div class="skewXorg">
+This a normal div element.
+</div>
+
+<div class="skewX">
+This div element is skewed 20 degrees along the X-axis.
+</div>
+
+</body>
+</html>
+</td>
+												</tr>
+												</table><h5>&nbsp;</h5>
+						</div></div></div></section>
+												
+												<section class="container">
+                <div class="row">
+					<div class="col-sm-12">
+                        <div class="box6">
+							<table  class="roundedCorners" align="center">
+												<tr><td colspan="2" align="center"><h3>The skewY() Method</h3></td></tr>
+												<tr><td colspan="2" align="center">The skewY() method skews an element along the Y-axis by the given angle.</td></tr>
+											<tr>
+												<td><br>&lt;!DOCTYPE html&gt;
+<br>&lt;html&gt;
+<br>&lt;head&gt;
+<br>&lt;style&gt;
+<br>div.skewYorg {
+<br>  width: 300px;
+<br>  height: 100px;
+<br>  background-color: yellow;
+<br>  border: 1px solid black;
+<br>}
+<br>
+<br>div.skewY {
+<br>  width: 300px;
+<br>  height: 100px;
+<br>  background-color: yellow;
+<br>  border: 1px solid black;
+<br>  -ms-transform: skewY(20deg); /* IE 9 */
+<br>  transform: skewY(20deg); /* Standard syntax */
+<br>}
+<br>&lt;/style&gt;
+<br>&lt;/head&gt;
+<br>&lt;body&gt;
+<br>
+<br>&lt;h1&gt;The skewY() Method&lt;/h1&gt;
+<br>&lt;p&gt;The skewY() method skews an element along the Y-axis by the given angle.&lt;/p&gt;
+<br>
+<br>&lt;div class="skewYorg"&gt;
+<br>This a normal div element.
+<br>&lt;/div&gt;
+<br>
+<br>&lt;div class="skewY"&gt;
+<br>This div element is skewed 20 degrees along the Y-axis.
+<br>&lt;/div&gt;
+<br>
+<br>&lt;/body&gt;
+<br>&lt;/html&gt;
+</td>
+												<td><!DOCTYPE html>
+<html>
+<head>
+<style>
+div.skewYorg {
+  width: 300px;
+  height: 100px;
+  background-color: yellow;
+  border: 1px solid black;
+}
+
+div.skewY {
+  width: 300px;
+  height: 100px;
+  background-color: yellow;
+  border: 1px solid black;
+  -ms-transform: skewY(20deg); /* IE 9 */
+  transform: skewY(20deg); /* Standard syntax */
+}
+</style>
+</head>
+<body>
+
+<h1>The skewY() Method</h1>
+<p>The skewY() method skews an element along the Y-axis by the given angle.</p>
+
+<div class="skewYorg">
+This a normal div element.
+</div>
+
+<div class="skewY">
+This div element is skewed 20 degrees along the Y-axis.
+</div>
+
+</body>
+</html>
+</td>
+												</tr>
+												</table><h5>&nbsp;</h5>
+						</div></div></div></section>
+												
+												<section class="container">
+                <div class="row">
+					<div class="col-sm-12">
+                        <div class="box6">
+							<table  class="roundedCorners" align="center">
+												<tr><td colspan="2" align="center"><h3>The matrix() Method</h3></td></tr>
+												<tr><td colspan="2" align="center">The matrix() method combines all the 2D transform methods into one.<br>
+The matrix() method take six parameters, containing mathematic functions, which allows you to rotate, scale, move (translate), and skew elements.</td></tr>
+											<tr>
+												<td><br>&lt;!DOCTYPE html&gt;
+<br>&lt;html&gt;
+<br>&lt;head&gt;
+<br>&lt;style&gt;
+<br>div.matrixorg {
+<br>  width: 300px;
+<br>  height: 100px;
+<br>  background-color: yellow;
+<br>  border: 1px solid black;
+<br>}
+<br>
+<br>div.matrix1 {
+<br>  width: 300px;
+<br>  height: 100px;
+<br>  background-color: yellow;
+<br>  border: 1px solid black;
+<br>  -ms-transform: matrix(1, -0.3, 0, 1, 0, 0); /* IE 9 */
+<br>  transform: matrix(1, -0.3, 0, 1, 0, 0); /* Standard syntax */
+<br>}
+<br>
+<br>div.matrix2 {
+<br>  width: 300px;
+<br>  height: 100px;
+<br>  background-color: yellow;
+<br>  border: 1px solid black;
+<br>  -ms-transform: matrix(1, 0, 0.5, 1, 150, 0); /* IE 9 */
+<br>  transform: matrix(1, 0, 0.5, 1, 150, 0); /* Standard syntax */
+<br>}
+<br>&lt;/style&gt;
+<br>&lt;/head&gt;
+<br>&lt;body&gt;
+<br>
+<br>&lt;h1&gt;The matrix() Method&lt;/h1&gt;
+<br>&lt;p&gt;The matrix() method combines all the 2D transform methods into one.&lt;/p&gt;
+<br>
+<br>&lt;div class="matrixorg"&gt;
+<br>This a normal div element.
+<br>&lt;/div&gt;
+<br>
+<br>&lt;div class="matrix1"&gt;
+<br>Using the matrix() method.
+<br>&lt;/div&gt;
+<br>
+<br>&lt;div class="matrix2"&gt;
+<br>Another use of the matrix() method.
+<br>&lt;/div&gt;
+<br>
+<br>&lt;/body&gt;
+<br>&lt;/html&gt;
+</td>
+												<td><!DOCTYPE html>
+<html>
+<head>
+<style>
+div.matrixorg {
+  width: 300px;
+  height: 100px;
+  background-color: yellow;
+  border: 1px solid black;
+}
+
+div.matrix1 {
+  width: 300px;
+  height: 100px;
+  background-color: yellow;
+  border: 1px solid black;
+  -ms-transform: matrix(1, -0.3, 0, 1, 0, 0); /* IE 9 */
+  transform: matrix(1, -0.3, 0, 1, 0, 0); /* Standard syntax */
+}
+
+div.matrix2 {
+  width: 300px;
+  height: 100px;
+  background-color: yellow;
+  border: 1px solid black;
+  -ms-transform: matrix(1, 0, 0.5, 1, 150, 0); /* IE 9 */
+  transform: matrix(1, 0, 0.5, 1, 150, 0); /* Standard syntax */
+}
+</style>
+</head>
+<body>
+
+<h1>The matrix() Method</h1>
+<p>The matrix() method combines all the 2D transform methods into one.</p>
+
+<div class="matrixorg">
+This a normal div element.
+</div>
+
+<div class="matrix1">
+Using the matrix() method.
+</div>
+
+<div class="matrix2">
+Another use of the matrix() method.
+</div>
+
+</body>
+</html>
+</td>
+												</tr>
+												
+											</table>
+												
+		<h5>&nbsp;</h5>
+							
+					</div>
+					</div>
+			
+				</div>
+					</section>
+		
+		<section class="container">
+                <div class="row">
+				<div class="col-sm-12">
+                        <div class="box6">
+							<h3>CSS Transform Properties</h3>
+							<table class="roundedCorners" align="center">
+							<tr>
+								<td align="center"><b>Properties</b></td>
+								<td align="center"><b>Description</b></td>
+							</tr>
+								<tr>
+								<td><b>transform</b></td>
+								<td><b>Applies a 2D or 3D transformation to an element</b></td>
+							</tr>
+								<tr>
+								<td><b>transform-origin</b></td>
+								<td><b>Allows you to change the position on transformed elements</b></td>
+							</tr>
+							</table>
+							<h2>&nbsp;</h2>
+							<h3>CSS 2D Transform Methods</h3>
+							<table class="roundedCorners" align="center">
+							<tr>
+								<td align="center"><b>Function</b></td>
+								<td align="center"><b>Description</b></td>
+							</tr>
+								<tr>
+									<td>matrix(n,n,n,n,n,n)</td>
+									<td>Defines a 2D transformation, using a matrix of six values</td>
+								</tr>
+								<tr>
+									<td>translate(x,y)</td>
+									<td>Defines a 2D translation, moving the element along the X- and the Y-axis</td>
+								</tr>
+								<tr>
+									<td>translateX(n)</td>
+									<td>Defines a 2D translation, moving the element along the X-axis</td>
+								</tr>
+								<tr>
+									<td>translateY(n)</td>
+									<td>Defines a 2D translation, moving the element along the Y-axis</td>
+								</tr>
+								<tr>
+									<td>scale(x,y)</td>
+									<td>Defines a 2D scale transformation, changing the elements width and height</td>
+								</tr>
+								<tr>
+									<td>scaleX(n)</td>
+									<td>Defines a 2D scale transformation, changing the element's width</td>
+								</tr>
+								<tr>
+									<td>scaleY(n)</td>
+									<td>Defines a 2D scale transformation, changing the element's height</td>
+								</tr>
+								<tr>
+									<td>rotate(angle)</td>
+									<td>Defines a 2D rotation, the angle is specified in the parameter</td>
+								</tr>
+								<tr>
+									<td>skew(x-angle,y-angle)</td>
+									<td>Defines a 2D skew transformation along the X- and the Y-axis</td>
+								</tr>
+								<tr>
+									<td>skewX(angle)</td>
+									<td>	Defines a 2D skew transformation along the X-axis</td>
+								</tr>
+								<tr>
+									<td>skewY(angle)</td>
+									<td>Defines a 2D skew transformation along the Y-axis</td>
+								</tr>
+							</table>
+							<h5>&nbsp;</h5>
+                        </div>
+					</div>
+					</div>
+			</section>
+		
+	
+				<section class="container">
+                <div class="row">
+				<div class="col-sm-2">
+                        <div class="box5">
+							<a href="PAGE_6.html">
+								<p style="color:white;">PREVIOUS</p>
+							</a>
+                        </div>
+					</div>
+					
+					<div class="col-sm-8">
+                        <div class="box2">
+                        </div>
+					</div>
+					
+					<div class="col-sm-2">
+                        <div class="box5">
+							<a href="PAGE_8.html">
+								<p style="color:white;">NEXT</p>
+							</a>
+                        </div>
+					</div>
+					</div>
+			</section>
+            
+                       
+                           
+                            
+                            
+	           
+                      
+                    
+            <!--<div id="push"></div>-->
+        </div>
+        <footer class="container-fluid" style="background:#002739;padding:70px 0px 0px 0px;">
+            <div class="row">
+                <div class="container" style="padding-bottom:40px;">
+                    <div class="row">
+                        <div class="col-sm-12 text-center">
+                            <a href="#">
+                                <img src="images/logo-2.png"  width="200" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+</body>
+</html>

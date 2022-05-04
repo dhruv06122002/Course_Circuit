@@ -1,0 +1,533 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/Style.css" rel="stylesheet" />
+</head>
+<body>
+    <div id="wrapper">
+        <div class="main">
+            <header class="container-fluid topHeader">
+                <div class="row">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <ul class="list-inline">
+                                    <li><a href="#"><span class="glyphicon glyphicon-envelope"></span> courcecircuit@gmail.com</a></li>
+                                    <li><a href="#"><span class="glyphicon glyphicon-phone"></span>+91 000000000</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </header>
+            <nav class="navbar navbar-default">
+                <div class="container">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="../1_HTML,CSS,PHP for web-development.html">
+                            <img src="images/logo1.png" width="200"  />
+                        </a>
+                    </div>
+
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="navbar-collapse">
+                        <ul class="nav navbar-nav float-right">
+                             <li><a href="PAGE_0.html">Index</a></li>
+                            <li><a href="../../B_EXAM/Phase 3/SELECT EXAM.html">Assignments</a></li>
+                            <li><a href="../B_PHASE_1/PAGE_COLOR.html">Color Picker</a></li>
+                            <li><a href="../../A_MAIN/3_COMPILER.html">Compiler</a></li>
+                        </ul>
+                    </div><!-- /.navbar-collapse -->
+                </div><!-- /.container-fluid -->
+            </nav>
+             <section class="jumbotron">
+                <div class="container">
+                    <p><center><img src="PHASES/Advance CSS.png" height="150" width="150"></center></p>
+                    <p class="lead"><center><b><h3>Welcome to Phase 3 : Advance CSS</h3></b></center></p>
+                </div>
+            </section>
+           
+            <section class="container">
+                <div class="row">
+                <div class="col-sm-12">
+                        <div class="box2">
+                        <h1>CSS Transitions</h1>
+                        </div>
+  </div>
+                        
+                                        <div class="col-sm-12">
+                        <div class="box6">
+							<table class="roundedCorners1" align="center">
+								<tr>
+									<td align="center">CSS transitions allows you to change property values smoothly, over a given duration.</td>
+								</tr>
+								<tr>
+									<td align="center">In this chapter you will learn about the following properties:</td>
+								</tr>
+								<tr>
+									<td align="center">
+										<code>transition</code>
+									</td>
+								</tr>
+								<tr>
+									<td align="center">
+										<code>transition-delay</code>
+									</td>
+								</tr>
+								<tr>
+									<td align="center">
+										<code>transition-duration</code>
+									</td>
+								</tr>
+								<tr>
+									<td align="center">
+										<code>transition-property</code>
+									</td>
+								</tr>
+								<tr>
+									<td align="center">
+										<code>transition-timing-function</code>
+									</td>
+								</tr>
+											</table>
+					</div></div></div></section>
+											<section class="container">
+                <div class="row">
+					<div class="col-sm-12">
+                        <div class="box6">
+											<table  class="roundedCorners" align="center">
+												<tr><td colspan="2" align="center"><h3>How to Use CSS Transitions?</h3></td></tr>
+												<tr><td colspan="2" align="center">the CSS property you want to add an effect to the duration of the effect</td></tr>
+												<tr><td colspan="2" align="center">The following example shows a 100px * 100px  element. The element has also specified a transition effect for the width property, with a duration of 2 seconds:</td></tr>
+											<tr>
+												<td><br>&lt;!DOCTYPE html&gt;
+<br>&lt;html&gt;
+<br>&lt;head&gt;
+<br>&lt;style&gt;
+<br>div.org {
+<br>  width: 100px;
+<br>  height: 100px;
+<br>  background: #00afef;
+<br>  transition: width 2s;
+<br>}
+<br>div.org:hover {
+<br>  width: 300px;
+<br>}
+<br>&lt;/style&gt;
+<br>&lt;/head&gt;
+<br>&lt;body&gt;
+<br>&lt;div class="org"&gt;
+<br>Mouse over the element to see a CSS transition effect
+<br>&lt;/div&gt;
+<br>&lt;/body&gt;
+<br>&lt;/html&gt;
+</td>
+												<td><!DOCTYPE html>
+<html>
+<head>
+<style>
+div.org {
+  width: 100px;
+  height: 100px;
+  background: #00afef;
+  transition: width 2s;
+}
+div.org:hover {
+  width: 300px;
+}
+</style>
+</head>
+<body>
+<div class="org">
+Mouse over the element to see a CSS transition effect
+</div>
+</body>
+</html>
+</td>
+												</tr>
+												</table><h5>&nbsp;</h5>
+						</div></div></div></section>
+												
+												<section class="container">
+                <div class="row">
+					<div class="col-sm-12">
+                        <div class="box6">
+							<table  class="roundedCorners" align="center">
+												<tr><td colspan="2" align="center"><h3>Change Several Property Values</h3></td></tr>
+												<tr><td colspan="2" align="center">The following example adds a transition effect for both the width and height property, with a duration of 2 seconds for the width and 4 seconds for the height:</td></tr>
+											<tr>
+												<td><br>&lt;!DOCTYPE html&gt;
+<br>&lt;html&gt;
+<br>&lt;head&gt;
+<br>&lt;style&gt;
+<br>div.org1 {
+<br>  width: 100px;
+<br>  height: 100px;
+<br>  background: #00afef;
+<br>  transition: width 2s, height 4s;
+<br>}
+<br>div.org1:hover {
+<br>  width: 300px;
+<br>  height: 300px;
+<br>}
+<br>&lt;/style&gt;
+<br>&lt;/head&gt;
+<br>&lt;body&gt;
+<br>&lt;div class="org1"&gt;
+<br>Mouse over the element to see a CSS transition effect
+<br>&lt;/div&gt;
+<br>&lt;/body&gt;
+<br>&lt;/html&gt;
+</td>
+												<td><!DOCTYPE html>
+<html>
+<head>
+<style>
+div.org1 {
+  width: 100px;
+  height: 100px;
+  background: #00afef;
+  transition: width 2s, height 4s;
+}
+div.org1:hover {
+  width: 300px;
+  height: 300px;
+}
+</style>
+</head>
+<body>
+<div class="org1">
+Mouse over the element to see a CSS transition effect
+</div>
+</body>
+</html>
+</td>
+												</tr>
+												
+								</table><h5>&nbsp;</h5>
+						</div></div></div></section>
+												
+												
+		<section class="container">
+                <div class="row">
+				<div class="col-sm-12">
+                        <div class="box6">
+							<h3>Specify the Speed Curve of the Transition</h3>
+							<table class="roundedCorners" align="center">
+							<tr>
+								<td colspan="2" align="center"><b>The transition-timing-function property specifies the speed curve of the transition effect.</b></td>
+							</tr>
+								
+							<tr>
+								<td colspan="2" align="center"><b>The transition-timing-function property can have the following values:</b></td>
+							</tr>
+								<tr>
+									<td>ease </td>
+									<td>	 specifies a transition effect with a slow start, then fast, then end slowly (this is default)</td>
+								</tr>
+<tr>
+									<td>linear </td>
+									<td>	 specifies a transition effect with the same speed from start to end</td>
+								</tr>
+<tr>
+									<td>ease in </td>
+									<td>	 specifies a transition effect with a slow start</td>
+								</tr>
+<tr>
+									<td>ease out </td>
+									<td>	 specifies a transition effect with a slow end</td>
+								</tr>
+<tr>
+									<td>ease in out </td>
+									<td>	specifies a transition effect with a slow start and end</td>
+								</tr>
+<tr>
+									<td>cubic bezier(n,n,n,n) </td>
+									<td>	 lets you define your own values in a cubic bezier function</td>
+								</tr>
+								<tr><td colspan="2" align="center"><b>The following example shows the some of the different speed curves that can be used:</b></td></tr>
+								<tr>
+								<td><br>&lt;html&gt;
+<br>&lt;head&gt;
+<br>&lt;style&gt; 
+<br>div.org3 {
+<br>  width: 100px;
+<br>  height: 100px;
+<br>  background: #00afef;
+<br>  transition: width 2s;
+<br>}
+<br>
+<br>#div1 {transition-timing-function: linear;}
+<br>#div2 {transition-timing-function: ease;}
+<br>#div3 {transition-timing-function: ease-in;}
+<br>#div4 {transition-timing-function: ease-out;}
+<br>#div5 {transition-timing-function: ease-in-out;}
+<br>
+<br>div.org3:hover {
+<br>  width: 300px;
+<br>}
+<br>&lt;/style&gt;
+<br>&lt;/head&gt;
+<br>&lt;body&gt;
+<br>
+<br>&lt;h1&gt;The transition-timing-function Property&lt;/h1&gt;
+<br>
+<br>&lt;p&gt;Hover over the div elements below, to see the different speed curves:&lt;/p&gt;
+<br>
+<br>&lt;div class="org3" id="div1"&gt;linear&lt;/div&gt;&lt;br&gt;
+<br>&lt;div class="org3" id="div2"&gt;ease&lt;/div&gt;&lt;br&gt;
+<br>&lt;div class="org3" id="div3"&gt;ease-in&lt;/div&gt;&lt;br&gt;
+<br>&lt;div class="org3" id="div4"&gt;ease-out&lt;/div&gt;&lt;br&gt;
+<br>&lt;div class="org3" id="div5"&gt;ease-in-out&lt;/div&gt;&lt;br&gt;
+<br>
+<br>&lt;/body&gt;
+<br>&lt;/html&gt;</td>
+								<td><html>
+<head>
+<style> 
+div.org3 {
+  width: 100px;
+  height: 100px;
+  background: #00afef;
+  transition: width 2s;
+}
+
+#div1 {transition-timing-function: linear;}
+#div2 {transition-timing-function: ease;}
+#div3 {transition-timing-function: ease-in;}
+#div4 {transition-timing-function: ease-out;}
+#div5 {transition-timing-function: ease-in-out;}
+
+div.org3:hover {
+  width: 300px;
+}
+</style>
+</head>
+<body>
+
+<h1>The transition-timing-function Property</h1>
+
+<p>Hover over the div elements below, to see the different speed curves:</p>
+
+<div class="org3" id="div1">linear</div><br>
+<div class="org3" id="div2">ease</div><br>
+<div class="org3" id="div3">ease-in</div><br>
+<div class="org3" id="div4">ease-out</div><br>
+<div class="org3" id="div5">ease-in-out</div><br>
+
+</body>
+</html>
+</td>
+								</tr>
+							</table>
+							<h2>&nbsp;</h2>
+							</div></div></div></section> 
+			
+		<section class="container">
+                <div class="row">
+				<div class="col-sm-12">
+                        <div class="box6">
+							<table  class="roundedCorners" align="center">
+												<tr><td colspan="2" align="center"><h3>Delay the Transition Effect</h3></td></tr>
+												<tr><td colspan="2" align="center">The transition-delay property specifies a delay (in seconds) for the transition effect.</td></tr>
+											<tr>
+												<td><br>&lt;!DOCTYPE html&gt;
+<br>&lt;html&gt;
+<br>&lt;head&gt;
+<br>&lt;style&gt; 
+<br>div.org4 {
+<br>  width: 100px;
+<br>  height: 100px;
+<br>  background: #00afef;
+<br>  transition: width 3s;
+<br>  transition-delay: 1s;
+<br>}
+<br>
+<br>div.org4:hover {
+<br>  width: 300px;
+<br>}
+<br>&lt;/style&gt;
+<br>&lt;/head&gt;
+<br>&lt;body&gt;
+<br>
+<br>&lt;h1&gt;The transition-delay Property&lt;/h1&gt;
+<br>&lt;div class="org4"&gt;&lt;p&gt;Hover over the div element below, to see the transition effect&lt;/p&gt;&lt;/div&gt;
+<br>&lt;/body&gt;
+<br>&lt;/html&gt;
+</td>
+												<td><!DOCTYPE html>
+<html>
+<head>
+<style> 
+div.org4 {
+  width: 100px;
+  height: 100px;
+  background: #00afef;
+  transition: width 3s;
+  transition-delay: 1s;
+}
+
+div.org4:hover {
+  width: 300px;
+}
+</style>
+</head>
+<body>
+
+<h1>The transition-delay Property</h1>
+<div class="org4"><p>Hover over the div element below, to see the transition effect</p></div>
+</body>
+</html>
+
+</td>
+												</tr>
+												
+								</table><h5>&nbsp;</h5>
+							</div></div></div></section>
+												
+												
+		<section class="container">
+                <div class="row">
+				<div class="col-sm-12">
+                        <div class="box6">
+							<table  class="roundedCorners" align="center">
+												<tr><td colspan="2" align="center"><h3>Transition + Transformation</h3></td></tr>
+												<tr><td colspan="2" align="center">The following example adds a transition effect to the transformation:</td></tr>
+											<tr>
+												<td><br>&lt;!DOCTYPE html&gt;
+<br>&lt;html&gt;
+<br>&lt;head&gt;
+<br>&lt;style&gt; 
+<br>div.org5 {
+<br>  width: 100px;
+<br>  height: 100px;
+<br>  background: #00afef;
+<br>  transition: width 2s, height 2s, transform 2s;
+<br>}
+<br>
+<br>div.org5:hover {
+<br>  width: 300px;
+<br>  height: 300px;
+<br>  transform: rotate(180deg);
+<br>}
+<br>&lt;/style&gt;
+<br>&lt;/head&gt;
+<br>&lt;body&gt;
+<br>
+<br>&lt;h1&gt;Transition + Transform&lt;/h1&gt;
+<br>&lt;div class="org5"&gt;&lt;p&gt;Hover over the div element below:&lt;/p&gt;&lt;/div&gt;
+<br>
+<br>&lt;/body&gt;
+<br>&lt;/html&gt;
+</td>
+												<td><!DOCTYPE html>
+<html>
+<head>
+<style> 
+div.org5 {
+  width: 100px;
+  height: 100px;
+  background: #00afef;
+  transition: width 2s, height 2s, transform 2s;
+}
+
+div.org5:hover {
+  width: 300px;
+  height: 300px;
+  transform: rotate(180deg);
+}
+</style>
+</head>
+<body>
+
+<h1>Transition + Transform</h1>
+<div class="org5"><p>Hover over the div element below:</p></div>
+
+</body>
+</html>
+
+</td>
+												</tr>
+												
+								</table><h5>&nbsp;</h5>
+							</div></div></div></section>
+											
+												
+		<section class="container">
+                <div class="row">
+				<div class="col-sm-12">
+                        <div class="box6">
+							<h3>CSS 3D Transform Methods</h3>
+							<table class="roundedCorners" align="center">
+							<tr>
+								<td align="center"><b>Function</b></td>
+								<td align="center"><b>Description</b></td>
+							</tr>
+								<tr><td>transition</td><td>	A shorthand property for setting the four transition properties into a single property</td></tr>
+<tr><td>transition-delay</td><td>	Specifies a delay (in seconds) for the transition effect</td></tr>
+<tr><td>transition-duration</td><td>	Specifies how many seconds or milliseconds a transition effect takes to complete</td></tr>
+<tr><td>transition-property</td><td>	Specifies the name of the CSS property the transition effect is for</td></tr>
+<tr><td>transition-timing-function</td><td>	Specifies the speed curve of the transition effect</td></tr>
+							</table>
+							<h5>&nbsp;</h5>
+                        </div>
+					</div>
+					</div>
+			</section>
+		
+	
+				<section class="container">
+                <div class="row">
+				<div class="col-sm-2">
+                        <div class="box5">
+							<a href="PAGE_8.html">
+								<p style="color:white;">PREVIOUS</p>
+							</a>
+                        </div>
+					</div>
+					
+					<div class="col-sm-8">
+                        <div class="box2">
+                        </div>
+					</div>
+					
+					<div class="col-sm-2">
+                        <div class="box5">
+							<a href="PAGE_10.html">
+								<p style="color:white;">NEXT</p>
+							</a>
+                        </div>
+					</div>
+					</div>
+			</section>
+            
+                       
+                           
+                            
+                            
+	           
+                      
+                    
+            <!--<div id="push"></div>-->
+        </div>
+        <footer class="container-fluid" style="background:#002739;padding:70px 0px 0px 0px;">
+            <div class="row">
+                <div class="container" style="padding-bottom:40px;">
+                    <div class="row">
+                        <div class="col-sm-12 text-center">
+                            <a href="#">
+                                <img src="images/logo-2.png"  width="200" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+</body>
+</html>

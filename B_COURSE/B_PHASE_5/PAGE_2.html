@@ -1,0 +1,344 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/Style.css" rel="stylesheet" />
+</head>
+<body>
+    <div id="wrapper">
+        <div class="main">
+            <header class="container-fluid topHeader">
+                <div class="row">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <ul class="list-inline">
+                                    <li><a href="#"><span class="glyphicon glyphicon-envelope"></span> courcecircuit@gmail.com</a></li>
+                                    <li><a href="#"><span class="glyphicon glyphicon-phone"></span>+91 000000000</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </header>
+            <nav class="navbar navbar-default">
+                <div class="container">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="../1_HTML,CSS,PHP for web-development.html">
+                            <img src="images/logo1.png" width="200"  />
+                        </a>
+                    </div>
+
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="navbar-collapse">
+                        <ul class="nav navbar-nav float-right">
+                             <li><a href="PAGE_0.html">Index</a></li>
+                            <li><a href="../../B_EXAM/Phase 5/SELECT EXAM.html">Assignments</a></li>
+                            <li><a href="../B_PHASE_1/PAGE_COLOR.html">Color Picker</a></li>
+                            <li><a href="../../A_MAIN/3_COMPILER.html">Compiler</a></li>
+                        </ul>
+                    </div><!-- /.navbar-collapse -->
+                </div><!-- /.container-fluid -->
+            </nav>
+             <section class="jumbotron">
+                <div class="container">
+                    <p><center><img src="PHASES/database.png" height="150" width="150"></center></p>
+                    <p class="lead"><center><b><h3>Welcome to Phase 5 : Database(MYSQL)</h3></b></center></p>
+                </div>
+            </section>
+           
+            <section class="container">
+                <div class="row">
+                <div class="col-sm-12">
+                        <div class="box2">
+                        <h1>What is MYSQL?</h1>
+                        </div>
+					</div>
+                    <div class="col-sm-12">
+                        <div class="box4">
+                        <h3>MYSQL</h3>
+                        <p align="justify"> MySQL is a freely available open source Relational Database Management System (RDBMS) that uses Structured Query Language (SQL).<br>One of the most important things about using MySQL is to have a MySQL specialized host. Here are some of the things SiteGround can offer:
+<ul>
+<li>
+We have long experience in providing technical support for MySQL-based web sites. Thanks to it our servers are perfectly optimized to offer the best overall performance for most MySQL applications.</li>
+<li>
+We offer a lot of free MySQL tools including CMS systems, forums, galleries, blogs, shopping carts and more.
+</li>
+<li>
+We support MySQL 5 and we provide unlimited MySQL databases on all our hosting plans.</li>
+</ul>
+</p>
+						</div>
+                        </div>
+                        <div class="col-sm-12">
+                        <div class="box4">
+                        <h3>SQL Data Types</h3>	
+                        <p>An SQL developer must decide what type of data that will be stored inside each 
+column when creating a table. The data type is a 
+guideline for SQL to understand what type of data is expected inside of each 
+column, and it also identifies how SQL will interact with the stored data.</p>
+<center>
+<p>In MySQL there are three main data types: string, numeric, and date and time.</p></center>
+</div></div><div class="col-sm-12">
+                        <div class="box4">
+<h3>String data types:</h3>
+ &nbsp;
+<table align="center" class="roundedCorners2">
+    <tr>
+      <th style="width:30%">Data type</th>
+      <th>Description</th>
+    </tr>
+    <tr>
+      <td>CHAR(size)</td>
+      <td>A FIXED length string (can contain letters, numbers, and special characters). The
+      <em>size</em> parameter specifies the column length in characters - can be 
+      from 0 to   255. Default is 1</td>
+    </tr>
+    <tr>
+      <td>VARCHAR(size)</td>
+      <td>A VARIABLE length string (can contain letters, numbers, and special 
+      characters). The <em>size</em> parameter specifies the maximum column 
+      length in characters - can be from 0 to 65535</td>
+    </tr>
+    <tr>
+      <td>BINARY(size)</td>
+      <td>Equal to CHAR(), but stores binary byte strings. The <em>size</em> 
+      parameter specifies the column length in bytes. Default is 1</td>
+    </tr>
+    <tr>
+      <td>VARBINARY(size)</td>
+      <td>Equal to VARCHAR(), but stores binary byte strings. The <em>size</em> 
+      parameter specifies the maximum column length in bytes.</td>
+    </tr>
+    <tr>
+      <td>TINYBLOB</td>
+      <td>For BLOBs (Binary Large OBjects). Max length: 255 bytes</td>
+    </tr>
+    <tr>
+      <td>TINYTEXT</td>
+      <td>Holds a string with a maximum length of 255 characters</td>
+    </tr>
+    <tr>
+      <td>TEXT(size)</td>
+      <td>Holds a string with a maximum length of 65,535 bytes</td>
+    </tr>
+    <tr>
+      <td>BLOB(size)</td>
+      <td>For BLOBs (Binary Large OBjects). Holds up to 65,535 bytes of data</td>
+    </tr>
+    <tr>
+      <td>MEDIUMTEXT</td>
+      <td>Holds a string with a maximum length of 16,777,215 characters</td>
+    </tr>
+    <tr>
+      <td>MEDIUMBLOB</td>
+      <td>For BLOBs (Binary Large OBjects). Holds up to 16,777,215 bytes of data</td>
+    </tr>
+    <tr>
+      <td>LONGTEXT</td>
+      <td>Holds a string with a maximum length of 4,294,967,295 characters</td>
+    </tr>
+    <tr>
+      <td>LONGBLOB</td>
+      <td>For BLOBs (Binary Large OBjects). Holds up to 4,294,967,295 bytes of data</td>
+    </tr>
+    <tr>
+      <td>ENUM(val1, val2, val3, ...)</td>
+      <td>A string object that can have only one value, chosen from a list of possible values. You can list up to 65535 values in an ENUM list. If a value is inserted that is not in the list, a   blank value will be inserted. 
+      The values are sorted in the order you enter them</td>
+    </tr>
+  <tr>
+      <td>SET(val1, val2, val3, ...)</td>
+      <td>A string object that can have 0 or more values, chosen from a list of 
+      possible values. You can list up to 64 values in a SET list</td>
+    </tr>
+</table>
+&nbsp;
+</div></div><div class="col-sm-12">
+                        <div class="box4">
+<h3>Numeric data types:</h3>
+ &nbsp;
+<table align="center" class="roundedCorners2">
+    <tr>
+      <th style="width:30%">Data type</th>
+      <th>Description</th>
+    </tr>
+    <tr>
+      <td>BIT(<em>size</em>)</td>
+      <td>A bit-value type. The number of bits per value is specified in <em>size</em>. 
+      The <em>size</em> parameter can hold a value from 1 to 64. The default 
+      value for <em>size</em> is 1.</td>
+    </tr>
+    <tr>
+      <td>TINYINT(<em>size</em>)</td>
+      <td>A very small integer. Signed range is from -128 to 127. Unsigned range 
+      is from 0 to 255. The <em>size</em> parameter specifies the maximum 
+      display width (which is 255)</td>
+    </tr>
+    <tr>
+      <td>BOOL</td>
+      <td>Zero is considered as false, nonzero values are considered as true. </td>
+    </tr>
+    <tr>
+      <td>BOOLEAN</td>
+      <td>Equal to BOOL</td>
+    </tr>
+    <tr>
+      <td>SMALLINT(<em>size</em>)</td>
+      <td>A small integer. Signed range is from -32768 to 32767. Unsigned range 
+      is from 0 to 65535. The <em>size</em> parameter specifies the maximum 
+      display width (which is 255)</td>
+    </tr>
+    <tr>
+      <td>MEDIUMINT(<em>size</em>)</td>
+      <td>A medium integer. Signed range is from -8388608 to 8388607. Unsigned 
+      range is from 0 to 16777215. The <em>size</em> parameter specifies the 
+      maximum display width (which is 255)</td>
+    </tr>
+    <tr>
+      <td>INT(<em>size</em>)</td>
+      <td>A medium integer. Signed range is from -2147483648 to 2147483647. 
+      Unsigned range is from 0 to 4294967295. The <em>size</em> parameter 
+      specifies the maximum display width (which is 255)</td>
+    </tr>
+    <tr>
+      <td>INTEGER(<em>size</em>)</td>
+      <td>Equal to INT(size)</td>
+    </tr>
+    <tr>
+      <td>BIGINT(<em>size</em>)</td>
+      <td>A large integer. Signed range is from -9223372036854775808 to 
+      9223372036854775807. Unsigned range is from 0 to 18446744073709551615. The
+      <em>size</em> parameter specifies the maximum display width (which is 255)</td>
+    </tr>
+    <tr>
+      <td>FLOAT(<em>size</em>, <em>d</em>)</td>
+      <td>A floating point number. The total number of digits is specified in 
+      <em>size</em>. The   number of digits after the decimal point is specified 
+      in the <em>d</em> parameter. This syntax is deprecated in MySQL 8.0.17, 
+      and it will be removed in future MySQL versions</td>
+    </tr>
+    <tr>
+      <td>FLOAT(<em>p</em>)</td>
+      <td>A floating point number. MySQL uses the <em>p</em> value to determine 
+      whether to use FLOAT or DOUBLE for the resulting data type. If <em>p</em> 
+      is from 0 to 24, the data type becomes FLOAT(). If <em>p</em> is from 25 to 
+      53, the data type becomes DOUBLE()</td>
+    </tr>
+    <tr>
+      <td>DOUBLE(<em>size</em>, <em>d</em>)</td>
+      <td>A normal-size floating point number. The total number of digits is specified in 
+      <em>size</em>. The   number of digits after the decimal point is specified 
+      in the <em>d</em> parameter</td>
+    </tr>
+    <tr>
+      <td>DOUBLE PRECISION(<em>size</em>, <em>d</em>)</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>DECIMAL(<em>size</em>, <em>d</em>)</td>
+      <td>An exact fixed-point number. The   total number of digits is specified in 
+      <em>size</em>. The   number of digits after the decimal point is specified 
+      in the <em>d</em> parameter. The maximum number for <em>size</em> is 65. 
+      The maximum number for <em>d</em> is 30. The default value for <em>size</em> 
+      is 10. The default value for <em>d</em> is 0.</td>
+    </tr>
+    <tr>
+      <td>DEC(<em>size</em>, <em>d</em>)</td>
+      <td>Equal to DECIMAL(size,d)</td>
+    </tr>
+    </table>
+    &nbsp;
+</div></div><div class="col-sm-12">
+                        <div class="box4">
+<h3>Date and Time data types:</h3>
+&nbsp;
+<table align="center" class="roundedCorners2">
+    <tr>
+      <th style="width:30%">Data type</th>
+      <th>Description</th>
+    </tr>
+    <tr>
+      <td>DATE</td>
+      <td>A date. Format: YYYY-MM-DD. The supported range is from '1000-01-01' to '9999-12-31'</td>
+    </tr>
+    <tr>
+      <td>DATETIME(<em>fsp</em>)</td>
+      <td>A date and time combination. Format: YYYY-MM-DD hh:mm:ss. The supported range is from '1000-01-01 00:00:00' to '9999-12-31 23:59:59'. 
+      Adding DEFAULT and ON UPDATE in the column definition to get automatic 
+      initialization and updating to the current date and time</td>
+    </tr>
+    <tr>
+      <td>TIMESTAMP(<em>fsp</em>)</td>
+      <td>A timestamp. TIMESTAMP values are stored as the number of seconds since the Unix epoch ('1970-01-01 00:00:00' UTC). Format: YYYY-MM-DD   
+      hh:mm:ss. The supported range is from '1970-01-01 00:00:01'   UTC to '2038-01-09 03:14:07' UTC. 
+      Automatic initialization and updating to the current date and time can be 
+      specified using DEFAULT CURRENT_TIMESTAMP and ON UPDATE CURRENT_TIMESTAMP 
+      in the column definition</td>
+    </tr>
+    <tr>
+      <td>TIME(<em>fsp</em>)</td>
+      <td>A time. Format: hh:mm:ss. The supported range is from '-838:59:59' to '838:59:59'</td>
+    </tr>
+    <tr>
+      <td>YEAR</td>
+      <td>A year in four-digit format. Values allowed in four-digit format: 1901 to 2155, and 0000.<br>
+      MySQL 8.0 does not support year in two-digit format.</td>
+    </tr>
+</table>
+						&nbsp;
+                        </div>
+					</div>
+		</div>
+				<div class="col-sm-2">
+                        <div class="box5">
+							<a href="PAGE_1.html">
+								<p style="color:white;">PREVIOUS</p>
+							</a>
+                        </div>
+					</div>
+					
+					<div class="col-sm-8">
+                        <div class="box2">
+                        </div>
+					</div>
+					
+					<div class="col-sm-2">
+                        <div class="box5">
+							<a href="PAGE_3.html">
+								<p style="color:white;">NEXT</p>
+							</a>
+                        </div>
+					</div>
+			</section>
+            
+                       
+                           
+                            
+                            
+	           
+                      
+                    
+            <!--<div id="push"></div>-->
+        </div>
+        <footer class="container-fluid" style="background:#002739;padding:70px 0px 0px 0px;">
+            <div class="row">
+                <div class="container" style="padding-bottom:40px;">
+                    <div class="row">
+                        <div class="col-sm-12 text-center">
+                            <a href="#">
+                                <img src="images/logo-2.png"  width="200" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+</body>
+</html>

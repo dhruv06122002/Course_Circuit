@@ -1,0 +1,6 @@
+Phase 1 - HTML (Basic + Advance)
+Phase 2 - CSS (Basic)
+Phase 3 - Advance CSS (Advance)
+Phase 4 - PHP (Basic PHP + Use of PHP with HTML)
+Phase 5 - Database Connction (Create and connect with database)
+Phase 6 - Host and Domain

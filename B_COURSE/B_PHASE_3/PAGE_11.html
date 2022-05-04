@@ -1,0 +1,554 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/Style.css" rel="stylesheet" />
+</head>
+	
+<style>
+.tooltip {
+  /*position: relative;
+  display: inline-block;*/
+  border-bottom: 1px dotted black;
+}
+
+.tooltip .Basictooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+}
+
+.tooltip .Righttooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: red;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  top: -5px;
+  left: 105%;
+}
+
+.tooltip .Lefttooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  top: -5px;
+  right: 105%;
+}
+	
+.tooltip .Toptooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -60px;
+}
+	
+.tooltip .Bottomtooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  top: 100%;
+  left: 50%;
+  margin-left: -60px;
+}
+	
+.tooltip .fadetooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -60px;
+  
+  /* Fade in tooltip - takes 1 second to go from 0% to 100% opac: */
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.tooltip:hover .fadetooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+	
+
+.tooltip:hover .Basictooltiptext {
+  visibility: visible;
+}
+.tooltip:hover .Righttooltiptext {
+  visibility: visible;
+}
+.tooltip:hover .Lefttooltiptext {
+  visibility: visible;
+}
+.tooltip:hover .Toptooltiptext {
+  visibility: visible;
+}
+.tooltip:hover .Bottomtooltiptext {
+  visibility: visible;
+}
+</style>
+<body>
+    <div id="wrapper">
+        <div class="main">
+            <header class="container-fluid topHeader">
+                <div class="row">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <ul class="list-inline">
+                                    <li><a href="#"><span class="glyphicon glyphicon-envelope"></span> courcecircuit@gmail.com</a></li>
+                                    <li><a href="#"><span class="glyphicon glyphicon-phone"></span>+91 000000000</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </header>
+            <nav class="navbar navbar-default">
+                <div class="container">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="../1_HTML,CSS,PHP for web-development.html">
+                            <img src="images/logo1.png" width="200"  />
+                        </a>
+                    </div>
+
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="navbar-collapse">
+                        <ul class="nav navbar-nav float-right">
+                             <li><a href="PAGE_0.html">Index</a></li>
+                            <li><a href="../../B_EXAM/Phase 3/SELECT EXAM.html">Assignments</a></li>
+                            <li><a href="../B_PHASE_1/PAGE_COLOR.html">Color Picker</a></li>
+                            <li><a href="../../A_MAIN/3_COMPILER.html">Compiler</a></li>
+                        </ul>
+                    </div><!-- /.navbar-collapse -->
+                </div><!-- /.container-fluid -->
+            </nav>
+             <section class="jumbotron">
+                <div class="container">
+                    <p><center><img src="PHASES/Advance CSS.png" height="150" width="150"></center></p>
+                    <p class="lead"><center><b><h3>Welcome to Phase 3 : Advance CSS</h3></b></center></p>
+                </div>
+            </section>
+			<section class="container">
+                <div class="row">
+                <div class="col-sm-12">
+                        <div class="box2">
+                        <h1>CSS Tooltip</h1>
+                        </div>
+  </div>
+                        
+                                        <div class="col-sm-12">
+                        <div class="box6">
+							<table class="roundedCorners2" align="center">
+								<tr>
+									<td colspan="2" align="center">Create tooltips with CSS.</td>
+								</tr>
+								<tr>
+									<td colspan="2" align="center">A tooltip is often used to specify extra information about something when the user moves the mouse pointer over an element:</td>
+								</tr>
+							</table><h5>&nbsp;</h5>
+							<section class="container">
+                <div class="row">
+							 <div class="col-sm-5">
+                        <div class="box6">
+							<br>&lt;!DOCTYPE html&gt;
+<br>&lt;html&gt;
+<br>&lt;style&gt;
+<br>.tooltip {
+<br>position: relative;
+<br>display: inline-block;
+<br>border-bottom: 1px dotted black;
+<br>}
+<br>
+<br>.tooltip .Basictooltiptext {
+<br>visibility: hidden;
+<br>width: 120px;
+<br>background-color: black;
+<br>color: #fff;
+<br>text-align: center;
+<br>border-radius: 6px;
+<br>padding: 5px 0;
+<br>
+<br>/* Position the tooltip */
+<br>position: absolute;
+<br>z-index: 1;
+<br>}
+<br>
+<br>.tooltip:hover .Basictooltiptext {
+<br>visibility: visible;
+<br>}
+<br>&lt;/style&gt;
+<br>&lt;body&gt;
+<br>
+<br>&lt;p&gt;Move the mouse over the text below:&lt;/p&gt;
+<br>&lt;div align="center"&gt;
+<br>&lt;div class="tooltip"&gt;
+<br>Basic
+<br>&lt;span class="Basictooltiptext"&gt;Basic Tooltip text&lt;/span&gt;&lt;/div&gt;
+<br>	&lt;/div&gt;
+<br>
+<br>&lt;/body&gt;
+<br>&lt;/html&gt;
+							</div></div>
+							 <div class="col-sm-6">
+                        <div class="box6"><video src="media/basic.mp4" width="500" controls loop></video>
+							</div></div>
+							</div></section>
+							<section class="container">
+                <div class="row">
+							<div class="col-sm-5">
+                        <div class="box6">
+							<br>&lt;!DOCTYPE html&gt;
+<br>&lt;html&gt;
+<br>&lt;style&gt;
+<br>.tooltip {
+<br>position: relative;
+<br>display: inline-block;
+<br>border-bottom: 1px dotted black;
+<br>}
+<br>
+<br>.tooltip .Righttooltiptext {
+<br>visibility: hidden;
+<br>width: 120px;
+<br>background-color: black;
+<br>color: #fff;
+<br>text-align: center;
+<br>border-radius: 6px;
+<br>padding: 5px 0;
+<br>
+<br>/* Position the tooltip */
+<br>position: absolute;
+<br>z-index: 1;
+<br>top: -5px;
+<br>left: 105%;
+<br>}
+<br>
+<br>
+<br>.tooltip:hover .Righttooltiptext {
+<br>visibility: visible;
+<br>}
+<br>&lt;/style&gt;
+<br>&lt;body&gt;
+<br>
+<br>&lt;p&gt;Move the mouse over the text below:&lt;/p&gt;
+<br>&lt;div align="center"&gt;
+<br>&lt;div class="tooltip"&gt;
+<br>Right
+<br>&lt;span class="Righttooltiptext"&gt;Right Tooltip text&lt;/span&gt;&lt;/div&gt;
+<br>	&lt;/div&gt;
+<br>
+<br>&lt;/body&gt;
+<br>&lt;/html&gt;
+							</div></div>
+							<div class="col-sm-6">
+                        <div class="box6"><video src="media/right.mp4" width="500" controls loop></video>
+							</div></div>
+							</div></section>
+							<section class="container">
+                <div class="row">
+							
+							<div class="col-sm-5">
+                        <div class="box6">
+							<br>&lt;!DOCTYPE html&gt;
+<br>&lt;html&gt;
+<br>&lt;style&gt;
+<br>.tooltip {
+<br>position: relative;
+<br>display: inline-block;
+<br>border-bottom: 1px dotted black;
+<br>}
+<br>
+<br>.tooltip .Lefttooltiptext {
+<br>visibility: hidden;
+<br>width: 120px;
+<br>background-color: black;
+<br>color: #fff;
+<br>text-align: center;
+<br>border-radius: 6px;
+<br>padding: 5px 0;
+<br>
+<br>/* Position the tooltip */
+<br>position: absolute;
+<br>z-index: 1;
+<br>top: -5px;
+<br>right: 105%;
+<br>}
+<br>
+<br>
+<br>.tooltip:hover .Lefttooltiptext {
+<br>visibility: visible;
+<br>}
+<br>&lt;/style&gt;
+<br>&lt;body&gt;
+<br>
+<br>&lt;p&gt;Move the mouse over the text below:&lt;/p&gt;
+<br>&lt;div align="center"&gt;
+<br>&lt;div class="tooltip"&gt;
+<br>left
+<br>&lt;span class="Lefttooltiptext"&gt;Left Tooltip text&lt;/span&gt;&lt;/div&gt;
+<br>	&lt;/div&gt;
+<br>
+<br>&lt;/body&gt;
+<br>&lt;/html&gt;
+							</div></div>
+							<div class="col-sm-6">
+                        <div class="box6"><video src="media/left.mp4" width="500" controls loop></video>
+							</div></div>
+							
+							</div></section>
+							<section class="container">
+                <div class="row">
+							<div class="col-sm-5">
+                        <div class="box6">
+							<br>&lt;!DOCTYPE html&gt;
+<br>&lt;html&gt;
+<br>&lt;style&gt;
+<br>.tooltip {
+<br>position: relative;
+<br>display: inline-block;
+<br>border-bottom: 1px dotted black;
+<br>}
+<br>
+<br>.tooltip .Toptooltiptext {
+<br>visibility: hidden;
+<br>width: 120px;
+<br>background-color: black;
+<br>color: #fff;
+<br>text-align: center;
+<br>border-radius: 6px;
+<br>padding: 5px 0;
+<br>
+<br>/* Position the tooltip */
+<br>position: absolute;
+<br>z-index: 1;
+<br>bottom: 100%;
+<br>left: 50%;
+<br>margin-left: -60px;
+<br>}
+<br>
+<br>
+<br>.tooltip:hover .Toptooltiptext {
+<br>visibility: visible;
+<br>}
+<br>&lt;/style&gt;
+<br>&lt;body&gt;
+<br>
+<br>&lt;p&gt;Move the mouse over the text below:&lt;/p&gt;
+<br>&lt;div align="center"&gt;
+<br>&lt;div class="tooltip"&gt;
+<br>Top
+<br>&lt;span class="Toptooltiptext"&gt;Top Tooltip text&lt;/span&gt;&lt;/div&gt;
+<br>	&lt;/div&gt;
+<br>
+<br>&lt;/body&gt;
+&lt;/html&gt;
+							</div></div>
+							<div class="col-sm-6">
+                        <div class="box6"><video src="media/top.mp4" width="500" controls loop></video>
+							</div></div>
+											</div></section>
+			
+							<section class="container">
+                <div class="row">
+							<div class="col-sm-5">
+                        <div class="box6">
+							<br>&lt;!DOCTYPE html&gt;
+<br>&lt;html&gt;
+<br>&lt;style&gt;
+<br>.tooltip {
+<br>position: relative;
+<br>display: inline-block;
+<br>border-bottom: 1px dotted black;
+<br>}
+<br>
+<br>.tooltip .Bottomtooltiptext {
+<br>visibility: hidden;
+<br>width: 120px;
+<br>background-color: black;
+<br>color: #fff;
+<br>text-align: center;
+<br>border-radius: 6px;
+<br>padding: 5px 0;
+<br>
+<br>/* Position the tooltip */
+<br>position: absolute;
+<br>z-index: 1;
+<br>top: 100%;
+<br>left: 50%;
+<br>margin-left: -60px;
+<br>}
+<br>
+<br>
+<br>.tooltip:hover .Bottomtooltiptext {
+<br>visibility: visible;
+<br>}
+<br>&lt;/style&gt;
+<br>&lt;body&gt;
+<br>
+<br>&lt;p&gt;Move the mouse over the text below:&lt;/p&gt;
+<br>&lt;div align="center"&gt;
+<br>&lt;div class="tooltip"&gt;
+<br>Bottom
+<br>&lt;span class="Bottomtooltiptext"&gt;Bottom Tooltip text&lt;/span&gt;&lt;/div&gt;
+<br>	&lt;/div&gt;
+<br>
+<br>&lt;/body&gt;
+<br>&lt;/html&gt;
+							</div></div>
+							<div class="col-sm-6">
+                        <div class="box6"><video src="media/bottom.mp4" width="500" controls loop></video>
+							</div></div>
+								</div></section>
+							<section class="container">
+                <div class="row">
+							<div class="col-sm-5">
+                        <div class="box6">
+							<br>&lt;!DOCTYPE html&gt;
+<br>&lt;html&gt;
+<br>&lt;style&gt;
+<br>.tooltip {
+<br>position: relative;
+<br>display: inline-block;
+<br>border-bottom: 1px dotted black;
+<br>}
+<br>.tooltip .fadetooltiptext {
+<br>visibility: hidden;
+<br>width: 120px;
+<br>background-color: black;
+<br>color: #fff;
+<br>text-align: center;
+<br>border-radius: 6px;
+<br>padding: 5px 0;
+<br>position: absolute;
+<br>z-index: 1;
+<br>bottom: 100%;
+<br>left: 50%;
+<br>margin-left: -60px;
+<br>
+<br>/* Fade in tooltip - takes 1 second to go from 0% to 100% opac: */
+<br>opacity: 0;
+<br>transition: opacity 1s;
+<br>}
+<br>
+<br>.tooltip:hover .fadetooltiptext {
+<br>visibility: visible;
+<br>opacity: 1;
+<br>}
+<br>&lt;/style&gt;
+<br>&lt;body&gt;
+<br>
+<br>&lt;p&gt;Move the mouse over the text below:&lt;/p&gt;
+<br>&lt;div align="center"&gt;
+<br>&lt;div class="tooltip"&gt;
+<br>Fade
+<br>&lt;span class="fadetooltiptext"&gt;fade Tooltip text&lt;/span&gt;&lt;/div&gt;
+<br>	&lt;/div&gt;
+<br>
+<br>&lt;/body&gt;
+<br>&lt;/html&gt;
+							</div></div>
+							<div class="col-sm-6">
+                        <div class="box6"><video src="media/fade.mp4" width="500" controls loop></video>
+							</div></div></div></section>
+			</div></div></div></section>
+				<section class="container">
+                <div class="row">
+				<div class="col-sm-2">
+                        <div class="box5">
+							<a href="PAGE_10.html">
+								<p style="color:white;">PREVIOUS</p>
+							</a>
+                        </div>
+					</div>
+					
+					<div class="col-sm-8">
+                        <div class="box2">
+                        </div>
+					</div>
+					
+					<div class="col-sm-2">
+                        <div class="box5">
+							<a href="PAGE_12.html">
+								<p style="color:white;">NEXT</p>
+							</a>
+                        </div>
+					</div>
+					</div>
+			</section>
+            
+                       
+                           
+                            
+                            
+	           
+                      
+                    
+            <!--<div id="push"></div>-->
+        </div>
+        <footer class="container-fluid" style="background:#002739;padding:70px 0px 0px 0px;">
+            <div class="row">
+                <div class="container" style="padding-bottom:40px;">
+                    <div class="row">
+                        <div class="col-sm-12 text-center">
+                            <a href="#">
+                                <img src="images/logo-2.png"  width="200" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+</body>
+</html>

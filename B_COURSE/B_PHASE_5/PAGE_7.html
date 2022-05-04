@@ -1,0 +1,339 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/Style.css" rel="stylesheet" />
+</head>
+<body>
+    <div id="wrapper">
+        <div class="main">
+            <header class="container-fluid topHeader">
+                <div class="row">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <ul class="list-inline">
+                                    <li><a href="#"><span class="glyphicon glyphicon-envelope"></span> courcecircuit@gmail.com</a></li>
+                                    <li><a href="#"><span class="glyphicon glyphicon-phone"></span>+91 000000000</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </header>
+            <nav class="navbar navbar-default">
+                <div class="container">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="SELECT 1 BOARD.html">
+                            <img src="images/logo1.png" width="200"  />
+                        </a>
+                    </div>
+
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="navbar-collapse">
+                        <ul class="nav navbar-nav float-right">
+                             <li><a href="PAGE_0.html">Index</a></li>
+                            <li><a href="../B_EXAM/Phase 4/SELECT EXAM.html">Assignments</a></li>
+                            <li><a href="../B_PHASE_1/PAGE_COLOR.html">Color Picker</a></li>
+                            <li><a href="../../A_LOGIN/5_COMPILER.html">Compiler</a></li>
+                        </ul>
+                    </div><!-- /.navbar-collapse -->
+                </div><!-- /.container-fluid -->
+            </nav>
+            <section class="jumbotron">
+                <div class="container">
+                   <p><center><img src="PHASES/database.png" height="150" width="150"></center></p>
+                    <p class="lead"><center><b><h3>Welcome to Phase 5 : Database(MYSQL)</h3></b></center></p>
+                </div>
+            </section>
+            
+            
+				<section class="container">
+                <div class="row">
+                <div class="col-sm-12">
+                        <div class="box2">
+
+                       <h1>Web Application</h1>
+
+                 </div>
+		</div>
+
+<div class="col-sm-12">
+                        <div class="box4">
+							<h3> Manipulation.php </h3>
+							<div class="col-sm-2">
+                        <div class="box9">
+								</div></div>
+							<div class="col-sm-8">
+                        <div class="box6">
+							<br>&lt;html&gt;
+<br>&lt;body&gt;
+<br>&lt;h3&gt;INSERT DATA&lt;/h3&gt;
+<br>&lt;form name="f1" method="POST" action="insert.php"&gt;
+<br>&lt;table&gt;
+<br>&lt;tr&gt;
+<br>&lt;td&gt;NAME&lt;/td&gt;
+<br>&lt;td&gt;&lt;input type="text" name="ntxt" placeholder="Name"/&gt;&lt;/td&gt;
+<br>&lt;/tr&gt;
+<br>&lt;tr&gt;
+<br>&lt;td&gt;ENR NO&lt;/td&gt;
+<br>&lt;td&gt;&lt;input type="text" name="entxt" placeholder="Enrollment"/&gt;&lt;/td&gt;
+<br>&lt;/tr&gt;
+<br>&lt;tr&gt;
+<br>&lt;td&gt;&lt;/td&gt;
+<br>&lt;td&gt;&lt;input type="submit" name="insert" value="INSERT"/&gt;&lt;/td&gt;
+<br>&lt;/tr&gt;
+<br>&lt;/table&gt;
+<br>&lt;/form&gt;
+<br>&lt;h3&gt;UPDATE DATA&lt;/h3&gt;
+<br>&lt;form name="f2" action="update.php" method="POST"&gt;
+<br>&lt;table&gt;
+<br>&lt;tr&gt;
+<br>&lt;td&gt;NEW NAME&lt;/td&gt;
+<br>&lt;td&gt;&lt;input type="text" name="nntxt" placeholder="Enter New Name"/&gt;&lt;/td&gt;
+<br>&lt;/tr&gt;
+<br>&lt;tr&gt;
+<br>&lt;td&gt;NEW ENR&lt;/td&gt;
+<br>&lt;td&gt;&lt;input type="number" name="netxt" placeholder="Enter New
+<br>Enrollment"/&gt;&lt;/td&gt;&lt;/tr&gt;
+<br>&lt;tr&gt;
+<br>&lt;td&gt;CHANGE AT&lt;/td&gt;
+<br>&lt;td&gt;&lt;input type="text" name="ctxt" placeholder="Enter Value"/&gt;&lt;/td&gt;
+<br>&lt;/tr&gt;
+<br>&lt;tr&gt;
+<br>&lt;td&gt;&lt;/td&gt;
+<br>&lt;td&gt;&lt;input type="submit" name="update" value="UPDATE"/&gt;&lt;/td&gt;
+<br>&lt;/tr&gt;
+<br>&lt;/table&gt;
+<br>&lt;/form&gt;
+<br>&lt;h3&gt;DELETE DATA&lt;/h3&gt;
+<br>&lt;form name="f3" action="delete.php" method="POST"&gt;
+<br>&lt;table&gt;
+<br>&lt;tr&gt;
+<br>&lt;td&gt;CONDITION&lt;/td&gt;
+<br>&lt;td&gt;&lt;input type="text" name="cotxt" placeholder="Enter ENR"/&gt;&lt;/td&gt;
+<br>&lt;/tr&gt;
+<br>&lt;tr&gt;
+<br>&lt;td&gt;&lt;/td&gt;
+<br>&lt;td&gt;&lt;input type="submit" name="submit" value="DELETE"/&gt;&lt;/td&gt;
+<br>&lt;/tr&gt;
+<br>&lt;/table&gt;
+<br>&lt;/form&gt;
+<br>&lt;/body&gt;
+<br>&lt;/html&gt;
+
+</div></div>
+</div></div>
+<div class="col-sm-12">
+                        <div class="box4">
+<h3> input.php </h3>
+							<div class="col-sm-2">
+                        <div class="box9">
+								</div></div>
+							<div class="col-sm-8">
+                        <div class="box6">
+						<br>&lt;html&gt;
+<br>&lt;body&gt;
+<br>&lt;?php
+<br>$name=$_POST["ntxt"];
+<br>$enr=$_POST["entxt"];
+<br>$cn=mysqli_connect("localhost","root");
+<br>$db=mysqli_select_db($cn,"p-20");
+<br>if($name!="" &amp;&amp; $enr!="")
+<br>{
+<br>$ins=mysqli_query($cn,"insert into Info values('".$name."','".$enr."')");
+<br>}
+<br>else
+<br>{
+<br>echo "Insert data and Try Again..!!!";
+<br>}
+<br>if($ins)
+<br>{
+<br>echo "Data Inserted Successfully...";
+<br>}
+<br>?&gt;
+<br>&lt;table border="2"&gt;
+<br>&lt;tr&gt;
+<br>&lt;th&gt;Name&lt;/th&gt;
+<br>&lt;th&gt;Enr&lt;/th&gt;
+<br>&lt;?php
+<br>$sel=mysqli_query($cn,"select * from Info");
+<br>if(mysqli_num_rows($sel)&gt;0)
+<br>{
+<br>while($row=mysqli_fetch_array($sel))
+<br>{
+<br>echo "&lt;tr&gt;&lt;td&gt;".$row["name"]."&lt;/td&gt;&lt;td&gt;".$row["enr"]."&lt;/td&gt;&lt;/tr&gt;";
+<br>}
+<br>}
+<br>echo "&lt;/table&gt;";
+<br>mysqli_close($cn);
+<br>?&gt;
+<br>&lt;/body&gt;
+<br>&lt;/html&gt;
+</div></div></div></div>
+
+<div class="col-sm-12">
+                        <div class="box4">
+<h3> update.php </h3>
+							<div class="col-sm-2">
+                        <div class="box9">
+								</div></div>
+							<div class="col-sm-8">
+                        <div class="box6">
+							<br>&lt;html&gt;
+<br>&lt;body&gt;
+<br>&lt;?php
+<br>$newname=$_POST["nntxt"];
+<br>$newenr=$_POST["netxt"];
+<br>$val=$_POST["ctxt"];
+<br>$cn=mysqli_connect("localhost","root");
+<br>$db=mysqli_select_db($cn,"p-20");
+<br>if($val!="" &amp;&amp; $newname!="")
+<br>{
+<br>$upd=mysqli_query($cn,"update Info set name='".$newname."', enr='".$newenr."'
+<br>where enr='".$val."' ");
+<br>}
+<br>else
+<br>{
+<br>echo "Cant Update data Try Again..!!!";
+<br>}
+<br>if($upd)
+<br>{
+<br>echo "Data updated Successfully...";
+<br>}
+<br>?&gt;
+<br>&lt;table border="2"&gt;
+<br>&lt;tr&gt;
+<br>&lt;th&gt;Name&lt;/th&gt;
+<br>&lt;th&gt;Enr&lt;/th&gt;
+<br>&lt;?php
+<br>$sel=mysqli_query($cn,"select * from Info");
+<br>if(mysqli_num_rows($sel)&gt;0)
+<br>{
+<br>while($row=mysqli_fetch_array($sel))
+<br>{
+<br>echo "&lt;tr&gt;&lt;td&gt;".$row["name"]."&lt;/td&gt;&lt;td&gt;".$row["enr"]."&lt;/td&gt;&lt;/tr&gt;";
+<br>}
+<br>}
+<br>echo "&lt;/table&gt;";
+<br>mysqli_close($cn);
+<br>?&gt;
+<br>&lt;/body&gt;
+<br>&lt;/html&gt;
+</div></div></div></div>
+
+
+<div class="col-sm-12">
+                        <div class="box4">
+<h3> delete.php </h3>
+							<div class="col-sm-2">
+                        <div class="box9">
+								</div></div>
+							<div class="col-sm-8">
+                        <div class="box6">
+							<br>&lt;html&gt;
+<br>&lt;body&gt;
+<br>&lt;?php
+<br>$d=$_POST["cotxt"];
+<br>$cn=mysqli_connect("localhost","root");
+<br>$db=mysqli_select_db($cn,"p-20");
+<br>if($d!="")
+<br>{
+<br>$delete=mysqli_query($cn,"delete from Information where(enr='".$d."')");
+<br>}
+<br>else
+<br>{
+<br>echo "Cant delete data Try Again..!!!";
+<br>}
+<br>if($delete)
+<br>{
+<br>echo "Data Deleted Successfully...";
+<br>}
+<br>?&gt;
+<br>&lt;table border="2"&gt;
+<br>&lt;tr&gt;
+<br>&lt;th&gt;Name&lt;/th&gt;
+<br>&lt;th&gt;Enr&lt;/th&gt;
+<br>&lt;?php
+<br>$sel=mysqli_query($cn,"select * from Information");
+<br>if(mysqli_num_rows($sel)&gt;0)
+<br>{
+<br>while($row=mysqli_fetch_array($sel))
+<br>{
+<br>echo "&lt;tr&gt;&lt;td&gt;".$row["name"]."&lt;/td&gt;&lt;td&gt;".$row["enr"]."&lt;/td&gt;&lt;/tr&gt;";
+<br>}
+<br>}
+<br>echo "&lt;/table&gt;";
+<br>mysqli_close($cn);
+<br>?&gt;
+<br>&lt;/body&gt;
+<br>&lt;/html&gt;
+</div></div></div></div>
+
+<div class="col-sm-12">
+                        <div class="box4">
+							<div class="col-sm-2">
+								<div class="box9"></div></div>
+							<div class="col-sm-8" align="center">
+                        <div class="box6">
+<img src="images/Webapp1.png" ><br>
+							</div></div>
+							<div class="col-sm-12" align="center">
+                        <div class="box6"><img src="images/Webapp2.png" >&nbsp;<img src="images/Webapp3.png" >&nbsp;<img src="images/Webapp4.png" ></div></div>
+							<h4>&nbsp;</h4>
+</div></div>
+					
+				<div class="col-sm-2">
+                        <div class="box5">
+							<a href="PAGE_6.html">
+								<p style="color:white;">PREVIOUS</p>
+							</a>
+                        </div>
+					</div>
+					
+					<div class="col-sm-8">
+                        <div class="box2">
+                        
+                        </div>
+					</div>
+					
+					<div class="col-sm-2">
+                        <div class="box5">
+							<a href="../../B_EXAM/Phase 5/SELECT EXAM.html">
+								<p style="color:white;">EXAM</p>
+							</a>
+                        </div>
+					</div>
+				</div>
+			</section>
+            
+                       
+                           
+                            
+                            
+	           
+                      
+                    
+            <!--<div id="push"></div>-->
+        </div>
+        <footer class="container-fluid" style="background:#002739;padding:70px 0px 0px 0px;">
+            <div class="row">
+                <div class="container" style="padding-bottom:40px;">
+                    <div class="row">
+                        <div class="col-sm-12 text-center">
+                            <a href="#">
+                                <img src="images/logo-2.png"  width="200" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+</body>
+</html>

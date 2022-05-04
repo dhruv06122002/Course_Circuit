@@ -1,0 +1,240 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #282828;
+  padding-top: 100px;
+  font-family: "Roboto", sans-serif;
+  text-decoration:none;
+}
+
+.navbar {
+  width: 100%;
+  height: 50px;
+  background: #282828;
+}
+
+.icon {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  float: right;
+}
+
+.avatar img {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #333;
+  border: 1px solid #333;
+  filter: grayscale(1) invert(1);
+}
+.logo {
+  float: left;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  margin-left: 15px;
+}
+
+.logo img {
+  width: 100px;
+}
+
+.tabs {
+  border-top: 1px solid #525252;
+  display: flex;
+  background: #282828;
+  max-width: 100%;
+  overflow-x: scroll;
+  padding: 10px;
+}
+
+.tab1,.tab2,.tab3,.tab4,.tab5,.tab6,.tab7 {
+  margin-right: 10px;
+  padding: 6px 11px 6px 11px;
+  font-size: 14px;
+  border-radius: 100px;
+  color: #fff;
+  border: 1px solid #525252;
+  background: #3e3e3e;
+  white-space: nowrap;
+}
+
+.chips .active {
+  background: #fff;
+  color: #000;
+  border: 1px solid #fff;
+}
+
+.bottomnav {
+  width: 100%;
+  max-height: 50px;
+  display: flex;
+  background: #282828;
+  border-top: 1px solid #525252;
+  position: fixed;
+  bottom: 1px;
+  left: 0;
+  z-index: 1;
+}
+
+.bottomnav .item {
+  text-align: center;
+  width: 100%;
+  color: #909090;
+  padding-top: 6px;
+  width: 100%;
+  height: 50px;
+}
+
+.text1, .text2, #text1, #text2, .text3, #text3 {
+  font-size: 15px;
+  margin-top: -1px;
+}
+
+.bottomnav .active {
+  color: #fff;
+}
+
+.topnav {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  box-shadow: 0 0 5px #000;
+  z-index: 1;
+}
+.sendfb {
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 15px 0 5px;
+  color: #3ea6ff;
+  font-weight: bolder;
+  font-size: 14px;
+}
+
+.preloader {
+  width: 100%;
+  height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+  position: fixed;
+  align-items: center;
+  justify-content: center;
+  background: #111;
+  top: 0;
+  left: 0;
+  transition: 1s;
+}
+
+.preloader img {
+  width: 100%;
+  height: 100vh;
+}
+
+#search-icon:hover .search-box {
+  top: 0;
+}
+#search-icon:hover .back-button{
+    top:5px;
+}
+.search-box {
+  position: absolute;
+  height: 47px;
+  width: 90%;
+  z-index: +2;
+  top: -55px;
+  right: -12px;
+  border-right: 35px solid #111;
+  transition: 0.5s;
+  background: #111;
+  border: none;
+  outline: none;
+  font-family: "Roboto", sans-serif;
+  color: white;
+}
+.back-button{
+    position:absolute;
+    z-index:+3;
+    height:40px;
+    width:40px;
+    background:#eee;
+    margin:auto;
+    top:-55px;
+    left:13px;
+    transition:.5s;
+    filter:invert(1);
+}
+.container {
+  position: absolute;
+  height: 80%;
+  width: 100%;
+  border-bottom: 1px solid rgb(51, 51, 51);
+  margin: auto;
+  right: 0;
+  left: 0;
+  overflow-x:hidden;overflow-y:scroll;
+}
+.result {
+  position: relative;
+  height: 62%;
+  width: 100%;text-decoration:none;
+}
+.thumbnail {
+  position: relative;
+  margin: auto;
+  left: 0;
+  right: 0;
+  width: 100%;
+}
+.title {
+  color: white;
+  position: relative;
+  margin: auto;
+  height: 45px;
+  overflow: hidden;
+  width: 80%;
+  left: 20px;
+  top: 10px;
+  font-family: "roboto", sans-serif;
+  text-decoration:none;
+}
+.user {
+  position: relative;
+  color: rgb(141, 141, 141);
+  font-family: "roboto", sans-serif;
+  left: 60px;
+  top: -5px;text-decoration:none;
+}
+.channelArt {
+  position: relative;
+  height: 40px;
+  border-radius: 50%;
+  bottom: 90px;
+  text-decoration:none;
+  left: 7px;
+}
+.LoaderBG{
+    position:absolute;
+    height:100%;
+    width:100%;
+    margin:auto;top:0;right:0;left:0;bottom:0;
+   background:#111; display:flex;justify-content:center;align-items:center;
+   transition:1s;
+    z-index:10;
+}
+.YTLogo{
+    position:absolute;
+    width:80%;
+}

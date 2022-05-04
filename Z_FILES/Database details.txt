@@ -1,0 +1,12 @@
+DATABASE DETAILS:
+
+create database of name 
+"final_year"  (kindly copy paste name if error occurs.)
+
+click on import .
+select final_year.sql file and press go...
+
+check their should be 3 tables :
+-- users
+-- files
+-- contact

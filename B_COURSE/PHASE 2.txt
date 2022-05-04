@@ -1,0 +1,14 @@
+PHASE 2
+
+Page 1 -  Introduction to CSS
+Page 2 - Syntax & Types of CSS
+Page 3 - CSS Selectors
+Page 4 - CSS Comments
+Page 5 - CSS Colors
+Page 6 - CSS Backgrounds
+Page 7 - CSS Borders
+Page 8 - CSS Margins
+Page 9 - CSS Padding
+Page 10 - CSS Text
+Page 11 - CSS Fonts
+Page 12 - CSS Website Layout

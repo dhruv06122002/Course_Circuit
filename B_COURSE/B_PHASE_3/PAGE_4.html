@@ -1,0 +1,447 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/Style.css" rel="stylesheet" />
+</head>
+<body>
+    <div id="wrapper">
+        <div class="main">
+            <header class="container-fluid topHeader">
+                <div class="row">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <ul class="list-inline">
+                                    <li><a href="#"><span class="glyphicon glyphicon-envelope"></span> courcecircuit@gmail.com</a></li>
+                                    <li><a href="#"><span class="glyphicon glyphicon-phone"></span>+91 000000000</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </header>
+            <nav class="navbar navbar-default">
+                <div class="container">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="../1_HTML,CSS,PHP for web-development.html">
+                            <img src="images/logo1.png" width="200"  />
+                        </a>
+                    </div>
+
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="navbar-collapse">
+                        <ul class="nav navbar-nav float-right">
+                             <li><a href="PAGE_0.html">Index</a></li>
+                            <li><a href="../../B_EXAM/Phase 3/SELECT EXAM.html">Assignments</a></li>
+                            <li><a href="../B_PHASE_1/PAGE_COLOR.html">Color Picker</a></li>
+                            <li><a href="../../A_MAIN/3_COMPILER.html">Compiler</a></li>
+                        </ul>
+                    </div><!-- /.navbar-collapse -->
+                </div><!-- /.container-fluid -->
+            </nav>
+             <section class="jumbotron">
+                <div class="container">
+                    <p><center><img src="PHASES/Advance CSS.png" height="150" width="150"></center></p>
+                    <p class="lead"><center><b><h3>Welcome to Phase 3 : Advance CSS</h3></b></center></p>
+                </div>
+            </section>
+           
+            <section class="container">
+                <div class="row">
+                <div class="col-sm-12">
+                        <div class="box2">
+                        <h1>CSS gradients</h1>
+                        </div>
+  </div>
+                        
+                                        <div class="col-sm-12">
+                        <div class="box6">
+							<p><h3>CSS Radial Gradients</h3>
+							<b><h4><center>A radial gradient is defined by its center.<br>
+To create a radial gradient you must also define at least two color stops.</center></h4></b></p>
+							<h3>Syntax:</h3>
+											<center><code>background-image: radial-gradient(shape size at position, start-color, ..., last-color);</code></center><br>
+							<center><p>By default, shape is ellipse, size is farthest-corner, and position is center.<br></p></center>
+											<h6>&nbsp;</h6>
+							<table class="roundedCorners" align="center">
+								<tr><td colspan="2" align="center"><h3>The following table lists the CSS gradient properties:</h3></td></tr>
+							<tr>
+								<td><b>Property</b></td>
+								<td><b>Description</b></td>
+							</tr>
+							<tr>
+								<td>background-image</td>
+								<td>Sets one or more background images for an element</td>
+							</tr>
+							</table>
+							<h6>&nbsp;</h6>
+							
+											<div class="col-sm-12"><div class="box6"><h3>Radial Gradient - Evenly Spaced Color Stops (this is default).</h3>
+											<div class="col-sm-6"><div class="box6"><br>&lt;html&gt;
+<br>&lt;head&gt;
+<br>&lt;style&gt;
+<br>#grad1 {
+<br>  height: 150px;
+<br>  width: 200px;
+<br>  background-color: red; 
+<br>  background-image: radial-gradient(red, yellow, green);
+<br>}
+<br>&lt;/style&gt;
+<br>&lt;/head&gt;
+<br>&lt;body&gt;
+<br>&lt;h1&gt;Radial Gradient - Evenly Spaced Color Stops<br>&lt;/h1&gt;
+<br>&lt;div id="grad1"&gt;<br>&lt;/div&gt;
+<br>&lt;/body&gt;
+<br>&lt;/html&gt;</div></div>
+											<div class="col-sm-5"><div class="box2"><html>
+<head>
+<style>
+#grad1 {
+  height: 150px;
+  width: 200px;
+  background-color: red; /* For browsers that do not support gradients */
+  background-image: radial-gradient(red, yellow, green);
+}
+</style>
+</head>
+<body>
+
+<h1>Radial Gradient - Evenly Spaced Color Stops</h1>
+
+<div id="grad1"></div>
+
+</body>
+</html></div></div>
+											</div></div>
+											<div class="col-sm-12"><div class="box6"><h3>Radial Gradient - Differently Spaced Color Stops</h3>
+											<div class="col-sm-6"><div class="box6"><br>&lt;html&gt;
+<br>&lt;head&gt;
+<br>&lt;style&gt;
+<br>#grad2 {
+<br>  height: 150px;
+<br>  width: 200px;
+<br>  background-color: red; 
+<br>  background-image: radial-gradient(red 5%, yellow 15%, green 60%);
+<br>}
+<br>&lt;/style&gt;
+<br>&lt;/head&gt;
+<br>&lt;body&gt;
+<br>
+<br>&lt;h1&gt;Radial Gradient - Differently Spaced Color Stops&lt;/h1&gt;
+<br>
+<br>&lt;div id="grad2"&gt;&lt;/div&gt;
+<br>
+<br>&lt;/body&gt;
+<br>&lt;/html&gt;</div></div>
+											<div class="col-sm-5"><div class="box2"><html>
+<head>
+<style>
+#grad2 {
+  height: 150px;
+  width: 200px;
+  background-color: red; /* For browsers that do not support gradients */
+  background-image: radial-gradient(red 5%, yellow 15%, green 60%);
+}
+</style>
+</head>
+<body>
+
+<h1>Radial Gradient - Differently Spaced Color Stops</h1>
+
+<div id="grad2"></div>
+
+</body>
+</html></div></div>
+											</div></div>
+											<div class="col-sm-12"><div class="box6"><h3>Set Shape</h3>
+											<div class="col-sm-6"><div class="box6"><br>&lt;html&gt;
+<br>&lt;head&gt;
+<br>&lt;style&gt;
+<br>#grad3 {
+<br>  height: 150px;
+<br>  width: 200px;
+<br>  background-color: red; 
+<br>  background-image: radial-gradient(red, yellow, green);
+<br>}
+<br>
+<br>#grad4 {
+<br>  height: 150px;
+<br>  width: 200px;
+<br>  background-color: red; 
+<br>  background-image: radial-gradient(circle, red, yellow, green);
+<br>}
+<br>&lt;/style&gt;
+<br>&lt;/head&gt;
+<br>&lt;body&gt;
+<br>
+<br>&lt;h1&gt;Radial Gradient - Shapes<br>&lt;/h1&gt;
+<br>&lt;h2&gt;Ellipse (this is default):<br>&lt;/h2&gt;
+<br>&lt;div id="grad1"&gt;<br>&lt;/div&gt;
+<br>&lt;h2&gt;<br>&lt;strong&gt;Circle:<br>&lt;/strong&gt;<br>&lt;/h2&gt;
+<br>&lt;div id="grad2"&gt;<br>&lt;/div&gt;													
+<br>&lt;/body&gt;
+<br>&lt;/html&gt;</div></div>
+											<div class="col-sm-5"><div class="box2"><html>
+<head>
+<style>
+#grad3 {
+  height: 150px;
+  width: 200px;
+  background-color: red; /* For browsers that do not support gradients */
+  background-image: radial-gradient(red, yellow, green);
+}
+
+#grad4 {
+  height: 150px;
+  width: 200px;
+  background-color: red; /* For browsers that do not support gradients */
+  background-image: radial-gradient(circle, red, yellow, green);
+}
+</style>
+</head>
+<body>
+
+<h1>Radial Gradient - Shapes</h1>
+
+<h2>Ellipse (this is default):</h2>
+<div id="grad3"></div>
+
+<h2><strong>Circle:</strong></h2>
+<div id="grad4"></div>
+
+
+</body>
+</html></div></div>
+											</div></div>
+											<h5>&nbsp;</h5>
+							
+					</div>
+					</div>
+				
+				<div class="col-sm-12">
+                        <div class="box6">
+							<p><h3>Use of Different Size Keywords</h3><br>The size parameter defines the size of the gradient. It can take four values:
+							<ul>
+								<li>closest-side</li>
+<li>farthest-side</li>
+<li>closest-corner</li>
+<li>farthest-corner</li></ul></p>
+											
+					<div class="col-sm-12"><div class="box6">
+											<div class="col-sm-6"><div class="box6"><br>&lt;html&gt;
+<br>&lt;head&gt;
+<br>&lt;style&gt;
+<br>#grad5 {
+<br>  height: 150px;
+<br>  width: 150px;
+<br>  background-color: red;
+<br>  background-image: radial-gradient(closest-side at 60% 55%, red, yellow, black);
+<br>}
+<br>
+<br>#grad6 {
+<br>  height: 150px;
+<br>  width: 150px;
+<br>  background-color: red;
+<br>  background-image: radial-gradient(farthest-side at 60% 55%, red, yellow, black);
+<br>}
+<br>
+<br>#grad7 {
+<br>  height: 150px;
+<br>  width: 150px;
+<br>  background-color: red;
+<br>  background-image: radial-gradient(closest-corner at 60% 55%, red, yellow, black);
+<br>}
+<br>
+<br>#grad8 {
+<br>  height: 150px;
+<br>  width: 150px;
+<br>  background-color: red;
+<br>  background-image: radial-gradient(farthest-corner at 60% 55%, red, yellow, black);
+<br>}
+<br>&lt;/style&gt;
+<br>&lt;/head&gt;
+<br>&lt;body&gt;
+
+<br>&lt;h1&gt;Radial Gradients - Different size keywords<br>&lt;/h1&gt;
+
+<br>&lt;h2&gt;closest-side:<br>&lt;/h2&gt;
+<br>&lt;div id="grad5"&gt;<br>&lt;/div&gt;
+
+<br>&lt;h2&gt;farthest-side:<br>&lt;/h2&gt;
+<br>&lt;div id="grad6"&gt;<br>&lt;/div&gt;
+
+<br>&lt;h2&gt;closest-corner:<br>&lt;/h2&gt;
+<br>&lt;div id="grad7"&gt;<br>&lt;/div&gt;
+
+<br>&lt;h2&gt;farthest-corner (default):<br>&lt;/h2&gt;
+<br>&lt;div id="grad8"&gt;<br>&lt;/div&gt;
+
+<br>&lt;/body&gt;
+<br>&lt;/html&gt;
+</div></div>
+											<div class="col-sm-5"><div class="box2">
+												<html>
+<head>
+<style>
+#grad5 {
+  height: 150px;
+  width: 150px;
+  background-color: red; /* For browsers that do not support gradients */
+  background-image: radial-gradient(closest-side at 60% 55%, red, yellow, black);
+}
+
+#grad6 {
+  height: 150px;
+  width: 150px;
+  background-color: red; /* For browsers that do not support gradients */
+  background-image: radial-gradient(farthest-side at 60% 55%, red, yellow, black);
+}
+
+#grad7 {
+  height: 150px;
+  width: 150px;
+  background-color: red; /* For browsers that do not support gradients */
+  background-image: radial-gradient(closest-corner at 60% 55%, red, yellow, black);
+}
+
+#grad8 {
+  height: 150px;
+  width: 150px;
+  background-color: red; /* For browsers that do not support gradients */
+  background-image: radial-gradient(farthest-corner at 60% 55%, red, yellow, black);
+}
+</style>
+</head>
+<body>
+
+<h1>Radial Gradients - Different size keywords</h1>
+
+<h2>closest-side:</h2>
+<div id="grad5"></div>
+
+<h2>farthest-side:</h2>
+<div id="grad6"></div>
+
+<h2>closest-corner:</h2>
+<div id="grad7"></div>
+
+<h2>farthest-corner (default):</h2>
+<div id="grad8"></div>
+
+</body>
+</html></div></div>
+											</div></div><h5>&nbsp;</h5>
+							
+					</div>
+					</div>
+
+	<div class="col-sm-12">
+                        <div class="box6">
+							<p><h3>Repeating a radial-gradient</h3><center>The repeating-radial-gradient() function is used to repeat radial gradients:</center></p>
+											<h6>&nbsp;</h6>
+											
+		<div class="col-sm-12"><div class="box6">
+											<div class="col-sm-6"><div class="box6"><br>&lt;!DOCTYPE html&gt;
+<br>&lt;html&gt;
+<br>&lt;head&gt;
+<br>&lt;style&gt;
+<br>#grad9 {
+<br>  height: 150px;
+<br>  width: 200px;
+<br>  background-color: red;
+<br>  background-image: repeating-radial-gradient(red, yellow 10%, green 15%);
+<br>}
+<br>&lt;/style&gt;
+<br>&lt;/head&gt;
+<br>&lt;body&gt;
+
+<br>&lt;h1&gt;Repeating Radial Gradient<br>&lt;/h1&gt;
+
+<br>&lt;div id="grad9"&gt;<br>&lt;/div&gt;
+<br>&lt;/body&gt;
+<br>&lt;/html&gt;</div></div>
+											<div class="col-sm-5"><div class="box2"><!DOCTYPE html>
+<html>
+<head>
+<style>
+#grad9 {
+  height: 150px;
+  width: 200px;
+  background-color: red; /* For browsers that do not support gradients */
+  background-image: repeating-radial-gradient(red, yellow 10%, green 15%);
+}
+</style>
+</head>
+<body>
+
+<h1>Repeating Radial Gradient</h1>
+
+<div id="grad9"></div>
+
+</body>
+</html></div></div>
+											</div></div>
+		<h5>&nbsp;</h5>
+							
+					</div>
+					</div>
+			
+				</div>
+					</section>
+	
+				<section class="container">
+                <div class="row">
+				<div class="col-sm-2">
+                        <div class="box5">
+							<a href="PAGE_3.html">
+								<p style="color:white;">PREVIOUS</p>
+							</a>
+                        </div>
+					</div>
+					
+					<div class="col-sm-8">
+                        <div class="box2">
+                        </div>
+					</div>
+					
+					<div class="col-sm-2">
+                        <div class="box5">
+							<a href="PAGE_5.html">
+								<p style="color:white;">NEXT</p>
+							</a>
+                        </div>
+					</div>
+					</div>
+			</section>
+            
+                       
+                           
+                            
+                            
+	           
+                      
+                    
+            <!--<div id="push"></div>-->
+        </div>
+        <footer class="container-fluid" style="background:#002739;padding:70px 0px 0px 0px;">
+            <div class="row">
+                <div class="container" style="padding-bottom:40px;">
+                    <div class="row">
+                        <div class="col-sm-12 text-center">
+                            <a href="#">
+                                <img src="images/logo-2.png"  width="200" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+</body>
+</html>

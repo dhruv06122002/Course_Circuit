@@ -1,0 +1,480 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/Style.css" rel="stylesheet" />
+</head>
+<body>
+    <div id="wrapper">
+        <div class="main">
+            <header class="container-fluid topHeader">
+                <div class="row">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <ul class="list-inline">
+                                    <li><a href="#"><span class="glyphicon glyphicon-envelope"></span> courcecircuit@gmail.com</a></li>
+                                    <li><a href="#"><span class="glyphicon glyphicon-phone"></span>+91 000000000</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </header>
+            <nav class="navbar navbar-default">
+                <div class="container">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="../1_HTML,CSS,PHP for web-development.html">
+                            <img src="images/logo1.png" width="200"  />
+                        </a>
+                    </div>
+
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="navbar-collapse">
+                        <ul class="nav navbar-nav float-right">
+                             <li><a href="PAGE_0.html">Index</a></li>
+                            <li><a href="../../B_EXAM/Phase 4/SELECT EXAM.html">Assignments</a></li>
+                            <li><a href="../B_PHASE_1/PAGE_COLOR.html">Color Picker</a></li>
+                            <li><a href="../../A_MAIN/3_COMPILER.html">Compiler</a></li>
+                        </ul>
+                    </div><!-- /.navbar-collapse -->
+                </div><!-- /.container-fluid -->
+            </nav>
+            <section class="jumbotron">
+                <div class="container">
+                    <p><center><img src="PHASES/php.png" height="150" width="150"></center></p>
+                    <p class="lead"><center><b><h3>Welcome to Phase 4 : PHP</h3></b></center></p>
+				</div>
+            </section>
+            
+            <section class="container">
+                <div class="row">
+                <div class="col-sm-12">
+                        <div class="box2">
+                        <h1>PHP Operators</h1>
+                        </div>
+					</div>
+                    <div class="col-sm-1">
+                        <div class="box7"></div></div>	
+                    <div class="col-sm-10">
+                        <div class="box4">
+                        <h3>Operators in PHP</h3>
+							<h2>PHP Operators</h2>
+<p>Operators are used to perform operations on variables and values.</p>
+<p>PHP divides the operators in the following groups:</p>
+<ul>
+  <li>Arithmetic operators</li>
+  <li>Assignment operators</li>
+  <li>Comparison operators</li>
+  <li>Increment/Decrement operators</li>
+  <li>Logical operators</li>
+  <li>String operators</li>
+  <li>Array operators</li>
+  <li>Conditional assignment operators</li>
+</ul>
+<hr>
+
+<h2>PHP Arithmetic Operators</h2>
+<p>The PHP arithmetic operators are used with numeric values to perform common arithmetical operations, 
+such as addition, subtraction, multiplication etc.</p>
+<table class="roundedCorners" align="center">
+<tr>
+<th style="width:15%">Operator</th>
+<th style="width:20%">Name</th>
+<th style="width:20%">Example</th>
+<th style="width:35%">Result</th>
+</tr>
+<tr>
+<td>+</td>
+<td>Addition</td>
+<td>$x + $y</td>
+<td>Sum of $x and $y</td>
+</tr>
+<tr>
+<td>-</td>
+<td>Subtraction</td>
+<td>$x - $y</td>
+<td>Difference of $x and $y</td>
+</tr>
+<tr>
+<td>*</td>
+<td>Multiplication</td>
+<td>$x * $y</td>
+<td>Product of $x and $y</td>
+</tr>
+<tr>
+<td>/</td>
+<td>Division</td>
+<td>$x / $y</td>
+<td>Quotient of $x and $y</td>
+</tr>
+<tr>
+<td>%</td>
+<td>Modulus</td>
+<td>$x % $y</td>
+<td>Remainder of $x divided by $y</td>
+</tr>
+<tr>
+<td>**</td>
+<td>Exponentiation</td>
+<td>$x ** $y</td>
+<td>Result of raising $x to the $y'th power</td>
+</tr>
+</table>
+<hr>
+
+<h2>PHP Assignment Operators</h2>
+<p>The PHP assignment operators are used with numeric values to write a value to a variable.</p>
+<p>The basic assignment operator in PHP is &quot;=&quot;. It means that the left operand 
+gets set to the value of the assignment expression on the right.</p>
+<table class="roundedCorners" align="center">
+<tr>
+<th style="width:15%">Assignment</th>
+<th style="width:20%">Same as... </th>
+<th style="width:55%">Description</th>
+</tr>
+<tr>
+<td>x = y</td>
+<td>x = y</td>
+<td>The left operand gets set to the value of the expression on the right</td>
+</tr>
+<tr>
+<td>x += y</td>
+<td>x = x + y</td>
+<td>Addition</td>
+</tr>
+<tr>
+<td>x -= y</td>
+<td>x = x - y</td>
+<td>Subtraction</td>
+</tr>
+<tr>
+<td>x *= y</td>
+<td>x = x * y</td>
+<td>Multiplication</td>
+</tr>
+<tr>
+<td>x /= y</td>
+<td>x = x / y</td>
+<td>Division</td>
+</tr>
+<tr>
+<td>x %= y</td>
+<td>x = x % y</td>
+<td>Modulus</td>
+</tr>
+</table>
+<hr>
+<h2>PHP Comparison Operators</h2>
+<p>The PHP comparison operators are used to compare two values (number or string):</p>
+<table class="roundedCorners" align="center">
+<tr>
+<th style="width:15%">Operator</th>
+<th style="width:22%">Name</th>
+<th style="width:15%">Example</th>
+<th style="width:38%">Result</th>
+</tr>
+<tr>
+<td>==</td>
+<td>Equal</td>
+<td>$x == $y</td>
+<td>Returns true if $x is equal to $y</td>
+</tr>
+<tr>
+<td>===</td>
+<td>Identical</td>
+<td>$x === $y</td>
+<td>Returns true if $x is equal to $y, and they are of the same type</td>
+</tr>
+<tr>
+<td>!=</td>
+<td>Not equal</td>
+<td>$x != $y</td>
+<td>Returns true if $x is not equal to $y</td>
+</tr>
+<tr>
+<td>&lt;&gt;</td>
+<td>Not equal</td>
+<td>$x &lt;&gt; $y</td>
+<td>Returns true if $x is not equal to $y</td>
+</tr>
+<tr>
+<td>!==</td>
+<td>Not identical</td>
+<td>$x !== $y</td>
+<td>Returns true if $x is not equal to $y, or they are not of the same type</td>
+</tr>
+<tr>
+<td>&gt;</td>
+<td>Greater than</td>
+<td>$x &gt; $y</td>
+<td>Returns true if $x is greater than $y</td>
+</tr>
+<tr>
+<td>&lt;</td>
+<td>Less than</td>
+<td>$x &lt; $y</td>
+<td>Returns true if $x is less than $y</td>
+</tr>
+<tr>
+<td>&gt;=</td>
+<td>Greater than or equal to</td>
+<td>$x &gt;= $y</td>
+<td>Returns true if $x is greater than or equal to $y</td>
+</tr>
+<tr>
+<td>&lt;=</td>
+<td>Less than or equal to</td>
+<td>$x &lt;= $y</td>
+<td>Returns true if $x is less than or equal to $y</td>
+</tr>
+<tr>
+<td>&lt;=&gt;</td>
+<td>Spaceship</td>
+<td>$x &lt;=&gt; $y</td>
+<td>Returns an integer less than, equal to, or greater than zero, depending on 
+if $x is less than, equal to, or greater than $y. Introduced in PHP 7.</td>
+</tr>
+
+</table>
+<hr>
+
+<h2>PHP Increment / Decrement Operators</h2>
+<p>The PHP increment operators are used to increment a variable's value.</p>
+<p>The PHP decrement operators are used to decrement a variable's value.</p>
+<table class="roundedCorners" align="center">
+<tr>
+<th style="width:15%">Operator</th>
+<th style="width:20%">Name </th>
+<th style="width:55%">Description</th>
+</tr>
+<tr>
+<td>++$x</td>
+<td>Pre-increment</td>
+<td>Increments $x by one, then returns $x</td>
+</tr>
+<tr>
+<td>$x++</td>
+<td>Post-increment</td>
+<td>Returns $x, then increments $x by one</td>
+</tr>
+<tr>
+<td>--$x</td>
+<td>Pre-decrement</td>
+<td>Decrements $x by one, then returns $x</td>
+</tr>
+<tr>
+<td>$x--</td>
+<td>Post-decrement</td>
+<td>Returns $x, then decrements $x by one</td>
+</tr>
+</table>
+<hr>
+
+<h2>PHP Logical Operators</h2>
+<p>The PHP logical operators are used to combine conditional statements.</p>
+<table class="roundedCorners" align="center">
+<tr>
+<th style="width:15%">Operator</th>
+<th style="width:20%">Name</th>
+<th style="width:20%">Example</th>
+<th style="width:35%">Result</th>
+</tr>
+<tr>
+<td>and</td>
+<td>And</td>
+<td>$x and $y</td>
+<td>True if both $x and $y are true</td>
+</tr>
+<tr>
+<td>or</td>
+<td>Or</td>
+<td>$x or $y</td>
+<td>True if either $x or $y is true</td>
+</tr>
+<tr>
+<td>xor</td>
+<td>Xor</td>
+<td>$x xor $y</td>
+<td>True if either $x or $y is true, but not both</td>
+</tr>
+<tr>
+<td>&amp;&amp;</td>
+<td>And</td>
+<td>$x &amp;&amp; $y</td>
+<td>True if both $x and $y are true</td>
+</tr>
+<tr>
+<td>||</td>
+<td>Or</td>
+<td>$x || $y</td>
+<td>True if either $x or $y is true</td>
+</tr>
+<tr>
+<td>!</td>
+<td>Not</td>
+<td>!$x</td>
+<td>True if $x is not true</td>
+</tr>
+</table>
+<hr>
+
+<h2>PHP String Operators</h2>
+<p>PHP has two operators that are specially designed for strings.</p>
+<table class="roundedCorners" align="center">
+<tr>
+<th style="width:15%">Operator</th>
+<th style="width:25%">Name</th>
+<th style="width:25%">Example</th>
+<th style="width:25%">Result</th>
+</tr>
+<tr>
+<td>.</td>
+<td>Concatenation</td>
+<td>$txt1 . $txt2</td>
+<td>Concatenation of $txt1 and $txt2</td>
+</tr>
+<tr>
+<td>.=</td>
+<td>Concatenation assignment</td>
+<td>$txt1 .= $txt2</td>
+<td>Appends $txt2 to $txt1</td>
+</tr>
+</table>
+<hr>
+
+<h2>PHP Array Operators</h2>
+<p>The PHP array operators are used to compare arrays.</p>
+<table class="roundedCorners" align="center">
+<tr>
+<th style="width:15%">Operator</th>
+<th style="width:18%">Name</th>
+<th style="width:17%">Example</th>
+<th style="width:40%">Result</th>
+</tr>
+<tr>
+<td>+</td>
+<td>Union</td>
+<td>$x + $y</td>
+<td>Union of $x and $y</td>
+</tr>
+<tr>
+<td>==</td>
+<td>Equality</td>
+<td>$x == $y</td>
+<td></td>
+</tr>
+<tr>
+<td>===</td>
+<td>Identity</td>
+<td>$x === $y</td>
+<td>Returns true if $x and $y have the same key/value pairs in the same order and of the same types</td>
+</tr>
+<tr>
+<td>!=</td>
+<td>Inequality</td>
+<td>$x != $y</td>
+<td>Returns true if $x is not equal to $y</td>
+</tr>
+<tr>
+<td>&lt;&gt;</td>
+<td>Inequality</td>
+<td>$x &lt;&gt; $y</td>
+<td>Returns true if $x is not equal to $y</td>
+</tr>
+<tr>
+<td>!==</td>
+<td>Non-identity</td>
+<td>$x !== $y</td>
+<td>Returns true if $x is not identical to $y</td>
+</tr>
+</table>
+
+<hr>
+
+<h2>PHP Conditional Assignment Operators</h2>
+<p>The PHP conditional assignment operators are used to set a value depending on conditions:</p>
+<table class="roundedCorners" align="center">
+<tr>
+<th style="width:15%">Operator</th>
+<th style="width:22%">Name</th>
+<th style="width:15%">Example</th>
+<th style="width:38%">Result</th>
+</tr>
+<tr>
+<td>?:</td>
+<td>Ternary</td>
+<td>$x = <em>expr1</em> ? <em>expr2</em> : <em>expr3</em></td>
+<td>Returns the value of $x.<br>The value of $x is <em>expr2</em> if <em>expr1</em> 
+= TRUE.<br>The value of $x is <em>expr3</em> if <em>expr1</em> = FALSE</td>
+</tr>
+<tr>
+<td>??</td>
+<td>Null coalescing</td>
+<td>$x = <em>expr1</em> ?? <em>expr2</em></td>
+<td>Returns the value of $x.<br>The value of $x is <em>expr1</em> if <em>expr1</em> 
+exists, and is not NULL.<br>If <em>expr1</em> does not exist, or is NULL, the value of $x is
+<em>expr2</em>.<br>Introduced in PHP 7</td>
+</tr>
+</table>
+<h6>&nbsp;</h6>
+</div></div>
+						
+					</div>
+					</section>
+                    <section class="container">
+                <div class="row">
+				<div class="col-sm-2">
+                        <div class="box5">
+							<a href="PAGE_4.html">
+								<p style="color:white;">PREVIOUS</p>
+							</a>
+                        </div>
+					</div>
+					
+					<div class="col-sm-8">
+                        <div class="box2">
+                        
+                        </div>
+					</div>
+					
+					<div class="col-sm-2">
+                        <div class="box5">
+							<a href="PAGE_6.html">
+								<p style="color:white;">NEXT</p>
+							</a>
+                        </div>
+					</div>
+				</div>
+			</section>
+            
+                       
+                           
+                            
+                            
+	           
+                      
+                    
+            <!--<div id="push"></div>-->
+        </div>
+        <footer class="container-fluid" style="background:#002739;padding:70px 0px 0px 0px;">
+            <div class="row">
+                <div class="container" style="padding-bottom:40px;">
+                    <div class="row">
+                        <div class="col-sm-12 text-center">
+                            <a href="#">
+                                <img src="images/logo-2.png"  width="200" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+</body>
+</html>

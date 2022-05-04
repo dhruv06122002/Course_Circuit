@@ -1,0 +1,8 @@
+[0314/222509.452:ERROR:cache_util_win.cc(21)] Unable to move the cache: 0
+[0314/222509.452:ERROR:cache_util.cc(141)] Unable to move cache folder C:\Users\dhruv\AppData\Local\Temp\cep_cache\DRWV_21.1_com.adobe.DesignLibraries.angular\GPUCache to C:\Users\dhruv\AppData\Local\Temp\cep_cache\DRWV_21.1_com.adobe.DesignLibraries.angular\old_GPUCache_000
+[0314/222509.452:ERROR:disk_cache.cc(185)] Unable to create cache
+[0314/222509.452:ERROR:shader_disk_cache.cc(623)] Shader Cache Creation failed: -2
+[0314/222523.011:ERROR:database.cc(1713)] Cookie sqlite error 8, errno 0: attempt to write a readonly database, sql: DELETE FROM cookies WHERE is_persistent != 1
+[0314/222523.011:ERROR:cache_util_win.cc(21)] Unable to move the cache: 0
+[0314/222523.011:ERROR:cache_util.cc(141)] Unable to move cache folder C:\Users\dhruv\AppData\Local\Temp\cep_cache\DRWV_21.1_com.adobe.DesignLibraries.angular\Cache to C:\Users\dhruv\AppData\Local\Temp\cep_cache\DRWV_21.1_com.adobe.DesignLibraries.angular\old_Cache_000
+[0314/222523.011:ERROR:disk_cache.cc(185)] Unable to create cache

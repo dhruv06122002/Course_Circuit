@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/Style.css" rel="stylesheet" />
+</head>
+<body>
+    <div id="wrapper">
+        <div class="main">
+            <header class="container-fluid topHeader">
+                <div class="row">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <ul class="list-inline">
+                                    <li><a href="#"><span class="glyphicon glyphicon-envelope"></span> courcecircuit@gmail.com</a></li>
+                                    <li><a href="#"><span class="glyphicon glyphicon-phone"></span>+91 000000000</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </header>
+            <nav class="navbar navbar-default">
+                <div class="container">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="../1_HTML,CSS,PHP for web-development.html">
+                            <img src="images/logo1.png" width="200"  />
+                        </a>
+                    </div>
+
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="navbar-collapse">
+                        <ul class="nav navbar-nav float-right">
+                             <li><a href="PAGE_0.html">Index</a></li>
+                            <li><a href="../../B_EXAM/Phase 3/SELECT EXAM.html">Assignments</a></li>
+                            <li><a href="../B_PHASE_1/PAGE_COLOR.html">Color Picker</a></li>
+                            <li><a href="../../A_MAIN/3_COMPILER.html">Compiler</a></li>
+                        </ul>
+                    </div><!-- /.navbar-collapse -->
+                </div><!-- /.container-fluid -->
+            </nav>
+             <section class="jumbotron">
+                <div class="container">
+                    <p><center><img src="PHASES/Advance CSS.png" height="150" width="150"></center></p>
+                    <p class="lead"><center><b><h3>Welcome to Phase 3 : The Advance CSS</h3></b></center></p>
+                </div>
+            </section>
+           
+            <section class="container">
+                <div class="row">
+                <div class="col-sm-12">
+                        <div class="box2">
+                        <h1>CSS Animations</h1>
+                        </div>
+                        </div>
+
+
+<div class="col-sm-12">
+<div class="box6">
+    <h3><center><b>What are CSS Animations?</b></center></h3><br>
+    <li>An animation lets an element gradually change from one style to another.</li>
+    <li>You can change as many CSS properties you want, as many times you want.</li>
+    <li>To use CSS animation, you must first specify some keyframes for the animation.</li>
+    <li>Keyframes hold what styles the element will have at certain times.</li><br><hr>
+    <h3><center><b>CSS Animation Properties</b></center></h3>
+    <p><center>The following table lists the @keyframes rule and all the CSS animation properties:</center></p><br>
+    <table class="roundedCorners" align="center">
+        <tr>
+            <th>Property</th>
+            <th>Description</th>
+        </tr>
+        <tr>
+            <td><code>@keyframes</code></td>
+            <td>Specifies the animation code</td>
+        </tr>
+        <tr>
+            <td><code>animation</code></td>
+            <td>A shorthand property for setting all the animation properties</td>
+        </tr>
+        <tr>
+            <td><code>animation-delay</code></td>
+            <td>Specifies a delay for the start of an animation</td>
+        </tr>
+        <tr>
+            <td><code>animation-direction</code></td>
+            <td>Specifies whether an animation should be played forwards, backwards or in alternate cycles</td>
+        </tr>
+        <tr>
+            <td><code>animation-duration</code></td>
+            <td>Specifies how long time an animation should take to complete one cycle</td>
+        </tr>
+        <tr>
+            <td><code>animation-fill-mode</code></td>
+            <td>Specifies a style for the element when the animation is not playing (before it starts, after it ends, or both)</td>
+        </tr>
+        <tr>
+            <td><code>animation-iteration-count</code></td>
+            <td>Specifies the number of times an animation should be played</td>
+        </tr>
+        <tr>
+            <td><code>animation-name</code></td>
+            <td>Specifies the name of the @keyframes animation</td>
+        </tr>
+        <tr>
+            <td><code>animation-play-state</code></td>
+            <td>Specifies whether the animation is running or paused</td>
+        </tr>
+        <tr>
+            <td><code>animation-timimng-function</code></td>
+            <td>Specifies the speed curve of the animation</td>
+		</tr>
+        </table><br><br>
+        
+<div class="col-sm-6">
+<div class="box6">
+    <h4><center><b>EXAMPLE</b></center></h4>
+    <table>
+        <tr><td>&lt;!doctype html&gt;</td></tr> 
+        <tr><td>&lt;html&gt;</td></tr> 
+        <tr><td>&lt;head&gt;</td></tr> 
+        <tr><td>&lt;style&gt;</td></tr> 
+<tr><td>div.one {</td></tr>
+ <tr><td>width: 100px;</td></tr>
+  <tr><td>height: 100px;</td></tr>
+  <tr><td>background-color: red;</td></tr>
+  <tr><td>animation-name: example;</td></tr>
+  <tr><td>animation-duration: 4s;</td></tr>
+<tr><td>}</td></tr>
+
+<tr><td>@keyframes example {</td></tr>
+  <tr><td>from {background-color: red;}</td></tr>
+  <tr><td>to {background-color: yellow;}</td></tr>
+<tr><td>}</td></tr>
+
+<tr><td>div.two {</td></tr>
+  <tr><td>width: 100px;</td></tr>
+  <tr><td>height: 100px;</td></tr>
+  <tr><td>background-color: red;</td></tr>
+  <tr><td>position: relative;</td></tr>
+  <tr><td>animation-name: examples;</td></tr>
+  <tr><td>animation-duration: 4s;</td></tr>
+  <tr><td>animation-iteration-count: 2;</td></tr>
+  <tr><td>animation-direction: alternate;</td></tr>  
+<tr><td>}</td></tr>
+
+<tr><td>@keyframes examples {</td></tr>
+  <tr><td>0%   {background-color:red; left:0px; top:0px;}</td></tr>
+  <tr><td>25%  {background-color:yellow; left:200px; top:0px;}</td></tr>
+  <tr><td>50%  {background-color:blue; left:200px; top:200px;}</td></tr>
+  <tr><td>75%  {background-color:green; left:0px; top:200px;}</td></tr>
+  <tr><td>100% {background-color:red; left:0px; top:0px;}</td></tr>
+<tr><td>}</td></tr>
+
+<tr><td>p.three {</td></tr>
+  <tr><td>width: 100px;</td></tr>
+  <tr><td>height: 50px;</td></tr>
+  <tr><td>background-color: red;</td></tr>
+  <tr><td>font-weight: bold;</td></tr>
+  <tr><td>position: relative;</td></tr>
+  <tr><td>animation: mymove 7s infinite;</td></tr>
+<tr><td>}</td></tr>
+
+<tr><td>#p1 {animation-timing-function: linear;}</td></tr>
+<tr><td>#p2 {animation-timing-function: ease;}</td></tr>
+<tr><td>#p3 {animation-timing-function: ease-in;}</td></tr>
+<tr><td>#p4 {animation-timing-function: ease-out;}</td></tr>
+<tr><td>#p5 {animation-timing-function: ease-in-out;}</td></tr>
+
+<tr><td>@keyframes mymove {</td></tr>
+  <tr><td>from {left: 0px;}</td></tr>
+  <tr><td>to {left: 500px;}</td></tr>
+<tr><td>}</td></tr>
+<tr><td>&lt;/style&gt;</td></tr>
+<tr><td>&lt;/head&gt;</td></tr>
+<tr><td>&lt;body&gt;</td></tr>
+
+<tr><td>&lt;p&gt;&lt;b&gt;Note:&lt;/b&gt; This example does not work in Internet Explorer 9 and earlier versions.&lt;/p&gt;</td></tr>
+<tr><td>&lt;div class="one"&gt;&lt;p&gt;Animation changes color&lt;/p&gt;&lt;/div&gt;</td></tr>
+<tr><td>&lt;h1&gt;&nbsp;&lt;/h1&gt;</td></tr>
+<tr><td>&lt;div class="two"&gt;&lt;p&gt;Animation changes color and position&lt;/p&gt;&lt;/div&gt;</td></tr>
+<tr><td>&lt;div&gt;&lt;p class="three" id="p1"&gt;linear&lt;/p&gt;&lt;/div&gt;</td></tr>
+<tr><td>&lt;div&gt;&lt;p class="three" id="p2"&gt;ease&lt;/p&gt;&lt;/div&gt;</td></tr>
+<tr><td>&lt;div&gt;&lt;p class="three" id="p3"&gt;ease-in&lt;/p&gt;&lt;/div&gt;</td></tr>
+<tr><td>&lt;div&gt;&lt;p class="three" id="p4"&gt;ease-out&lt;/p&gt;&lt;/div&gt;</td></tr>
+<tr><td>&lt;div&gt;&lt;p class="three" id="p5"&gt;ease-in-out&lt;/p&gt;&lt;/div&gt;</td></tr>
+<tr><td>&lt;/body&gt;</td></tr>
+<tr><td>&lt;/html&gt;</td></tr>
+</table>
+</div>
+</div>
+
+<div class="col-sm-6">
+<div class="box2">
+    <h4><center><b><u>OUTPUT</u></b></center></h4><br><br><br>
+    <!DOCTYPE html>
+<html>
+<head>
+<style> 
+div.one {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  animation-name: example;
+  animation-duration: 4s;
+}
+
+@keyframes example {
+  from {background-color: red;}
+  to {background-color: yellow;}
+}
+
+div.two {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  position: relative;
+  animation-name: examples;
+  animation-duration: 4s;
+  animation-iteration-count: 2;
+  animation-direction: alternate;  
+}
+
+@keyframes examples {
+  0%   {background-color:red; left:0px; top:0px;}
+  25%  {background-color:yellow; left:200px; top:0px;}
+  50%  {background-color:blue; left:200px; top:200px;}
+  75%  {background-color:green; left:0px; top:200px;}
+  100% {background-color:red; left:0px; top:0px;}
+}
+
+p.three {
+  width: 100px;
+  height: 50px;
+  background-color: red;
+  font-weight: bold;
+  position: relative;
+  animation: mymove 7s infinite;
+}
+
+#p1 {animation-timing-function: linear;}
+#p2 {animation-timing-function: ease;}
+#p3 {animation-timing-function: ease-in;}
+#p4 {animation-timing-function: ease-out;}
+#p5 {animation-timing-function: ease-in-out;}
+
+@keyframes mymove {
+  from {left: 0px;}
+  to {left: 400px;}
+}
+</style>
+</head>
+<body>
+
+<p><b>Note:</b> This example does not work in Internet Explorer 9 and earlier versions.</p>
+<div class="one"><p>Animation changes color</p></div>
+<h1>&nbsp;</h1>
+<div class="two"><p>Animation changes color and position</p></div>
+<h1>&nbsp;</h1>
+<h1>&nbsp;</h1>
+<h1>&nbsp;</h1>
+<h1>&nbsp;</h1>
+<div><p class="three" id="p1">linear</p></div>
+<div><p class="three" id="p2">ease</p></div>
+<div><p class="three" id="p3">ease-in</p></div>
+<div><p class="three" id="p4">ease-out</p></div>
+<div><p class="three" id="p5">ease-in-out</p></div>
+</body>
+</html>
+
+
+</div>
+</div>
+
+</div>
+</div>
+
+
+</div>
+</section>
+        
+        
+
+
+
+
+
+
+		<section class="container">
+                <div class="row">
+                </div>
+				<div class="col-sm-2">
+                        <div class="box5">
+							<a href="PAGE_9.html">
+								<p style="color:white;">PREVIOUS</p>
+							</a>
+                        </div>
+					</div>
+					
+					<div class="col-sm-8">
+                        <div class="box2">
+                        </div>
+					</div>
+					
+					<div class="col-sm-2">
+                        <div class="box5">
+							<a href="PAGE_11.html">
+								<p style="color:white;">NEXT</p>
+							</a>
+                        </div>
+					</div>
+			</section>
+            
+                      
+                           
+                            
+                            
+	           
+                      
+                    
+            <!--<div id="push"></div>-->
+        </div>
+        <footer class="container-fluid" style="background:#002739;padding:70px 0px 0px 0px;">
+            <div class="row">
+                <div class="container" style="padding-bottom:40px;">
+                    <div class="row">
+                        <div class="col-sm-12 text-center">
+                            <a href="#">
+                                <img src="images/logo-2.png"  width="200" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+</body>
+</html>

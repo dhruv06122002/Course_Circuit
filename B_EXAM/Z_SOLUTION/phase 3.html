@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+<head>
+	<style>
+	#rcorners02 {
+border-radius: 25px;
+border: 2px solid #00afef;
+padding: 20px;
+}
+		#borderimg01 {
+border: 10px solid transparent;
+padding: 15px;
+border-image: url(border.png) 30 round;
+}
+		#grad1 {
+height: 200px;
+background-color: #00afef; background-image: linear-gradient(Black,white);
+}
+		#grad9 {
+height: 150px;
+background-color: red;
+background-image: repeating-radial-gradient(red, yellow 10%, green 15%);
+}
+		#css5 {
+color: white;
+text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+}
+		div.org1 {
+width: 100px;
+height: 100px;
+background: #00afef;
+transition: width 2s, height 4s;
+			animation-name: example;
+animation-duration: 4s;
+}
+div.org1:hover {
+width: 1450px;
+height: 100px;
+}
+@keyframes example {
+from {background-color: red;}
+to {background-color: yellow;}
+}
+	</style>
+</head>
+
+<body>
+	<div id="rcorners02">
+	<div id="borderimg01" align="center">Welcome to Phase 3 : Advance CSS<h5>&nbsp;</h5><div id="grad1"><center><img src="Advance CSS.png" height="200" width="200"></center></div>
+		</div>
+		<h5>&nbsp;</h5><div id="grad9" align="center"></div>
+		<div class="org1" align="center">
+		<h5>&nbsp;</h5><div id="css5" align="center"><h1>This is My final Project...</h1></div>
+		</div>
+	</div>
+</body>
+</html>

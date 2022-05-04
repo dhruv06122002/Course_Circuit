@@ -1,0 +1,409 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/Style.css" rel="stylesheet" />
+  
+</head>
+<body>
+    <div id="wrapper">
+        <div class="main">
+            <header class="container-fluid topHeader">
+                <div class="row">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <ul class="list-inline">
+                                    <li><a href="#"><span class="glyphicon glyphicon-envelope"></span> courcecircuit@gmail.com</a></li>
+                                    <li><a href="#"><span class="glyphicon glyphicon-phone"></span>+91 000000000</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </header>
+            <nav class="navbar navbar-default">
+                <div class="container">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="../1_HTML,CSS,PHP for web-development.html">
+                            <img src="images/logo1.png" width="200"  />
+                        </a>
+                    </div>
+
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="navbar-collapse">
+                        <ul class="nav navbar-nav float-right">
+                             <li><a href="PAGE_0.html">Index</a></li>
+                            <li><a href="../../B_EXAM/Phase 3/SELECT EXAM.html">Assignments</a></li>
+                            <li><a href="../B_PHASE_1/PAGE_COLOR.html">Color Picker</a></li>
+                            <li><a href="../../A_MAIN/3_COMPILER.html">Compiler</a></li>
+                        </ul>
+                    </div><!-- /.navbar-collapse -->
+                </div><!-- /.container-fluid -->
+            </nav>
+            <section class="jumbotron">
+                <div class="container">
+                    <p><center><img src="PHASES/Advance CSS.png" height="150" width="150"></center></p>
+                    <p class="lead"><center><b><h3>Welcome to Phase 3 : Advance CSS</h3></b></center></p>
+                </div>
+            </section>
+            
+            <section class="container">
+                <div class="row">
+                       <div class="col-sm-12">
+                        <div class="box2">
+                        <h1>CSS Rounded Corners</h1>
+                        </div>
+					</div>
+                    <div class="col-sm-12">
+                        <div class="box4">
+                        <div class="col-sm-12">
+                        <div class="box6">
+						<p><center><h3>CSS Rounded Corners</h3><br><b>With the CSS <code>border-radius</code> property, you can give any element "rounded corners".</b></center></p>
+					</div></div>
+					<h5>&nbsp;</h5>
+					<div class="col-sm-6">
+                        <div class="box6">
+					<table class="roundedCorners" align="center">
+						<tr>
+							<td colspan="2" align="center"><h4><b>Border Radius properties</b></h4></td>
+						</tr>
+						<tr>
+							<td ><h4><b>Title</b></h4></td>
+							<td ><h4><b>Description</b></h4></td>
+						</tr>
+						<tr>
+							<td>border-radius</td>
+							<td>A shorthand property for setting all the four border-*-*-radius properties</td>
+						</tr>
+						<tr>
+							<td>border-top-left-radius</td>
+							<td>Defines the shape of the border of the top-left corner</td>
+						</tr>
+						<tr>
+							<td>border-top-right-radius</td>
+							<td>Defines the shape of the border of the top-right corner</td>
+						</tr>
+						<tr>
+							<td>border-bottom-right-radius </td>
+							<td>Defines the shape of the border of the bottom-right corner</td>
+						</tr>
+						<tr>
+							<td>border-bottom-left-radius </td>
+							<td>Defines the shape of the border of the bottom-left corner</td>
+						</tr>
+					</table>
+					<h4>&nbsp;</h4>
+					</div></div>
+					<div class="col-sm-6">
+                        <div class="box6">
+                        <h5>&nbsp;</h5>
+					<table class="roundedCorners" align="center">
+						<tr>
+							<td colspan="3" align="center"><h4><b>Styles</b></h4></td>
+						</tr>
+						<tr>
+							<td height="320px" width="200px"><p class="box5" >Rounded corners for an element with a specified background color<br>&nbsp;</p></td>
+							<td height="150px" width="200px"><p class="box4">Rounded corners for an element with a border<br>&nbsp;</p></td>
+							<td height="150px" width="200px"><p class="box121">Rounded corners for an element with a background image<br>&nbsp;</p></td>
+						</tr>
+						</table>
+						<h1>&nbsp;</h1>
+						</div></div>
+					<h5>&nbsp;</h5>
+					<center>
+					<h3>CSS border-radius - Specify Each Corner</h3>
+					<p>The border-radius property can have from one to four values</p>
+					</center>
+					<table class="roundedCorners" align="center">
+						<tr>
+							<td><h4><b>Type</b></h4></td>
+							<td><h4><b>Format</b></h4></td>
+							<td><h4><b>Description</b></h4></td>
+							<td><h4><b>Example</b></h4></td>
+						</tr>
+						<tr>
+							<td>Four values</td>
+							<td>border-radius: 15px 50px 30px 5px;</td>
+							<td>first value applies to top-left corner, second value applies to top-right corner, third value applies to bottom-right corner, and fourth value applies to bottom-left corner</td>
+							<td><p id="rcorners1"></p></td>
+						</tr>
+						<tr>
+							<td>Three values</td>
+							<td>border-radius: 15px 50px 30px;</td>
+							<td>first value applies to top-left corner, second value applies to top-right and bottom-left corners, and third value applies to bottom-right corner</td>
+							<td><p id="rcorners2"></p></td>
+						</tr>
+						<tr>
+							<td>Two values</td>
+							<td>border-radius: 15px 50px;</td>
+							<td>first value applies to top-left and bottom-right corners, and the second value applies to top-right and bottom-left corners</td>
+							<td><p id="rcorners3"></p></td>
+						</tr>
+						<tr>
+							<td>One value</td>
+							<td>border-radius: 15px;</td>
+							<td>the value applies to all four corners, which are rounded equally</td>
+							<td><p id="rcorners4"></p></td>
+						</tr>
+					</table>
+					</div></div>
+				</div>
+			</section>
+					<section class="container">
+                <div class="row">
+			<div class="col-sm-12">
+                        <div class="box6">
+                        <center><h4><b>EXAMPLE</b></h4></center>
+                        <div class="col-sm-7">
+                        <div class="box6">
+							<table class="roundedCorners1" >
+                        	<tr><td>&lt;!DOCTYPE html&gt;</td></tr>
+<tr><td>&lt;html&gt;</td></tr>
+<tr><td>&lt;head&gt;</td></tr>
+<tr><td>&lt;style&gt; </td></tr>
+<tr><td>	#rcorners01 {</td></tr>
+<tr><td>  border-radius: 25px;</td></tr>
+<tr><td>  background: #00afef;</td></tr>
+<tr><td>  padding: 20px;</td></tr>
+<tr><td>  width: 200px;</td></tr>
+<tr><td>  height: 150px;</td></tr>
+<tr><td>}</td></tr>
+<tr><td></td></tr>
+<tr><td>#rcorners02 {</td></tr>
+<tr><td>  border-radius: 25px;</td></tr>
+<tr><td>  border: 2px solid #00afef;</td></tr>
+<tr><td>  padding: 20px;</td></tr>
+<tr><td>  width: 200px;</td></tr>
+<tr><td>  height: 150px;</td></tr>
+<tr><td>}</td></tr>
+<tr><td></td></tr>
+<tr><td>#rcorners03 {</td></tr>
+<tr><td>  border-radius: 25px;</td></tr>
+<tr><td>  background: url(CSS.png);</td></tr>
+<tr><td>	background-size: 100px 100px;</td></tr>
+<tr><td>  background-position: left top;</td></tr>
+<tr><td>  background-repeat: repeat;</td></tr>
+<tr><td>  padding: 20px;</td></tr>
+<tr><td>  width: 200px;</td></tr>
+<tr><td>  height: 150px;</td></tr>
+<tr><td>}</td></tr>
+<tr><td>	</td></tr>
+<tr><td>#rcorners1 {</td></tr>
+<tr><td>  border-radius: 15px 50px 30px 5px;</td></tr>
+<tr><td>  background: #00afef;</td></tr>
+<tr><td>  padding: 20px; </td></tr>
+<tr><td>  width: 200px;</td></tr>
+<tr><td>  height: 150px; </td></tr>
+<tr><td>}</td></tr>
+<tr><td></td></tr>
+<tr><td>#rcorners2 {</td></tr>
+<tr><td>  border-radius: 15px 50px 30px;</td></tr>
+<tr><td>  background: #00afef;</td></tr>
+<tr><td>  padding: 20px; </td></tr>
+<tr><td>  width: 200px;</td></tr>
+<tr><td>  height: 150px; </td></tr>
+<tr><td>}</td></tr>
+<tr><td></td></tr>
+<tr><td>#rcorners3 {</td></tr>
+<tr><td>  border-radius: 15px 50px;</td></tr>
+<tr><td>  background: #00afef;</td></tr>
+<tr><td>  padding: 20px; </td></tr>
+<tr><td>  width: 200px;</td></tr>
+<tr><td>  height: 150px; </td></tr>
+<tr><td>} </td></tr>
+<tr><td></td></tr>
+<tr><td>#rcorners4 {</td></tr>
+<tr><td>  border-radius: 15px;</td></tr>
+<tr><td>  background: #00afef;</td></tr>
+<tr><td>  padding: 20px; </td></tr>
+<tr><td>  width: 200px;</td></tr>
+<tr><td>  height: 150px; </td></tr>
+<tr><td>} </td></tr>
+<tr><td>&lt;/style&gt;</td></tr>
+<tr><td>&lt;/head&gt;</td></tr>
+<tr><td>&lt;body&gt;</td></tr>
+<tr><td></td></tr>
+<tr><td>&lt;h1&gt;The border-radius Property&lt;/h1&gt;</td></tr>
+<tr><td>&lt;p&gt;Element withSpecified background color:&lt;/p&gt;</td></tr>
+<tr><td>&lt;p id="rcorners01"&gt;&lt;/p&gt;</td></tr>
+<tr><td></td></tr>
+<tr><td>&lt;p&gt;Element with a border:&lt;/p&gt;</td></tr>
+<tr><td>&lt;p id="rcorners02"&gt;&lt;/p&gt;</td></tr>
+<tr><td></td></tr>
+<tr><td>&lt;p&gt;Element with a background image:&lt;/p&gt;</td></tr>
+<tr><td>&lt;p id="rcorners03"&gt;&lt;/p&gt;</td></tr>
+<tr><td></td></tr>
+<tr><td>&lt;p&gt;Four values - border-radius: 15px 50px 30px 5px:&lt;/p&gt;</td></tr>
+<tr><td>&lt;p id="rcorners1"&gt;&lt;/p&gt;</td></tr>
+<tr><td></td></tr>
+<tr><td>&lt;p&gt;Three values - border-radius: 15px 50px 30px:&lt;/p&gt;</td></tr>
+<tr><td>&lt;p id="rcorners2"&gt;&lt;/p&gt;</td></tr>
+<tr><td></td></tr>
+<tr><td>&lt;p&gt;Two values - border-radius: 15px 50px:&lt;/p&gt;</td></tr>
+<tr><td>&lt;p id="rcorners3"&gt;&lt;/p&gt;</td></tr>
+<tr><td></td></tr>
+<tr><td>&lt;p&gt;One value - border-radius: 15px:&lt;/p&gt;</td></tr>
+<tr><td>&lt;p id="rcorners4"&gt;&lt;/p&gt;</td></tr>
+<tr><td></td></tr>
+<tr><td>&lt;/body&gt;</td></tr>
+<tr><td>&lt;/html&gt;</td></tr>
+							</table>
+                        </div></div>
+                        <div class="col-sm-5">
+                        <div class="box2">
+                        <h4><b>OUTPUT</b></h4>
+                        <h1>&nbsp;</h1>	
+                        <h1>&nbsp;</h1>
+                        <h1>&nbsp;</h1>
+<html>
+<head>
+<style> 
+	#rcorners01 {
+  border-radius: 25px;
+  background: #00afef;
+  padding: 20px;
+  width: 200px;
+  height: 150px;
+}
+
+#rcorners02 {
+  border-radius: 25px;
+  border: 2px solid #00afef;
+  padding: 20px;
+  width: 200px;
+  height: 150px;
+}
+
+#rcorners03 {
+  border-radius: 25px;
+  background: url(../B_PHASE_6/PHASES/CSS.png);
+	background-size: 100px 100px;
+  background-position: left top;
+  background-repeat: repeat;
+  padding: 20px;
+  width: 200px;
+  height: 150px;
+}
+	
+#rcorners1 {
+  border-radius: 15px 50px 30px 5px;
+  background: #00afef;
+  padding: 20px; 
+  width: 200px;
+  height: 150px; 
+}
+
+#rcorners2 {
+  border-radius: 15px 50px 30px;
+  background: #00afef;
+  padding: 20px; 
+  width: 200px;
+  height: 150px; 
+}
+
+#rcorners3 {
+  border-radius: 15px 50px;
+  background: #00afef;
+  padding: 20px; 
+  width: 200px;
+  height: 150px; 
+} 
+
+#rcorners4 {
+  border-radius: 15px;
+  background: #00afef;
+  padding: 20px; 
+  width: 200px;
+  height: 150px; 
+} 
+</style>
+</head>
+<body>
+
+<p>Element withSpecified background color:</p>
+<p id="rcorners01"></p>
+
+<p>Element with a border:</p>
+<p id="rcorners02"></p>
+
+<p>Element with a background image:</p><h1>&nbsp;</h1>
+<p id="rcorners03"></p>
+
+<p>Four values - border-radius: 15px 50px 30px 5px:</p>
+<p id="rcorners1"></p>
+
+<p>Three values - border-radius: 15px 50px 30px:</p>
+<p id="rcorners2"></p>
+
+<p>Two values - border-radius: 15px 50px:</p>
+<p id="rcorners3"></p>
+
+<p>One value - border-radius: 15px:</p>
+<p id="rcorners4"></p>
+
+</body>
+</html>
+								</div>
+							</div>
+						<h5>&nbsp;</h5>
+							</div>
+					</div></div>
+			</section>
+						<section class="container">
+                <div class="row">
+			
+				<div class="col-sm-2">
+                        <div class="box5">
+							<a href="PAGE_0.html">
+								<p style="color:white;">PREVIOUS</p>
+							</a>
+                        </div>
+					</div>
+					
+					<div class="col-sm-8">
+                        <div class="box2">
+                        
+                        </div>
+					</div>
+					
+					<div class="col-sm-2">
+                        <div class="box5">
+							<a href="PAGE_2.html">
+								<p style="color:white;">NEXT</p>
+							</a>
+                        </div>
+					</div>
+				</div>
+			</section>
+            
+                       
+                           
+                            
+                            
+	           
+                      
+                    
+            <!--<div id="push"></div>-->
+        </div>
+        <footer class="container-fluid" style="background:#002739;padding:70px 0px 0px 0px;">
+            <div class="row">
+                <div class="container" style="padding-bottom:40px;">
+                    <div class="row">
+                        <div class="col-sm-12 text-center">
+                            <a href="#">
+                                <img src="images/logo-2.png"  width="200" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+</body>
+</html>

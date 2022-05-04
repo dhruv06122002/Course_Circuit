@@ -1,0 +1,595 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/Style.css" rel="stylesheet" />
+</head>
+<body>
+    <div id="wrapper">
+        <div class="main">
+            <header class="container-fluid topHeader">
+                <div class="row">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <ul class="list-inline">
+                                    <li><a href="#"><span class="glyphicon glyphicon-envelope"></span> courcecircuit@gmail.com</a></li>
+                                    <li><a href="#"><span class="glyphicon glyphicon-phone"></span>+91 000000000</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </header>
+            <nav class="navbar navbar-default">
+                <div class="container">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="../1_HTML,CSS,PHP for web-development.html">
+                            <img src="images/logo1.png" width="200"  />
+                        </a>
+                    </div>
+
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="navbar-collapse">
+                        <ul class="nav navbar-nav float-right">
+                             <li><a href="PAGE_0.html">Index</a></li>
+                            <li><a href="../../B_EXAM/Phase 3/SELECT EXAM.html">Assignments</a></li>
+                            <li><a href="../B_PHASE_1/PAGE_COLOR.html">Color Picker</a></li>
+                            <li><a href="../../A_MAIN/3_COMPILER.html">Compiler</a></li>
+                        </ul>
+                    </div><!-- /.navbar-collapse -->
+                </div><!-- /.container-fluid -->
+            </nav>
+             <section class="jumbotron">
+                <div class="container">
+                    <p><center><img src="PHASES/Advance CSS.png" height="150" width="150"></center></p>
+                    <p class="lead"><center><b><h3>Welcome to Phase 3 : Advance CSS</h3></b></center></p>
+                </div>
+            </section>
+           
+            <section class="container">
+                <div class="row">
+                <div class="col-sm-12">
+                        <div class="box2">
+                        <h1>CSS gradients</h1>
+                        </div>
+  </div>
+                        
+                                        <div class="col-sm-12">
+                        <div class="box6">
+							<p>
+							<b><h3>CSS gradients let you display smooth transitions between two or more specified colors.</h3></b></p>
+							<br>CSS defines two types of gradients:
+<ul>
+	<li>Linear Gradients (goes down/up/left/right/diagonally)</li>
+	<li>Radial Gradients (defined by their center)</li></ul>
+							<h5>&nbsp;</h5>
+							<p><h3>CSS Linear Gradients</h3>To create a linear gradient you must define at least two color stops. Color stops are the colors you want to render smooth transitions among. You can also set a starting point and a direction (or an angle) along with the gradient effect</p>
+											<h3>Syntax:</h3>
+											<center><code>background-image: linear-gradient(direction, color-stop1, color-stop2, ...);</code></center>
+											<h6>&nbsp;</h6>
+											
+											<div class="col-sm-12"><div class="box6">
+												<h3>Direction - Top to Bottom (this is default)</h3>
+											<div class="col-sm-6"><div class="box6"><br>&lt;html&gt;
+<br>&lt;head&gt;
+<br>&lt;style&gt;
+<br>#grad1 {
+  <br>height: 200px;
+  <br>background-color: red; 
+  background-image: linear-gradient(red, yellow);<br>
+}<br>
+&lt;/style&gt;<br>
+&lt;/head&gt;<br>
+&lt;body&gt;<br>
+<br>
+&lt;h1&gt;Linear Gradient - Top to Bottom&lt;/h1&gt;<br>
+&lt;p&gt;This linear gradient starts red at the top, transitioning to yellow at the bottom:&lt;/p&gt;<br>
+<br>
+&lt;div id="grad1"&gt;&lt;/div&gt;<br>
+<br>
+&lt;/body&gt;<br>
+&lt;/html&gt;<br></div></div>
+											<div class="col-sm-6"><div class="box2"><html>
+<head>
+<style>
+#grad1 {
+  height: 200px;
+  background-color: red; /* For browsers that do not support gradients */
+  background-image: linear-gradient(red, yellow);
+}
+</style>
+</head>
+<body>
+
+<h1>Linear Gradient - Top to Bottom</h1>
+<p>This linear gradient starts red at the top, transitioning to yellow at the bottom:</p>
+
+<div id="grad1"></div>
+
+</body>
+</html></div></div>
+											</div></div>
+											
+											
+											<div class="col-sm-12"><div class="box6"><h3>Direction - Left to Right</h3>
+											<div class="col-sm-6"><div class="box6"><br>&lt;html&gt;
+<br>&lt;head&gt;
+<br>&lt;style&gt;
+<br>#grad2 {
+<br>  height: 200px;
+<br>  background-color: red; /* For browsers that do not support gradients */
+<br>  background-image: linear-gradient(to right, red , yellow);
+<br>}
+<br>&lt;/style&gt;
+<br>&lt;/head&gt;
+<br>&lt;body&gt;
+<br>
+<br>&lt;h1&gt;Linear Gradient - Left to Right&lt;/h1&gt;
+<br>&lt;p&gt;This linear gradient starts red at the left, transitioning to yellow (to the right):&lt;/p&gt;
+<br>
+<br>&lt;div id="grad2"&gt;&lt;/div&gt;
+<br>
+<br>&lt;/body&gt;
+<br>&lt;/html&gt;</div></div>
+											<div class="col-sm-6"><div class="box2"><html>
+<head>
+<style>
+#grad2 {
+  height: 200px;
+  background-color: red; /* For browsers that do not support gradients */
+  background-image: linear-gradient(to right, red , yellow);
+}
+</style>
+</head>
+<body>
+
+<h1>Linear Gradient - Left to Right</h1>
+<p>This linear gradient starts red at the left, transitioning to yellow (to the right):</p>
+
+<div id="grad2"></div>
+
+</body>
+</html></div></div>
+											</div></div>
+											<div class="col-sm-12"><div class="box6"><h3>Direction - Diagonal</h3>
+											<div class="col-sm-6"><div class="box6"><br>&lt;html&gt;
+<br>&lt;head&gt;
+<br>&lt;style&gt;
+<br>#grad3 {
+<br>  height: 200px;
+<br>  background-color: red; /* For browsers that do not support gradients */
+<br>  background-image: linear-gradient(to bottom right, red, yellow);
+<br>}
+<br>&lt;/style&gt;
+<br>&lt;/head&gt;
+<br>&lt;body&gt;
+<br>
+<br>&lt;h1&gt;Linear Gradient - Diagonal&lt;/h1&gt;
+<br>&lt;p&gt;This linear gradient starts red at top left, transitioning to yellow (at bottom right):&lt;/p&gt;
+<br>
+<br>&lt;div id="grad3"&gt;&lt;/div&gt;
+<br>
+<br>&lt;/body&gt;
+<br>&lt;/html&gt;
+</div></div>
+											<div class="col-sm-6"><div class="box2">
+<html>
+<head>
+<style>
+#grad3 {
+  height: 200px;
+  background-color: red; /* For browsers that do not support gradients */
+  background-image: linear-gradient(to bottom right, red, yellow);
+}
+</style>
+</head>
+<body>
+
+<h1>Linear Gradient - Diagonal</h1>
+<p>This linear gradient starts red at top left, transitioning to yellow (at bottom right):</p>
+
+<div id="grad3"></div>
+
+</body>
+</html></div></div>
+											</div></div>
+											<h5>&nbsp;</h5>
+							
+					</div>
+					</div>
+				
+				<div class="col-sm-12">
+                        <div class="box6">
+							<p><h3>Using Angles</h3>If you want more control over the direction of the gradient, you can define an angle, instead of the predefined directions (to bottom, to top, to right, to left, to bottom right, etc.). A value of 0deg is equivalent to "to top". A value of 90deg is equivalent to "to right". A value of 180deg is equivalent to "to bottom".</p>
+											<h3>Syntax:</h3>
+											<center><code>background-image: linear-gradient(angle, color-stop1, color-stop2);</code></center>
+											<h6>&nbsp;</h6>
+											
+					<div class="col-sm-12"><div class="box6">
+											<div class="col-sm-6"><div class="box6">&lt;html&gt;
+<br>&lt;head&gt;
+<br>&lt;style&gt;
+<br>#grad4 {
+<br>  height: 100px;
+<br>  background-color: red; /* For browsers that do not support gradients */
+<br>  background-image: linear-gradient(0deg, red, yellow);
+<br>}
+<br>
+<br>#grad5 {
+<br>  height: 100px;
+<br>  background-color: red; /* For browsers that do not support gradients */
+<br>  background-image: linear-gradient(90deg, red, yellow);
+<br>}
+<br>
+<br>#grad6 {
+<br>  height: 100px;
+<br>  background-color: red; /* For browsers that do not support gradients */
+<br>  background-image: linear-gradient(180deg, red, yellow);
+<br>}
+<br>
+<br>#grad7 {
+<br>  height: 100px;
+<br>  background-color: red; /* For browsers that do not support gradients */
+<br>  background-image: linear-gradient(-90deg, red, yellow);
+<br>}
+<br>&lt;/style&gt;
+<br>&lt;/head&gt;
+<br>&lt;body&gt;
+<br>
+<br>&lt;h1&gt;Linear Gradients - Using Different Angles&lt;/h1&gt;
+<br>
+<br>&lt;div id="grad4" style="text-align:center;"&gt;0deg&lt;/div&gt;&lt;br&gt;
+<br>&lt;div id="grad5" style="text-align:center;"&gt;90deg&lt;/div&gt;&lt;br&gt;
+<br>&lt;div id="grad6" style="text-align:center;"&gt;180deg&lt;/div&gt;&lt;br&gt;
+<br>&lt;div id="grad7" style="text-align:center;"&gt;-90deg&lt;/div&gt;
+<br>
+<br>&lt;/body&gt;
+<br>&lt;/html&gt;</div></div>
+											<div class="col-sm-6"><div class="box2"><html>
+<head>
+<style>
+#grad4 {
+  height: 100px;
+  background-color: red; /* For browsers that do not support gradients */
+  background-image: linear-gradient(0deg, red, yellow);
+}
+
+#grad5 {
+  height: 100px;
+  background-color: red; /* For browsers that do not support gradients */
+  background-image: linear-gradient(90deg, red, yellow);
+}
+
+#grad6 {
+  height: 100px;
+  background-color: red; /* For browsers that do not support gradients */
+  background-image: linear-gradient(180deg, red, yellow);
+}
+
+#grad7 {
+  height: 100px;
+  background-color: red; /* For browsers that do not support gradients */
+  background-image: linear-gradient(-90deg, red, yellow);
+}
+</style>
+</head>
+<body>
+
+<h1>Linear Gradients - Using Different Angles</h1>
+
+<div id="grad4" style="text-align:center;">0deg</div><br>
+<div id="grad5" style="text-align:center;">90deg</div><br>
+<div id="grad6" style="text-align:center;">180deg</div><br>
+<div id="grad7" style="text-align:center;">-90deg</div>
+
+</body>
+</html></div></div>
+											</div></div><h5>&nbsp;</h5>
+							
+					</div>
+					</div>
+
+	<div class="col-sm-12">
+                        <div class="box6">
+							<p><h3>Using Multiple Color Stops</h3><center>The following example shows a linear gradient (from top to bottom) with multiple color stops:</center></p>
+											<h6>&nbsp;</h6>
+											<div class="col-sm-12"><div class="box6">
+											<div class="col-sm-6"><div class="box6">&lt;html&gt;
+<br>&lt;head&gt;
+<br>&lt;style&gt;
+<br>#grad8 {
+<br>  height: 200px;
+<br>  background-color: red; /* For browsers that do not support gradients */
+<br>  background-image: linear-gradient(red, yellow, green);
+<br>}
+<br>
+<br>#grad9 {
+<br>  height: 200px;
+<br>  background-color: red; /* For browsers that do not support gradients */
+<br>  background-image: linear-gradient(red, orange, yellow, green, blue, indigo, violet);
+<br>}
+<br>
+<br>#grad10s {
+<br>  height: 200px;
+<br>  background-color: red; /* For browsers that do not support gradients */
+<br>  background-image: linear-gradient(red 10%, green 85%, blue 90%);
+<br>}
+<br>&lt;/style&gt;
+<br>&lt;/head&gt;
+<br>&lt;body&gt;
+
+<br>&lt;h1&gt;Linear Gradients - Multiple Color Stops<br>&lt;/h1&gt;
+<br>&lt;p&gt;<br>&lt;strong&gt;Note:<br>&lt;/strong&gt; Color stops are spaced evenly when no percents are specified.<br>&lt;/p&gt;
+
+<br>&lt;h2&gt;3 Color Stops (evenly spaced):<br>&lt;/h2&gt;
+<br>&lt;div id="grad8"&gt;<br>&lt;/div&gt;
+
+<br>&lt;h2&gt;7 Color Stops (evenly spaced):<br>&lt;/h2&gt;
+<br>&lt;div id="grad9"&gt;<br>&lt;/div&gt;
+
+<br>&lt;h2&gt;3 Color Stops (not evenly spaced):<br>&lt;/h2&gt;
+<br>&lt;div id="grad10"&gt;<br>&lt;/div&gt;
+
+<br>&lt;/body&gt;
+<br>&lt;/html&gt;</div></div>
+											<div class="col-sm-6"><div class="box2"><html>
+<head>
+<style>
+#grad8 {
+  height: 200px;
+  background-color: red; /* For browsers that do not support gradients */
+  background-image: linear-gradient(red, yellow, green);
+}
+
+#grad9 {
+  height: 200px;
+  background-color: red; /* For browsers that do not support gradients */
+  background-image: linear-gradient(red, orange, yellow, green, blue, indigo, violet);
+}
+
+#grad10 {
+  height: 200px;
+  background-color: red; /* For browsers that do not support gradients */
+  background-image: linear-gradient(red 10%, green 85%, blue 90%);
+}
+</style>
+</head>
+<body>
+
+<h1>Linear Gradients - Multiple Color Stops</h1>
+<p><strong>Note:</strong> Color stops are spaced evenly when no percents are specified.</p>
+
+<h2>3 Color Stops (evenly spaced):</h2>
+<div id="grad8"></div>
+
+<h2>7 Color Stops (evenly spaced):</h2>
+<div id="grad9"></div>
+
+<h2>3 Color Stops (not evenly spaced):</h2>
+<div id="grad10"></div>
+
+</body>
+</html></div></div>
+											</div></div>
+		<h5>&nbsp;</h5>
+							
+					</div>
+					</div>
+			
+				</div>
+					</section>
+	
+	<section class="container">
+	<div class="col-sm-12">
+                        <div class="box6">
+							<h3>Using Transparency</h3>
+							<center><p>CSS gradients also support transparency, which can be used to create fading effects.
+
+To add transparency, we use the rgba() function to define the color stops. The last parameter in the rgba() function can be a value from 0 to 1, and it defines the transparency of the color: 0 indicates full transparency, 1 indicates full color (no transparency).</p></center>
+							
+							<div class="col-sm-12"><div class="box6">
+											<div class="col-sm-6"><div class="box6"><br>&lt;html&gt;
+<br>&lt;head&gt;
+<br>&lt;style&gt;
+#grad1 {
+  height: 200px;
+  background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1));
+}
+<br>&lt;/style&gt;
+<br>&lt;/head&gt;
+<br>&lt;body&gt;
+
+<br>&lt;h1&gt;Linear Gradient - Transparency<br>&lt;/h1&gt;
+<br>&lt;p&gt;To add transparency, we use the rgba() function to define the color stops. The last parameter in the rgba() function can be a value from 0 to 1, and it defines the transparency of the color: 0 indicates full transparency, 1 indicates full color (no transparency).<br>&lt;/p&gt;
+
+<br>&lt;div id="grad1"&gt;<br>&lt;/div&gt;
+
+<br>&lt;/body&gt;
+<br>&lt;/html&gt;
+</div></div>
+											<div class="col-sm-5"><div class="box2">
+<html>
+<head>
+<style>
+#grad11 {
+  height: 200px;
+  background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1));
+}
+</style>
+</head>
+<body>
+
+<h1>Linear Gradient - Transparency</h1>
+<p>To add transparency, we use the rgba() function to define the color stops. The last parameter in the rgba() function can be a value from 0 to 1, and it defines the transparency of the color: 0 indicates full transparency, 1 indicates full color (no transparency).</p>
+
+<div id="grad11"></div>
+
+</body>
+</html></div></div>
+											</div></div><h5>&nbsp;</h5>
+		</div>
+		</div>
+	</section>
+	
+	<section class="container">
+	<div class="col-sm-12">
+                        <div class="box6">
+							<h3>Repeating a linear-gradient</h3>
+							<center><p>The repeating-linear-gradient() function is used to repeat linear gradients:</p></center>
+							
+							<div class="col-sm-12"><div class="box6">
+											<div class="col-sm-6"><div class="box6">&lt;html&gt;
+<br>&lt;head&gt;
+<br>&lt;style&gt;
+<br>#grad12 {
+<br>  height: 200px;
+<br>  background-color: red; /* For browsers that do not support gradients */
+<br>  background-image: repeating-linear-gradient(red, yellow 10%, green 20%);
+<br>}
+<br>
+<br>#grad13 {
+<br>  height: 200px;
+<br>  background-color: red; /* For browsers that do not support gradients */
+<br>  background-image: repeating-linear-gradient(45deg,red,yellow 7%,green 10%);
+<br>}
+<br>
+<br>#grad14 {
+<br>  height: 200px;
+<br>  background-color: red; /* For browsers that do not support gradients */
+<br>  background-image: repeating-linear-gradient(190deg,red,yellow 7%,green 10%);
+<br>}
+<br>
+<br>#grad15 {
+<br>  height: 200px;
+<br>  background-color: red; /* For browsers that do not support gradients */
+<br>  background-image: repeating-linear-gradient(90deg,red,yellow 7%,green 10%);
+<br>}
+<br>&lt;/style&gt;
+<br>&lt;/head&gt;
+<br>&lt;body&gt;
+<br>
+<br>&lt;h1&gt;Repeating Linear Gradient&lt;/h1&gt;
+<br>
+<br>&lt;div id="grad12"&gt;&lt;/div&gt;
+<br>
+<br>&lt;p&gt;A repeating gradient on 45deg axe starting red and finishing green:&lt;/p&gt;
+<br>&lt;div id="grad13"&gt;&lt;/div&gt;
+<br>
+<br>&lt;p&gt;A repeating gradient on 190deg axe starting red and finishing green:&lt;/p&gt;
+<br>&lt;div id="grad14"&gt;&lt;/div&gt;
+<br>
+<br>&lt;p&gt;A repeating gradient on 90deg axe starting red and finishing green:&lt;/p&gt;
+<br>&lt;div id="grad15"&gt;&lt;/div&gt;
+<br>
+<br>&lt;/body&gt;
+<br>&lt;/html&gt;
+</div></div>
+											<div class="col-sm-6"><div class="box2">
+<html>
+<head>
+<style>
+#grad12 {
+  height: 200px;
+  background-color: red; /* For browsers that do not support gradients */
+  background-image: repeating-linear-gradient(red, yellow 10%, green 20%);
+}
+
+#grad13 {
+  height: 200px;
+  background-color: red; /* For browsers that do not support gradients */
+  background-image: repeating-linear-gradient(45deg,red,yellow 7%,green 10%);
+}
+
+#grad14 {
+  height: 200px;
+  background-color: red; /* For browsers that do not support gradients */
+  background-image: repeating-linear-gradient(190deg,red,yellow 7%,green 10%);
+}
+
+#grad15 {
+  height: 200px;
+  background-color: red; /* For browsers that do not support gradients */
+  background-image: repeating-linear-gradient(90deg,red,yellow 7%,green 10%);
+}
+</style>
+</head>
+<body>
+
+<h1>Repeating Linear Gradient</h1>
+
+<div id="grad12"></div>
+
+<p>A repeating gradient on 45deg axe starting red and finishing green:</p>
+<div id="grad13"></div>
+
+<p>A repeating gradient on 190deg axe starting red and finishing green:</p>
+<div id="grad14"></div>
+
+<p>A repeating gradient on 90deg axe starting red and finishing green:</p>
+<div id="grad15"></div>
+
+</body>
+</html>
+								</div></div>
+											</div></div><h5>&nbsp;</h5>
+		</div>
+		</div>
+	</section>
+	
+	
+				<section class="container">
+                <div class="row">
+				<div class="col-sm-2">
+                        <div class="box5">
+							<a href="PAGE_2.html">
+								<p style="color:white;">PREVIOUS</p>
+							</a>
+                        </div>
+					</div>
+					
+					<div class="col-sm-8">
+                        <div class="box2">
+                        </div>
+					</div>
+					
+					<div class="col-sm-2">
+                        <div class="box5">
+							<a href="PAGE_4.html">
+								<p style="color:white;">NEXT</p>
+							</a>
+                        </div>
+					</div>
+					</div>
+			</section>
+            
+                       
+                           
+                            
+                            
+	           
+                      
+                    
+            <!--<div id="push"></div>-->
+        </div>
+        <footer class="container-fluid" style="background:#002739;padding:70px 0px 0px 0px;">
+            <div class="row">
+                <div class="container" style="padding-bottom:40px;">
+                    <div class="row">
+                        <div class="col-sm-12 text-center">
+                            <a href="#">
+                                <img src="images/logo-2.png"  width="200" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+</body>
+</html>

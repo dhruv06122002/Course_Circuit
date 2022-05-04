@@ -1,0 +1,281 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/Style.css" rel="stylesheet" />
+</head>
+<body>
+    <div id="wrapper">
+        <div class="main">
+            <header class="container-fluid topHeader">
+                <div class="row">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <ul class="list-inline">
+                                    <li><a href="#"><span class="glyphicon glyphicon-envelope"></span> courcecircuit@gmail.com</a></li>
+                                    <li><a href="#"><span class="glyphicon glyphicon-phone"></span>+91 000000000</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </header>
+            <nav class="navbar navbar-default">
+                <div class="container">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="SELECT 1 BOARD.html">
+                            <img src="images/logo1.png" width="200"  />
+                        </a>
+                    </div>
+
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="navbar-collapse">
+                        <ul class="nav navbar-nav float-right">
+                             <li><a href="PAGE_0.html">Index</a></li>
+                            <li><a href="../B_EXAM/Phase 4/SELECT EXAM.html">Assignments</a></li>
+                            <li><a href="../B_PHASE_1/PAGE_COLOR.html">Color Picker</a></li>
+                            <li><a href="../../A_LOGIN/5_COMPILER.html">Compiler</a></li>
+                        </ul>
+                    </div><!-- /.navbar-collapse -->
+                </div><!-- /.container-fluid -->
+            </nav>
+            <section class="jumbotron">
+                <div class="container">
+                    <p><center><img src="PHASES/php.png" height="150" width="150"></center></p>
+                    <p class="lead"><center><b><h3>Welcome to Phase 4 : PHP</h3></b></center></p>
+                </div>
+            </section>
+            
+            <section class="container">
+                <div class="row">
+                <div class="col-sm-12">
+                        <div class="box2">
+                        <h1>PHP Sessions</h1>
+                        </div>
+					</div>
+                   
+                <div class="col-sm-12">
+                    <div class="box4">
+                       <p>A session is a way to store information (in variables) to be used across multiple pages.</p>
+                       <p>Unlike a cookie, the information is not stored on the users computer.</p>
+                       <h2><center>What is a PHP Session?</center></h2>
+                       <p>When you work with an application, you open it, do some changes, and then you close it. 
+                           This is much like a Session. The computer knows who you are. It knows when you start the application and when you end. 
+                           But on the internet there is one problem: 
+                           the web server does not know who you are or what you do, because the HTTP address doesn't maintain state.</p>
+                        <p>Session variables solve this problem by storing user information to be used across multiple pages (e.g. username, favorite color, etc). 
+                               By default, session variables last until the user closes the browser.</p>
+                        <p>So; Session variables hold information about one single user, and are available to all pages in one application.</p><br>
+                        <p><b>Tip:</b> If you need a permanent storage, you may want to store the data in a database.</p><br>
+                    </div>
+                </div>
+
+                <div class="col-sm-12">
+                <div class="box4">
+                    <h2><center>Start a PHP Session</center></h2>
+                    <p><center>A session is started with the <code>session_start()</code> function.</center></p>
+                    <p><center>Session variables are set with the PHP global variable: $_SESSION.</center></p>
+                    <p><center>Now, let's create a new page called "demo_session1.php". In this page, we start a new PHP session and set some session variables:</center></p><br>
+
+                <div class="col-sm-6">
+                    <div class="box6">
+                        <h3>Example</h3><hr>
+                        <table class="roundedCorners1" align="center"> 
+                            <tr><td>&lt;?php</td></tr>
+                            <tr><td>// Start the session</td></tr>
+                            <tr><td>session_start();</td></tr>
+                            <tr><td>?&gt;</td></tr>
+                            <tr><td>&lt;!DOCTYPE html&gt;</td></tr>
+                            <tr><td>&lt;html&gt;</td></tr>
+                            <tr><td>&lt;body&gt;</td></tr>
+                            <tr><td>&lt;?php</td></tr>
+                            <tr><td>// Set session variables</td></tr>
+                            <tr><td>$_SESSION["favcolor"] = "green";</td></tr>
+                            <tr><td>$_SESSION["favanimal"] = "cat";</td></tr>
+                            <tr><td>echo "Session variables are set.";</td></tr>
+                            <tr><td>&lt;/body&gt;</td></tr>
+                            <tr><td>&lt;/html&gt;</td></tr>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="col-sm-6">
+                    <div class="box6">
+                        <h3>Output</h3><hr> <br><br>
+                        <center><img src="images/s1.PNG"></center><br><br><br><br><br><br><br><br><br>
+                    </div>
+                    <div class="box6">
+                        <p><b><center>Note:</center></b></p>
+                        <p><center>The <code>session_start()</code> function must be the very first thing in your document. Before any HTML tags.</center></p><br>
+                    </div>
+                </div>
+
+            </div>
+            </div>  
+
+            <div class="col-sm-12">
+                <div class="box4">
+                    <h2><center>Get PHP Session Variable Values</center></h2>
+                    <p><center>Next, we create another page called "demo_session2.php". From this page, we will access the session information we set on the first page ("demo_session1.php").</center></p>
+                    <p><center>Notice that session variables are not passed individually to each new page, instead they are retrieved from the session we open at the beginning of each page (<code>session_start()</code>).</center></p>
+                    <p><center>Also notice that all session variable values are stored in the global $_SESSION variable:</center></p><br>
+
+                    <div class="col-sm-6">
+                        <div class="box6">
+                            <h3>Example</h3><hr>
+                            <table class="roundedCorners1" align="center"> 
+                                <tr><td>&lt;?php</td></tr>
+                                <tr><td>session_start();</td></tr>
+                                <tr><td>?&gt;</td></tr>
+                                <tr><td>&lt;!DOCTYPE html&gt;</td></tr>
+                                <tr><td>&lt;html&gt;</td></tr>
+                                <tr><td>&lt;body&gt;</td></tr>
+                                <tr><td>&lt;?php</td></tr>
+                                <tr><td>// Echo session variables that were set on previous page</td></tr>
+                                <tr><td>echo "Favorite color is " . $_SESSION["favcolor"] . ".&lt;br&gt;";</td></tr>
+                                <tr><td>echo "Favorite animal is " . $_SESSION["favanimal"] . ".";</td></tr>
+                                <tr><td>&lt;/body&gt;</td></tr>
+                                <tr><td>&lt;/html&gt;</td></tr>
+                            </table>
+                        </div>
+                    </div>
+    
+                    <div class="col-sm-6">
+                        <div class="box6">
+                            <h3>Output</h3><hr> <br><br>
+                            <center><img src="images/s2.PNG"></center><br><br>
+                        </div>
+                            <div class="box6">
+                            <p><center><b>How does it work? How does it know it's me?</b></center></p>
+                            <p><center>Most sessions set a user-key on the user's computer that looks something like this: 765487cf34ert8dede5a562e4f3a7e12. 
+                            Then, when a session is opened on another page, it scans the computer for a user-key. 
+                            If there is a match, it accesses that session, if not, it starts a new session.</center></p><br>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="col-sm-12">
+                <div class="box4">
+                    <h2><center>Modify a PHP Session Variable</center></h2>
+                    <p><center>To change a session variable, just overwrite it:</center></p><br>
+
+                    <div class="col-sm-6">
+                        <div class="box6">
+                            <h3>Example</h3><hr>
+                            <table class="roundedCorners1" align="center"> 
+                                <tr><td>&lt;?php</td></tr>
+                                <tr><td>session_start();</td></tr>
+                                <tr><td>?&gt;</td></tr>
+                                <tr><td>&lt;!DOCTYPE html&gt;</td></tr>
+                                <tr><td>&lt;html&gt;</td></tr>
+                                <tr><td>&lt;body&gt;</td></tr>
+                                <tr><td>&lt;?php</td></tr>
+                                <tr><td>// to change a session variable, just overwrite it</td></tr>
+                                <tr><td>$_SESSION["favcolor"] = "yellow";</td></tr>
+                                <tr><td>print_r($_SESSION);</td></tr>
+                                <tr><td>&lt;/body&gt;</td></tr>
+                                <tr><td>&lt;/html&gt;</td></tr>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6">
+                        <div class="box6">
+                            <h3>Output</h3><hr><br><br><br><br><br>
+                            <img src="images/s3.PNG"><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                        </div>
+                    </div>    
+
+                </div>
+            </div>
+
+            <div class="col-sm-12">
+                <div class="box4">
+                    <h2><center>Destroy a PHP Session</center></h2>
+                    <p><center>To remove all global session variables and destroy the session, use <code>session_unset()</code> and <code>session_destroy()</code>:</center></p><br>
+
+                    <div class="col-sm-6">
+                        <div class="box6">
+                            <h3>Example</h3><hr>
+                            <table class="roundedCorners1" align="center"> 
+                                <tr><td>&lt;?php</td></tr>
+                                <tr><td>session_start();</td></tr>
+                                <tr><td>?&gt;</td></tr>
+                                <tr><td>&lt;!DOCTYPE html&gt;</td></tr>
+                                <tr><td>&lt;html&gt;</td></tr>
+                                <tr><td>&lt;body&gt;</td></tr>
+                                <tr><td>&lt;?php</td></tr>
+                                <tr><td>// remove all session variables</td></tr>
+                                <tr><td>session_unset();</td></tr>
+                                <tr><td>// destroy the session</td></tr>
+                                <tr><td>session_destroy();</td></tr>
+                                <tr><td>echo "All session variables are now removed, and the session is destroyed."</td></tr>
+                                <tr><td>&lt;/body&gt;</td></tr>
+                                <tr><td>&lt;/html&gt;</td></tr>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6">
+                        <div class="box6">
+                            <h3>Output</h3><hr><br><br><br><br><br>
+                            <img src="images/s4.PNG"><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                        </div>
+                    </div>   
+                
+                </div>
+            </div>
+
+        </div>
+                
+
+                
+                <div class="col-sm-2">
+                        <div class="box5">
+                            <a href="PAGE_13.html">
+                                <p style="color:white;">PREVIOUS</p>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="col-sm-8">
+                        <div class="box2">
+                        </div>
+                    </div>
+                    
+                    <div class="col-sm-2">
+                        <div class="box5">
+                            <a href="../../B_EXAM/Phase 4/SELECT EXAM.html">
+								<p style="color:white;">EXAM</p>
+							</a>
+                        </div>
+                    </div>
+            </section>
+            
+                                 
+            <!--<div id="push"></div>-->
+        </div>
+        <footer class="container-fluid" style="background:#002739;padding:70px 0px 0px 0px;">
+            <div class="row">
+                <div class="container" style="padding-bottom:40px;">
+                    <div class="row">
+                        <div class="col-sm-12 text-center">
+                            <a href="#">
+                                <img src="images/logo-2.png"  width="200" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+</body>
+</html>

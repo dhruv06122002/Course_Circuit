@@ -1,0 +1,816 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/Style.css" rel="stylesheet" />
+</head>
+<body>
+    <div id="wrapper">
+        <div class="main">
+            <header class="container-fluid topHeader">
+                <div class="row">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <ul class="list-inline">
+                                    <li><a href="#"><span class="glyphicon glyphicon-envelope"></span> courcecircuit@gmail.com</a></li>
+                                    <li><a href="#"><span class="glyphicon glyphicon-phone"></span>+91 000000000</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </header>
+            <nav class="navbar navbar-default">
+                <div class="container">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="../1_HTML,CSS,PHP for web-development.html">
+                            <img src="images/logo1.png" width="200"  />
+                        </a>
+                    </div>
+
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="navbar-collapse">
+                        <ul class="nav navbar-nav float-right">
+                             <li><a href="PAGE_0.html">Index</a></li>
+                            <li><a href="../../B_EXAM/Phase 2/SELECT EXAM.html">Assignments</a></li>
+                            <li><a href="../B_PHASE_1/PAGE_COLOR.html">Color Picker</a></li>
+                            <li><a href="../../A_MAIN/3_COMPILER.html">Compiler</a></li>
+                        </ul>
+                    </div><!-- /.navbar-collapse -->
+                </div><!-- /.container-fluid -->
+            </nav>
+             <section class="jumbotron">
+                <div class="container">
+                    <p><center><img src="PHASES/CSS.png" height="150" width="150"></center></p>
+                    <p class="lead"><center><b><h3>Welcome to Phase 2 : The Basics of CSS</h3></b></center></p>
+                </div>
+            </section>
+           
+            <section class="container">
+                <div class="row">
+                <div class="col-sm-12">
+                        <div class="box2">
+                        <h1>CSS Backgrounds</h1>
+                        </div>
+					</div>
+                        
+                    <div class="col-sm-12">
+                        <div class="box6">
+                            <p>The CSS background properties are used to define the background effects for elements.</p>
+                            <p>In these chapters, you will learn about the following CSS background properties:</p>
+                            <ul>
+                                <p>	
+                                <li>background-color</li>
+                                </p>
+                                <p>		
+                                <li>background-image</li>
+                                </p>
+                                <p>
+                                <li>background-repeat</li>
+                                </p>
+                                <p>	
+                                <li>background-attachment</li>
+                                </p>
+                                <p>	
+                                <li>background-position</li>
+                                </p>
+                                </ul>
+                        </div>
+                    </div> 	
+
+
+                    <div class="col-sm-12">
+                        <div class="box6">
+                  
+                    <center><h3><b>CSS Background-Color</b></h3></center>
+                    <center>The <code>background-color</code> property specifies the background color of an element.</center><br>
+                    
+                    <div class="col-sm-6">
+                    <div class="box6">
+                    <table class="roundedCorners1" align="center">
+                    
+                    <h4><center><b>EXAMPLE</b></center></h4>
+                    <center>The background color of a page is set like this:</center><hr>         
+                    <tr><td>&lt;!doctype html&gt;</td></tr> 
+                    <tr><td>&lt;html&gt;</td></tr> 
+                    <tr><td>&lt;head&gt;</td></tr> 
+                    <tr><td>&lt;style&gt;</td></tr> 
+                    <tr><td>body {</td></tr>
+                    <tr><td>background-color: lightblue;</td></tr>
+                    <tr><td>}</td></tr>
+                    <tr><td>&lt;/style&gt;</td></tr> 
+                    <tr><td>&lt;/head&gt;</td></tr> 
+                    <tr><td>&lt;body&gt;</td></tr>
+                    <tr><td>&lt;h3&gt;This page has a light blue background color!&lt;/h3&gt;</td></tr>
+                    <tr><td>&lt;/body&gt;</td></tr>
+                    <tr><td>&lt;/html&gt;</td></tr>
+                        </table>
+                        <h5>&nbsp;</h5>
+                        </div>
+                        </div>
+                    
+                        <div class="col-sm-6">
+                    <div class="box2">
+                    <h4><b><u>OUTPUT</u></b></h4>
+                    <h1>&nbsp;</h1>						    						
+                    <!DOCTYPE html>
+                    <html>
+                    <head>
+                    <style>
+                    .light {
+                      background-image: url(images/light.png);
+                    }
+                    </style>
+                    </head>
+                    <body>
+                    <h3 class="light" style="text-align: left;"><br>This page has a light blue background color!<br><br><br><br><br><br><br><br><br><br><br><br></h3>
+                    </body>
+                    </html>
+                    
+                            </div>
+                        </div>
+                    
+                        <div class="col-sm-6">
+                            <div class="box6">
+                                <p>With CSS, a color is most often specified by:</p>
+                                <ul>
+                                    <p>	
+                                    <li>a valid color name - like "red"</li>
+                                    </p>
+                                    <p>		
+                                    <li>a HEX value - like "#ff0000"</li>
+                                    </p>
+                                    <p>
+                                    <li>an RGB value - like "rgb(255,0,0)"</li>
+                                    </p>
+                                    </ul><br>
+                            </div>
+                                    </div>
+
+                                    <div class="col-sm-12">
+                                        <div class="box6">
+                                        <center><h3><b>Other Elements</b></h3></center>
+                                        <center>You can set the background color for any HTML elements:</center><br>
+                                            
+                                        <div class="col-sm-6">
+                                            <div class="box6">
+                                            <table class="roundedCorners1" align="center">
+                                            
+                                            <h4><center><b>EXAMPLE</b></center></h4>
+                                            <center>Here, the &lt;h1&gt;, &lt;p&gt;, and &lt;div&gt; elements will have different background colors: </center><hr>         
+                                            <tr><td>&lt;!doctype html&gt;</td></tr> 
+                                            <tr><td>&lt;html&gt;</td></tr> 
+                                            <tr><td>&lt;head&gt;</td></tr> 
+                                            <tr><td>&lt;style&gt;</td></tr> 
+                                            <tr><td>h1 {</td></tr>
+                                            <tr><td>background-color: lightseagreen;</td></tr>
+                                            <tr><td>}</td></tr>
+                                            <tr><td>div {</td></tr>
+                                            <tr><td>background-color: pink;</td></tr>
+                                            <tr><td>}</td></tr>
+                                            <tr><td>p {</td></tr>
+                                            <tr><td>background-color: yellow;</td></tr>
+                                            <tr><td>}</td></tr>
+                                            <tr><td>&lt;/style&gt;</td></tr> 
+                                            <tr><td>&lt;/head&gt;</td></tr> 
+                                            <tr><td>&lt;body&gt;</td></tr>
+                                            <tr><td>&lt;h4&gt;CSS background-color example!&lt;/h4&gt;</td></tr>
+                                            <tr><td>&lt;div&gt;</td></tr>
+                                            <tr><td>This is a text inside a div element.</td></tr>
+                                            <tr><td>&lt;p&gt;This paragraph has its own background color.&lt;/p&gt;</td></tr>
+                                            <tr><td>We are still in the div element.</td></tr>
+                                            <tr><td>&lt;/div&gt;</td></tr>
+                                            <tr><td>&lt;/body&gt;</td></tr>
+                                            <tr><td>&lt;/html&gt;</td></tr>
+                                                </table>
+                                                <h5>&nbsp;</h5>
+                                                </div>
+                                                </div>
+                                            
+                                                <div class="col-sm-6">
+                                            <div class="box2">
+                                            <h4><b><u>OUTPUT</u></b></h4>
+                                            <h1>&nbsp;</h1>						    						
+                                            <!DOCTYPE html>
+                                            <html>
+                                            <head>
+                                            <style>
+                                            .one {
+                                              background-color: lightseagreen;
+                                            }
+                                            
+                                            div.two {
+                                              background-color: pink;
+                                            }
+                                            
+                                            .three {
+                                              background-color: yellow;
+                                            }
+                                            </style>
+                                            </head>
+                                            <body>
+                                            
+                                            <h4 class="one">CSS background-color example!</h4>
+                                            <div class="two">
+                                            This is a text inside a div element.
+                                            <p class="three">This paragraph has its own background color.</p>
+                                            We are still in the div element.
+                                            </div>
+                                            
+                                            </body>
+                                            </html>
+                                            
+                                            
+                                                    </div>
+                                                </div>
+                                            
+
+                                        </div>
+                                    </div>
+                            
+                                    <div class="col-sm-12">
+                                        <div class="box6">
+                                       
+                                        <center><h3><b>Opacity / Transparency</b></h3></center>
+                                        <center>The <code>opacity</code> property specifies the opacity/transparency of an element. It can take a value from 0.0 - 1.0. The lower value, the more transparent:</center><br>
+                                        <img src="images/opacity.PNG"><br><br>
+
+                                        <div class="col-sm-6">
+                                            <div class="box6">
+                                            <table class="roundedCorners1" align="center">
+                                            
+                                            <h4><center><b>EXAMPLE</b></center></h4>
+                                            <tr><td>&lt;!doctype html&gt;</td></tr> 
+                                            <tr><td>&lt;html&gt;</td></tr> 
+                                            <tr><td>&lt;head&gt;</td></tr> 
+                                            <tr><td>&lt;style&gt;</td></tr> 
+                                            <tr><td>div {</td></tr>
+                                            <tr><td> background-color: green;</td></tr>
+                                            <tr><td>}</td></tr>
+                                            <tr><td>div.one {</td></tr>
+                                            <tr><td>opacity: 0.1;</td></tr>
+                                            <tr><td>}</td></tr>
+                                            <tr><td>div.two {</td></tr>
+                                            <tr><td>opacity: 0.3;</td></tr>
+                                            <tr><td>}</td></tr>
+                                            <tr><td>div.three {</td></tr>
+                                            <tr><td>opacity: 0.6;</td></tr>
+                                            <tr><td>}</td></tr>
+                                            <tr><td>&lt;/style&gt;</td></tr> 
+                                            <tr><td>&lt;/head&gt;</td></tr> 
+                                            <tr><td>&lt;body&gt;</td></tr>
+                                            <tr><td>&lt;h1&gt;Transparent Box&lt;/h1&gt;</td></tr>
+                                            <tr><td>&lt;p&gt;When using the opacity property to add transparency to the background of an element, all of its child elements become transparent as well. This can make the text inside a fully transparent element hard to read:&lt;/p&gt;</td></tr>
+                                            <tr><td>&lt;div class="first"&gt;</td></tr>                          
+                                            <tr><td>&lt;h1&gt;opacity 0.1&lt;/h1&gt;</td></tr>
+                                            <tr><td>&lt;/div&gt;</td></tr>
+                                            <tr><td>&lt;div class="second"&gt;</td></tr>                          
+                                            <tr><td>&lt;h1&gt;opacity 0.3&lt;/h1&gt;</td></tr>
+                                            <tr><td>&lt;/div&gt;</td></tr>
+                                            <tr><td>&lt;div class="third"&gt;</td></tr>                          
+                                            <tr><td>&lt;h1&gt;opacity 0.6&lt;/h1&gt;</td></tr>
+                                            <tr><td>&lt;/div&gt;</td></tr>
+                                            <tr><td>&lt;div&gt;</td></tr>                          
+                                            <tr><td>&lt;h1&gt;opacity 1 (default)&lt;/h1&gt;</td></tr>
+                                            <tr><td>&lt;/div&gt;</td></tr>
+                                            <tr><td>&lt;/body&gt;</td></tr>
+                                            <tr><td>&lt;/html&gt;</td></tr>
+                                                </table>
+                                                <h5>&nbsp;</h5>
+                                                </div>
+                                                </div>
+                                            
+                                                <div class="col-sm-6">
+                                            <div class="box2">
+                                            <h4><b><u>OUTPUT</u></b></h4>
+                                            <h1>&nbsp;</h1>						    						
+                                            <!DOCTYPE html>
+                                            <html>
+                                            <head>
+                                            <style>
+                                            div.def {
+                                              background-color: green;
+                                            }
+                                            
+                                            div.o1 {
+                                              opacity: 0.1;
+                                              background-color: green;
+                                            }
+                                            
+                                            div.o2 {
+                                              opacity: 0.3;
+                                              background-color: green;
+                                            }
+                                            
+                                            div.o3 {
+                                              opacity: 0.6;
+                                              background-color: green;
+                                            }
+                                            </style>
+                                            </head>
+                                            <body>
+                                            
+                                            <h1 style="text-align: left;">Transparent Box</h1>
+                                            <p style="text-align: left;">When using the opacity property to add transparency to the background of an element, all of its child elements become transparent as well. This can make the text inside a fully transparent element hard to read:</p>
+                                            
+                                            <div class="o1">
+                                              <h1 style="text-align: left;">opacity 0.1</h1>
+                                            </div>
+                                            
+                                            <div class="o2">
+                                              <h1 style="text-align: left;">opacity 0.3</h1>
+                                            </div>
+                                            
+                                            <div class="o3">
+                                              <h1 style="text-align: left;">opacity 0.6</h1>
+                                            </div>
+                                            
+                                            <div class="def">
+                                              <h1 style="text-align: left;">opacity 1 (default)</h1>
+                                            </div>
+                                            <br><br>
+                                            </body>
+                                            </html>
+                                        
+                                                    </div>
+                                                </div>
+                                            
+                                                <div class="col-sm-6">
+                                                    <div class="box6">
+                                                        <p><b>Note:</b></p>
+                                                        <p> When using the <code>opacity</code> property to add transparency to the background of an element, all of its child elements inherit the same transparency. This can make the text inside a fully transparent element hard to read.</p>
+                                                    </div>
+                                                </div>
+
+
+                                             <div class="col-sm-6">
+                                                    <div class="box6">
+                                                        <p><b><center><u>Transparency using RGBA</u></center></b></p><br>
+                                                        <p>If you do not want to apply opacity to child elements, like in our example above, use RGBA color values. 
+                                                            The following example sets the opacity for the background color and not the text:</p><br>
+                                                        <img src="images/opacity_1.PNG">
+                                                        <ul><br><br>
+                                                        <li>An RGBA color value is specified with: rgba(red, green, blue, alpha).</li> 
+                                                        <li>The alpha parameter is a number between 0.0 (fully transparent) and 1.0 (fully opaque).</li>
+                                                        </ul><br>
+                                                        <p><b><center>Syntax Example:</center></b></p><br>
+                                                        <p>div {</p>
+                                                        <p>&nbsp;&nbsp;background: rgba(0, 128, 0, 0.3) </p>
+                                                        <p>}</p><br>
+                                                        <p><b><center>Output:</center></b></p><br>
+                                                        <img src="images/opacity_2.PNG">
+                                                        <br><br>
+                                                    </div>
+                                                </div>
+
+
+                                        </div>
+                                    </div>
+
+                                </div>
+
+
+                    <h5>&nbsp;</h5>
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="col-sm-12">
+                        <div class="box6">
+                  
+                    <center><h3><b>CSS background-image</b></h3></center>
+                    <center>The <code>background-image</code> property specifies an image to use as the background of an element.</center>
+                    <center>By default, the image is repeated so it covers the entire element.</center><br>
+                    <div class="col-sm-6">
+                    <div class="box6">
+                    <table class="roundedCorners1" align="center">
+                    
+                    <h4><center><b>EXAMPLE</b></center></h4>
+                    <center>Set the background image for a page: </center><hr>         
+                    <tr><td>&lt;!doctype html&gt;</td></tr> 
+                    <tr><td>&lt;html&gt;</td></tr> 
+                    <tr><td>&lt;head&gt;</td></tr> 
+                    <tr><td>&lt;style&gt;</td></tr> 
+                    <tr><td>body {</td></tr>
+                    <tr><td>background-image: url("bg.jpg");</td></tr>
+                    <tr><td>}</td></tr>
+                    <tr><td>&lt;/style&gt;</td></tr> 
+                    <tr><td>&lt;/head&gt;</td></tr> 
+                    <tr><td>&lt;body&gt;</td></tr>
+                    <tr><td>&lt;h1&gt;Hello World!&lt;/h1&gt;</td></tr>
+                    <tr><td>&lt;p&gt;This page has an image as the background!&lt;/p&gt;</td></tr>
+                    <tr><td>&lt;/body&gt;</td></tr>
+                    <tr><td>&lt;/html&gt;</td></tr>
+                        </table>
+                        <h5>&nbsp;</h5>
+                        </div>
+                        </div>
+                    
+                        <div class="col-sm-6">
+                    <div class="box2">
+                    <h4><b><u>OUTPUT</u></b></h4>
+                    <!DOCTYPE html>
+<html>
+<head>
+<style>
+div.bg {
+  background-image: url("images/bg.jpg");
+}
+</style>
+</head>
+<body>
+<div class="bg">
+<h1 style="text-align: left;">Hello World!</h1>
+<p style="text-align: left;">This page has an image as the background!</p>
+<br><br><br><br><br><br><br><br><br><br>
+</div>
+</body>
+</html>
+                
+                            </div>
+                        </div>
+                    
+                        <div class="col-sm-6">
+                            <div class="box6">
+                                <ul>
+                                    <li>The background image can also be set for specific elements, like the &lt;p&gt;,&lt;h1&gt; to &lt;h6&gt;, etc. elements:</li>
+                                </ul>
+                                <p><b><center>Syntax Example:</center></b></p>
+                                <p>p {</p>
+                                <p>&nbsp;&nbsp;background-image: url("bg.jpg");</p>
+                                <p>}</p><hr>
+                                <p><b>Note:</b></p>
+                                <p> When using a background image, use an image that does not disturb the text.</p><br>
+                            </div>
+                        </div>
+
+                                </div>
+
+
+                    <h5>&nbsp;</h5>
+                        </div>
+                        
+ 					<div class="col-sm-12">
+                    <div class="box6">
+                   
+                    <center><h3><b>CSS Background Repeat</b></h3></center>
+                    <center>By default, the <code>background-image</code> property repeats an image both horizontally and vertically.</center><br>
+                    
+                   
+                    <div class="col-sm-6">
+                    <div class="box6">
+                    <table class="roundedCorners1" align="center">
+            
+                    <center>Some images should be repeated only horizontally or vertically, or they will look strange, like this: </center><hr>         
+                    <h4><center><b>EXAMPLE</b></center></h4>
+                    <tr><td>&lt;!doctype html&gt;</td></tr> 
+                    <tr><td>&lt;html&gt;</td></tr> 
+                    <tr><td>&lt;head&gt;</td></tr> 
+                    <tr><td>&lt;style&gt;</td></tr> 
+                    <tr><td>body {</td></tr>
+                    <tr><td>background-image: url("gradient_bg.jpg");</td></tr>
+                    <tr><td>}</td></tr>
+                    <tr><td>&lt;/style&gt;</td></tr> 
+                    <tr><td>&lt;/head&gt;</td></tr> 
+                    <tr><td>&lt;body&gt;</td></tr>
+                    <tr><td>&lt;h1&gt;Hello World!&lt;/h1&gt;</td></tr>
+                    <tr><td>&lt;p&gt;Strange background image...&lt;/p&gt;</td></tr>
+                    <tr><td>&lt;/body&gt;</td></tr>
+                    <tr><td>&lt;/html&gt;</td></tr>
+                        </table><hr>
+                        
+                         <h4><b><u><center>OUTPUT</center></u></b></h4>
+                         <!DOCTYPE html>
+<html>
+<head>
+<style>
+div.repeat_1 {
+  background-image: url("images/gradient_bg.jpg");
+}
+</style>
+</head>
+<body>
+<div class="repeat_1">
+<h1 style="text-align:left">Hello World!</h1>
+<p style="text-align:left">Strange background image...</p>
+<br><br><br><br><br><br><br><br><br><br><br><br><br>
+</div>
+</body>
+</html>
+
+                        
+                        <h5>&nbsp;</h5>
+                        </div>
+                        </div>
+                    
+                        <div class="col-sm-6">
+                    <div class="box6">
+                        <table class="roundedCorners1" align="center">
+                    
+                            
+                            <center>If the image above is repeated only horizontally (<code>background-repeat: repeat-x;</code>), the background will look better:</center><hr>         
+                            <h4><center><b>EXAMPLE</b></center></h4>
+                            <tr><td>&lt;!doctype html&gt;</td></tr> 
+                            <tr><td>&lt;html&gt;</td></tr> 
+                            <tr><td>&lt;head&gt;</td></tr> 
+                            <tr><td>&lt;style&gt;</td></tr> 
+                            <tr><td>body {</td></tr>
+                            <tr><td>background-image: url("gradient_bg.jpg");</td></tr>
+                            <tr><td>background-repeat: repeat-x;</td></tr>
+                            <tr><td>}</td></tr>
+                            <tr><td>&lt;/style&gt;</td></tr> 
+                            <tr><td>&lt;/head&gt;</td></tr> 
+                            <tr><td>&lt;body&gt;</td></tr>
+                            <tr><td>&lt;h1&gt;Hello World!&lt;/h1&gt;</td></tr>
+                            <tr><td>&lt;p&gt;Strange background image...&lt;/p&gt;</td></tr>
+                            <tr><td>&lt;/body&gt;</td></tr>
+                            <tr><td>&lt;/html&gt;</td></tr>
+                                </table><hr>
+                                
+                                 <h4><b><u><center>OUTPUT</center></u></b></h4>
+                                 <!DOCTYPE html>
+        <html>
+        <head>
+        <style>
+        div.repeat_2 {
+          background-image: url("images/gradient_bg.jpg");
+          background-repeat: repeat-x;
+        }
+        </style>
+        </head>
+        <body>
+        <div class="repeat_2">
+        <h1 style="text-align:left">Hello World!</h1>
+        <p style="text-align:left">Here, a background image is repeated only horizontally!</p>
+        <br><br><br><br>
+        </div>
+        </body>
+        </html>
+        
+                                
+                                <h5>&nbsp;</h5>
+                                </div>
+                                </div>
+
+
+                                <div class="col-sm-6">
+                                    <div class="box4">
+                                        <p><center><b>NOTE:</b> To repeat an image vertically, set <code>background-repeat: repeat-y;</code></center></p><br>
+                                    </div>
+                                </div>
+                                
+
+                                <div class="col-sm-12">
+                                    <div class="box6">
+                                        <h3><center><b>CSS background-repeat: no-repeat</b></center></h3>
+                                        <p><center>Showing the background image only once is also specified by the <code>background-repeat</code> property:</center></p><br>
+                                       
+                                        <div class="col-sm-6">
+                                            <div class="box6">
+                                                <table class="roundedCorners1" align="center">
+                                                <h4><center><b>EXAMPLE</b></center></h4>
+                                                <center><p>Show the background image only once:</p></center><hr>
+                                                <tr><td>&lt;!doctype html&gt;</td></tr> 
+                                                <tr><td>&lt;html&gt;</td></tr> 
+                                                <tr><td>&lt;head&gt;</td></tr> 
+                                                <tr><td>&lt;style&gt;</td></tr> 
+                                                <tr><td>body {</td></tr>
+                                                <tr><td>background-image: url("img_paint.jpg");</td></tr>
+                                                <tr><td> background-repeat: no-repeat;</td></tr>
+                                                <tr><td>}</td></tr>
+                                                <tr><td>&lt;/style&gt;</td></tr> 
+                                                <tr><td>&lt;/head&gt;</td></tr> 
+                                                <tr><td>&lt;body&gt;</td></tr>
+                                                <tr><td>&lt;h1&gt;Hello World!&lt;/h1&gt;</td></tr>
+                                                <tr><td>&lt;p&gt;The background image is only showing once, but it is disturbing the reader!&lt;/p&gt;</td></tr>
+                                                <tr><td>&lt;/body&gt;</td></tr>
+                                                <tr><td>&lt;/html&gt;</td></tr>
+                                                    </table>
+                                            </div>
+                                        </div>
+
+                    <div class="col-sm-6">
+                    <div class="box2">
+                    <h4><b><u>OUTPUT</u></b></h4>
+                    <!DOCTYPE html>
+<html>
+<head>
+<style>
+div.rep {
+  background-image: url("images/img_paint.jpg");
+  background-repeat: no-repeat;
+}
+</style>
+</head>
+<body>
+<div class="rep">
+<h1 style="text-align: left;">Hello World!</h1>
+<p style="text-align: left;">The background image is only showing once, but it is disturbing the reader!</p>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+</div>
+</body>
+</html>
+<hr>
+<p><center><b>In the example above, the background image is placed in the same place as the text. We want to change the position of the image, so that it does not disturb the text too much.</b></center></p>
+                
+                            </div>
+                        </div>
+                                    </div>
+                                </div> 	
+
+
+                                <div class="col-sm-12">
+                                    <div class="box6">
+                                        <h3><center><b>CSS background-position</b></center></h3>
+                                        <p><center>The <code>background-position</code> property is used to specify the position of the background image.</center></p><br>
+                                       
+                                        <div class="col-sm-6">
+                                            <div class="box6">
+                                                <table class="roundedCorners1" align="center">
+                                                <h4><center><b>EXAMPLE</b></center></h4>
+                                                <center><p>Show the background image only once:</p></center><hr>
+                                                <tr><td>&lt;!doctype html&gt;</td></tr> 
+                                                <tr><td>&lt;html&gt;</td></tr> 
+                                                <tr><td>&lt;head&gt;</td></tr> 
+                                                <tr><td>&lt;style&gt;</td></tr> 
+                                                <tr><td>body {</td></tr>
+                                                <tr><td>background-image: url("img_paint.jpg");</td></tr>
+                                                <tr><td> background-repeat: no-repeat;</td></tr>
+                                                <tr><td> background-position: right top;</td></tr>
+                                                <tr><td> margin-right: 200px;</td></tr>
+                                                <tr><td>}</td></tr>
+                                                <tr><td>&lt;/style&gt;</td></tr> 
+                                                <tr><td>&lt;/head&gt;</td></tr> 
+                                                <tr><td>&lt;body&gt;</td></tr>
+                                                <tr><td>&lt;h1&gt;Hello World!&lt;/h1&gt;</td></tr>
+                                                <tr><td>&lt;p&gt;Now the background image is only shown once, and positioned away from the text.&lt;/p&gt;</td></tr>
+                                                <tr><td>&lt;p&gt;In this example we have also added a margin on the right side, so the background image will never disturb the text.&lt;/p&gt;</td></tr>
+                                                <tr><td>&lt;/body&gt;</td></tr>
+                                                <tr><td>&lt;/html&gt;</td></tr>
+                                                    </table>
+                                            </div>
+                                        </div>
+
+                    <div class="col-sm-6">
+                    <div class="box2">
+                    <h4><b><u>OUTPUT</u></b></h4>
+                    <!DOCTYPE html>
+<html>
+<body>
+<img src="images/img_paint_op.PNG" >
+<br><br>
+</body>
+</html>
+
+                
+                            </div>
+                        </div>
+                                    </div>
+                                </div> 	
+                        </div>
+                    </div>
+                    <h5>&nbsp;</h5>
+
+
+<div class="col-sm-6">
+    <div class="box6">
+        <h3><center><b>CSS background - Shorthand property</b></center></h3>
+        <p><center>To shorten the code, it is also possible to specify all the background properties in one single property. This is called a shorthand property.</center></p><br>
+        <li><b>Insted of writing:</b></li><br>
+        <p>body {</p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;background-color: #ffffff;</p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;background-image: url("img_tree.png");</p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;background-repeat: no-repeat;</p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;background-position: right top;</p>
+          <p>}</p><br>
+          <li>You can use the shorthand property <code>background</code>:</li>
+              <li>Use the shorthand property to set the background properties in one declaration:</li><br>
+              <p><mark>body {</mark></p>
+                <p><mark>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;background: #ffffff url("img_tree.png") no-repeat right top;</mark></p>
+             <p><mark>}</mark></p><br>
+            <p> When using the shorthand property the order of the property values is:</p><br>
+            <li><code>background-color</code></li>
+            <li><code>background-image</code></li>
+            <li><code>background-repeat</code></li>
+            <li><code>background-attachment</code></li>
+            <li><code>background-position</code></li><br>
+            <p>It does not matter if one of the property values is missing, as long as the other ones are in this order. </p>
+               <p> Note that we do not use the background-attachment property in the examples above, as it does not have a value.</p>
+        </div>
+    </div>
+
+    <div class="col-sm-6">
+        <div class="box6">
+            <h3><center><b>All CSS Background Properties</b></center></h3><br><br>
+            <table class="roundedCorners" align="center">
+                    <tr>
+                        <th><center>Property</center></th>
+                        <th><center>Description</center></th>
+                    </tr>
+                    <tr>
+                        <td><code>background</code></td>
+                        <td>Sets all the background properties in one declaration</td>
+                    </tr>
+                    <tr>
+                        <td><code>background-attachment</code></td>
+                        <td>Sets whether a background image is fixed or scrolls with the rest of the page</td>
+                    </tr>
+                    <tr>
+                        <td><code>background-clip</code></td>
+                        <td>Specifies the painting area of the background</td>
+                    </tr>
+                    <tr>
+                        <td><code>background-color</code></td>
+                        <td>Sets the background color of an element</td>
+                    </tr>
+                    <tr>
+                        <td><code>background-image</code></td>
+                        <td>Sets the background image for an element</td>
+                    </tr>
+                    <tr>
+                        <td><code>background-origin</code></td>
+                        <td>Specifies where the background image(s) is/are positioned</td>
+                    </tr>
+                    <tr>
+                        <td><code>background-position</code></td>
+                        <td>Sets the starting position of a background image</td>
+                    </tr>
+                    <tr>
+                        <td><code>background-repeat</code></td>
+                        <td>Sets how a background image will be repeated</td>
+                    </tr>
+                    <tr>
+                        <td><code>background-size</code></td>
+                        <td>Specifies the size of the background image(s)</td>
+                    </tr>
+                </table>
+                <br><br><br><br><br><br><br><br>
+            </div>
+    </div>
+                        </section>
+                    </div></div>                        
+                        
+
+
+                   
+    
+
+
+
+<section class="container">
+                <div class="row">
+				<div class="col-sm-2">
+                        <div class="box5">
+							<a href="PAGE_5.html">
+								<p style="color:white;">PREVIOUS</p>
+							</a>
+                        </div>
+					</div>
+					
+					<div class="col-sm-8">
+                        <div class="box2">
+                        </div>
+					</div>
+					
+					<div class="col-sm-2">
+                        <div class="box5">
+							<a href="PAGE_7.html">
+								<p style="color:white;">NEXT</p>
+							</a>
+                        </div>
+					</div>
+			
+	</div></section>
+                       
+                           
+                            
+                            
+	           
+                      
+                    
+            <!--<div id="push"></div>-->
+        
+        <footer class="container-fluid" style="background:#002739;padding:70px 0px 0px 0px;">
+            <div class="row">
+                <div class="container" style="padding-bottom:40px;">
+                    <div class="row">
+                        <div class="col-sm-12 text-center">
+                            <a href="#">
+                                <img src="images/logo-2.png"  width="200" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    
+
+</body>
+</html>

@@ -1,0 +1,292 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/Style.css" rel="stylesheet" />
+</head>
+<body>
+    <div id="wrapper">
+        <div class="main">
+            <header class="container-fluid topHeader">
+                <div class="row">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <ul class="list-inline">
+                                    <li><a href="#"><span class="glyphicon glyphicon-envelope"></span> courcecircuit@gmail.com</a></li>
+                                    <li><a href="#"><span class="glyphicon glyphicon-phone"></span>+91 000000000</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </header>
+            <nav class="navbar navbar-default">
+                <div class="container">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="../1_HTML,CSS,PHP for web-development.html">
+                            <img src="images/logo1.png" width="200"  />
+                        </a>
+                    </div>
+
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="navbar-collapse">
+                        <ul class="nav navbar-nav float-right">
+                             <li><a href="PAGE_0.html">Index</a></li>
+                            <li><a href="../../B_EXAM/Phase 3/SELECT EXAM.html">Assignments</a></li>
+                            <li><a href="../B_PHASE_1/PAGE_COLOR.html">Color Picker</a></li>
+                            <li><a href="../../A_MAIN/3_COMPILER.html">Compiler</a></li>
+                        </ul>
+                    </div><!-- /.navbar-collapse -->
+                </div><!-- /.container-fluid -->
+            </nav>
+             <section class="jumbotron">
+                <div class="container">
+                    <p><center><img src="PHASES/Advance CSS.png" height="150" width="150"></center></p>
+                    <p class="lead"><center><b><h3>Welcome to Phase 3 : Advance CSS</h3></b></center></p>
+                </div>
+            </section>
+           
+            <section class="container">
+                <div class="row">
+                <div class="col-sm-12">
+                        <div class="box2">
+                        <h1>CSS Border Image</h1>
+                        </div>
+					</div>
+                    <div class="col-sm-12">
+                        <div class="box4">
+                         <div class="col-sm-12">
+                        <div class="box4" id="borderimg00" align="center">An Image as an Border. </div></div>
+                        <h3>CSS border-image Property</h3>
+                        <h4><b>The CSS border-image property allows you to specify an image to be used instead of the normal border around an element.</b></h4>
+						<ol><b>The property has three parts:</b>
+						<li>The image to use as the border</li>
+						<li>Where to slice the image</li>
+						<li>Define whether the middle sections should be repeated or stretched</li>
+						</ol>
+							<p>We will use the following image (called "border.png"):</p>
+							<img src="images/border.png">
+							<p><br>
+							The border-image property takes the image and slices it into nine sections, like a tic-tac-toe board. It then places the corners at the corners, and the middle sections are repeated or stretched as you specify.</p>
+							<p id="borderimg01" align="center">An image as an Border</p>
+							
+						
+						<h5>&nbsp;</h5>
+                        </div>
+			</div>
+				</div>
+			</section>
+			<section class="container">
+                <div class="row">
+                <div class="col-sm-12">
+                        <div class="box4">
+                <table class="roundedCorners1" align="center">
+                	<tr>
+                		<td colspan="2"><h3>CSS border-image - Different Slice Values</h3></td>
+                	</tr>
+                	<tr><td><p id="borderimg02">border-image: url(images/border.png) 50 round;</p></td></tr>
+					<tr><td><p id="borderimg03">border-image: url(images/border.png) 20% round;</p></td></tr>
+					<tr><td><p id="borderimg04">border-image: url(images/border.png) 30% round;</p></td></tr>
+                </table>
+                <table class="roundedCorners" align="center">
+                <tr>
+    <th style="width:30%">Property</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>border-image</td>
+    <td>A shorthand property for setting all the border-image-* properties</td>
+  </tr>
+  <tr>
+    <td>border-image-source</td>
+    <td>Specifies the path to the image to be used as a border</td>
+  </tr>
+  <tr>
+    <td>border-image-slice</td>
+    <td>Specifies how to slice the border image</td>
+  </tr>
+  <tr>
+    <td>border-image-width</td>
+    <td>Specifies the widths of the border image</td>
+  </tr>
+  <tr>
+    <td>border-image-outset</td>
+    <td>Specifies the amount by which the border image area extends beyond the border box</td>
+  </tr>
+  <tr>
+    <td>border-image-repeat</td>
+    <td>Specifies whether the border image should be repeated, rounded or stretched</td>
+  </tr>
+              </table>
+               <h5>&nbsp;</h5>
+                </div></div>
+				</div></section>
+               <section class="container">
+                <div class="row">
+				<div class="col-sm-12">
+                        <div class="box6">
+                        <center><h4><b>EXAMPLE</b></h4></center>
+                        <div class="col-sm-7">
+                        <div class="box6">
+							<table class="roundedCorners1" >
+<tr><td>&lt;!DOCTYPE html&gt;</td></tr>
+<tr><td>&lt;html&gt;</td></tr>
+<tr><td>&lt;head&gt;</td></tr>
+<tr><td>&lt;style&gt; </td></tr>
+<tr><td>#borderimg { </td></tr>
+<tr><td>  border: 10px solid transparent;</td></tr>
+<tr><td>  padding: 15px;</td></tr>
+<tr><td>  border-image: url(border.png) 30 round;</td></tr>
+<tr><td>}</td></tr>
+<tr><td>#borderimg01 {</td></tr>
+<tr><td>  border: 10px solid transparent;</td></tr>
+<tr><td>  padding: 15px;</td></tr>
+<tr><td>  border-image: url(border.png) 30 round;</td></tr>
+<tr><td>}</td></tr>
+<tr><td>#borderimg1 {</td></tr>
+<tr><td>  border: 10px solid transparent;</td></tr>
+<tr><td>  padding: 15px;</td></tr>
+<tr><td>  border-image: url(border.png) 50 round;</td></tr>
+<tr><td>}</td></tr>
+<tr><td></td></tr>
+<tr><td>#borderimg2 {</td></tr>
+<tr><td>  border: 10px solid transparent;</td></tr>
+<tr><td>  padding: 15px;</td></tr>
+<tr><td>  border-image: url(border.png) 20% round;</td></tr>
+<tr><td>}</td></tr>
+<tr><td></td></tr>
+<tr><td>#borderimg3 {</td></tr>
+<tr><td>  border: 10px solid transparent;</td></tr>
+<tr><td>  padding: 15px;</td></tr>
+<tr><td>  border-image: url(border.png) 30% round;</td></tr>
+<tr><td>}</td></tr>
+<tr><td>&lt;/head&gt;</td></tr>
+<tr><td>&lt;body&gt;</td></tr>
+<tr><td>&lt;p id="borderimg"&gt;border-image: url(border.png) 30 round;&lt;/p&gt;</td></tr>
+<tr><td>&lt;p id="borderimg01"&gt;border-image: url(border.png) 30 round;&lt;/p&gt;</td></tr>
+<tr><td>&lt;p id="borderimg1"&gt;border-image: url(border.png) 50 round;&lt;/p&gt;</td></tr>
+<tr><td>&lt;p id="borderimg2"&gt;border-image: url(border.png) 20% round;&lt;/p&gt;</td></tr>
+<tr><td>&lt;p id="borderimg3"&gt;border-image: url(border.png) 30% round;&lt;/p&gt;</td></tr>
+<tr><td>&lt;/body&gt;</td></tr>
+	<tr><td>&lt;/html&gt;</td></tr>
+							</table>
+							</div>
+							</div>
+							
+							<div class="col-sm-5">
+                        <div class="box2">
+                        <h4><b>OUTPUT</b></h4>
+                        <h1>&nbsp;</h1>	
+                        <h1>&nbsp;</h1>	
+                        <h1>&nbsp;</h1>						    						
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+#borderimg00 { 
+  border: 10px solid transparent;
+  padding: 15px;
+  border-image: url(images/border.png) 30 round;
+}
+#borderimg01 {
+  border: 10px solid transparent;
+  padding: 15px;
+  border-image: url(images/border.png) 30 stretch;
+}
+#borderimg02 {
+  border: 10px solid transparent;
+  padding: 15px;
+  border-image: url(images/border.png) 50 round;
+}
+
+#borderimg03 {
+  border: 10px solid transparent;
+  padding: 15px;
+  border-image: url(images/border.png) 20% round;
+}
+
+#borderimg04 {
+  border: 10px solid transparent;
+  padding: 15px;
+  border-image: url(images/border.png) 30% round;
+}
+	</style>
+</head>
+<body>
+
+<p id="borderimg00">border-image: url(images/border.png) 30 round;</p>
+<h5>&nbsp;</h5>
+<p id="borderimg01">border-image: url(images/border.png) 30 round;</p>
+<h5>&nbsp;</h5>
+<p id="borderimg02">border-image: url(images/border.png) 50 round;</p>
+<h5>&nbsp;</h5>
+<p id="borderimg03">border-image: url(images/border.png) 20% round;</p>
+<h5>&nbsp;</h5>
+<p id="borderimg04">border-image: url(images/border.png) 30% round;</p>
+<h5>&nbsp;</h5>
+</body>
+</html>
+
+								</div>
+							</div>
+					</div>
+					</div>
+				   </div>
+			</section>
+               
+               <section class="container">
+                <div class="row">
+				<div class="col-sm-2">
+                        <div class="box5">
+							<a href="PAGE_1.html">
+								<p style="color:white;">PREVIOUS</p>
+							</a>
+                        </div>
+					</div>
+					
+					<div class="col-sm-8">
+                        <div class="box2">
+                        </div>
+					</div>
+					
+					<div class="col-sm-2">
+                        <div class="box5">
+							<a href="PAGE_3.html">
+								<p style="color:white;">NEXT</p>
+							</a>
+                        </div>
+					</div>
+					</div>
+			</section>
+            
+                       
+                           
+                            
+                            
+	           
+                      
+                    
+            <!--<div id="push"></div>-->
+        </div>
+        <footer class="container-fluid" style="background:#002739;padding:70px 0px 0px 0px;">
+            <div class="row">
+                <div class="container" style="padding-bottom:40px;">
+                    <div class="row">
+                        <div class="col-sm-12 text-center">
+                            <a href="#">
+                                <img src="images/logo-2.png"  width="200" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+</body>
+</html>

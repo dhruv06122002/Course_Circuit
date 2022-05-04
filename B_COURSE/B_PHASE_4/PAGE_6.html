@@ -1,0 +1,293 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/Style.css" rel="stylesheet" />
+
+</head>
+<body>
+    <div id="wrapper">
+        <div class="main">
+            <header class="container-fluid topHeader">
+                <div class="row">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <ul class="list-inline">
+                                    <li><a href="#"><span class="glyphicon glyphicon-envelope"></span> courcecircuit@gmail.com</a></li>
+                                    <li><a href="#"><span class="glyphicon glyphicon-phone"></span>+91 000000000</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </header>
+            <nav class="navbar navbar-default">
+                <div class="container">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="../1_HTML,CSS,PHP for web-development.html">
+                            <img src="images/logo1.png" width="200"  />
+                        </a>
+                    </div>
+
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="navbar-collapse">
+                        <ul class="nav navbar-nav float-right">
+                             <li><a href="PAGE_0.html">Index</a></li>
+                            <li><a href="../../B_EXAM/Phase 4/SELECT EXAM.html">Assignments</a></li>
+                            <li><a href="../B_PHASE_1/PAGE_COLOR.html">Color Picker</a></li>
+                            <li><a href="../../A_MAIN/3_COMPILER.html">Compiler</a></li>
+                        </ul>
+                    </div><!-- /.navbar-collapse -->
+                </div><!-- /.container-fluid -->
+            </nav>
+            <section class="jumbotron">
+                <div class="container">
+                    <p><center><img src="PHASES/php.png" height="150" width="150"></center></p>
+                    <p class="lead"><center><b><h3>Welcome to Phase 4 : PHP</h3></b></center></p>
+                </div>
+            </section>
+            
+            <section class="container">
+                <div class="row">
+                <div class="col-sm-12">
+                        <div class="box2">
+                        <h1>Flow Control Statements</h1>
+                        </div>
+					</div>
+                    
+                    <div class="col-sm-12">
+                        <div class="box4">
+                        <h3>PHP Conditional Statements</h3>
+<p>Very often when you write code, you want to perform different actions for 
+different conditions. You can use conditional statements in your code to do this.</p>
+<p>In PHP we have the following conditional statements:</p>
+<ul>
+  <li><code>if</code> statement - executes some code if one condition is true</li>
+  <li><code>if...else</code> statement - executes some code if a condition is true and another code if that condition is false</li>
+  <li><code>if...elseif...else</code> statement  - executes different codes for more than two conditions</li>
+  <li><code>switch</code> statement - selects one of many blocks of code to be executed</li>
+</ul>
+<h3>PHP - The if Statement</h3>
+<p>The <code>if</code> statement executes some code if one condition is true.</p>
+ <div class="col-sm-6" align="center">
+                        <div class="box2">
+<h3>Syntax</h3>
+<div>
+if (<i>condition</i>) {<i><br>
+  &nbsp; code to be executed if condition is true</i>;<br>}
+</div>
+</div></div>
+<div > 
+<div class="col-sm-6" align="center">
+                        <div class="box2">
+<h3>Example</h3>
+  <p>Output &quot;Have a good day!&quot; if the current time (HOUR) is less than 20:</p>
+<div >
+&lt;?php<br>
+$t = date(&quot;H&quot;);<br>
+ <br>if ($t &lt; &quot;20&quot;) {<br>
+&nbsp;&nbsp;echo &quot;Have a good day!&quot;;<br>
+ }<br>
+?&gt;
+</div>
+</div>
+</div>
+</div>
+<hr>
+<h3>PHP - The if...else Statement</h3>
+<p>The <code>if...else</code> statement executes some code if a condition is true and 
+another code if that condition is false.</p>
+ <div class="col-sm-6" align="center">
+                        <div class="box2">
+<h3>Syntax</h3>
+<div ><div>
+if (<i>condition</i>)&nbsp;{<br>
+  &nbsp; <i>code to be executed if condition is true;</i><br>
+ }
+else {<br>
+&nbsp;&nbsp;<i>code to be executed if condition is false;<br>
+ </i>}
+</div></div></div></div>
+
+<div >
+ <div class="col-sm-6" align="center">
+                        <div class="box2">
+<h3>Example</h3>
+  <p>Output &quot;Have a good day!&quot; if the current time is less than 20, and &quot;Have a 
+  good night!&quot; otherwise:</p>
+<div >
+&lt;?php<br>
+$t = date(&quot;H&quot;);<br><br>
+if ($t &lt; &quot;20&quot;) {<br>
+&nbsp;
+echo &quot;Have a good day!&quot;;<br>
+ }
+else {<br>
+&nbsp;&nbsp;echo 
+&quot;Have a good night!&quot;;<br>
+ }<br>
+?&gt;
+</div>
+</div></div>
+</div>
+<hr>
+
+<h3>PHP - The if...elseif...else Statement</h3>
+<p>The <code>if...elseif...else</code> statement executes different codes for more than two 
+conditions.</p>
+ <div class="col-sm-6" align="center">
+                        <div class="box2">
+<h3>Syntax</h3>
+<div ><div>
+if (<i>condition</i>) {<br>
+  &nbsp; <i>code to be executed if this condition is true;<br>
+ </i>}
+elseif (<i>condition</i>) {<br>
+  &nbsp;<i> code to be executed if first condition is false and this 
+  condition is true;<br>
+ </i>} else {<br>
+&nbsp;&nbsp;<i>code to be executed if all conditions are false;<br>
+</i>}
+</div></div></div></div>
+
+<div >
+ <div class="col-sm-6" align="center">
+                        <div class="box2">
+<h3>Example</h3>
+  <p>Output &quot;Have a good morning!&quot; if the current time is less than 10, and 
+  &quot;Have a good day!&quot; if the current time is less than 20. Otherwise it will 
+  output &quot;Have a good night!&quot;:</p>
+<div >
+&lt;?php<br>
+$t = date(&quot;H&quot;);<br>
+ <br>if ($t &lt; &quot;10&quot;) {<br>
+&nbsp;&nbsp;echo &quot;Have a good morning!&quot;;<br>
+ }
+elseif ($t &lt; &quot;20&quot;) {<br>
+  &nbsp; echo &quot;Have a good day!&quot;;<br>
+ } else {<br>
+&nbsp;&nbsp;echo &quot;Have a good night!&quot;;<br>
+ }<br>
+?&gt;
+</div>
+</div></div>
+</div>
+<hr>
+<h3>The PHP switch Statement</h3>
+<p>Use the <code>switch</code> statement to <strong>select one of many blocks 
+of code to be executed</strong>.</p>
+ <div class="col-sm-6" align="center">
+                        <div class="box2">
+<h3>Syntax</h3>
+
+switch (<i>n</i>)
+{<br>
+&nbsp;&nbsp;case <i>label1:</i><br>
+&nbsp;&nbsp;<i>&nbsp;&nbsp;code to be executed if n=label1;</i><br>
+  &nbsp; &nbsp;&nbsp;break;<br>
+&nbsp;
+case <i>label2:</i><br>
+&nbsp;&nbsp;<i>&nbsp;&nbsp;code to be executed if n=label2;</i><br>
+&nbsp;&nbsp;&nbsp;
+break;<br>
+&nbsp;
+case <i>label3:</i><br>
+&nbsp;&nbsp;<i>&nbsp;&nbsp;code to be executed if n=label3;</i><br>
+&nbsp;&nbsp;&nbsp;
+break;<br>&nbsp; &nbsp; ...<br>
+&nbsp;&nbsp;default:<br>
+&nbsp;&nbsp;<i>&nbsp; code to be executed if n is different from all labels;</i><br>
+}
+
+</div></div>
+<div>
+ <div class="col-sm-6" align="center">
+                        <div class="box2">
+<h3>Example</h3>
+<div>
+ &lt;?php<br>
+ $favcolor = &quot;red&quot;;<br><br>
+ switch ($favcolor)
+ {<br>
+ &nbsp;&nbsp;case &quot;red&quot;:<br>
+  &nbsp;&nbsp;&nbsp; echo &quot;Your favorite color is red!&quot;;<br>
+  &nbsp;&nbsp;&nbsp; break;<br>
+ &nbsp;
+ case &quot;blue&quot;:<br>
+  &nbsp;&nbsp;&nbsp; echo &quot;Your favorite color is blue!&quot;;<br>
+  &nbsp;&nbsp;&nbsp; break;<br>
+ &nbsp;
+ case &quot;green&quot;:<br>
+ &nbsp;&nbsp;&nbsp;&nbsp;echo &quot;Your favorite color is green!&quot;;<br>
+ &nbsp;&nbsp;&nbsp;
+ break;<br>
+ &nbsp;
+ default:<br>
+  &nbsp;&nbsp;&nbsp; echo &quot;Your favorite color is neither red, blue, nor green!&quot;;<br>
+ }<br>
+ ?&gt;
+</div>
+</div>
+</div>
+</div>
+<hr>
+                        <h4>&nbsp;</h4>
+                       </div></div>
+                    </div></section>
+                    <section class="container">
+                <div class="row">
+				<div class="col-sm-2">
+                        <div class="box5">
+							<a href="PAGE_5.html">
+								<p style="color:white;">PREVIOUS</p>
+							</a>
+                        </div>
+					</div>
+					
+					<div class="col-sm-8">
+                        <div class="box2">
+                        
+                        </div>
+					</div>
+					
+					<div class="col-sm-2">
+                        <div class="box5">
+							<a href="PAGE_7.html">
+								<p style="color:white;">NEXT</p>
+							</a>
+                        </div>
+					</div>
+				</div>
+			</section>
+            
+                       
+                           
+                            
+                            
+	           
+                      
+                    
+            <!--<div id="push"></div>-->
+        </div>
+        <footer class="container-fluid" style="background:#002739;padding:70px 0px 0px 0px;">
+            <div class="row">
+                <div class="container" style="padding-bottom:40px;">
+                    <div class="row">
+                        <div class="col-sm-12 text-center">
+                            <a href="#">
+                                <img src="images/logo-2.png"  width="200" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+</body>
+</html>

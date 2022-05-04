@@ -1,0 +1,318 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/Style.css" rel="stylesheet" />
+</head>
+<body>
+    <div id="wrapper">
+        <div class="main">
+            <header class="container-fluid topHeader">
+                <div class="row">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <ul class="list-inline">
+                                    <li><a href="#"><span class="glyphicon glyphicon-envelope"></span> courcecircuit@gmail.com</a></li>
+                                    <li><a href="#"><span class="glyphicon glyphicon-phone"></span>+91 000000000</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </header>
+            <nav class="navbar navbar-default">
+                <div class="container">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="../1_HTML,CSS,PHP for web-development.html">
+                            <img src="images/logo1.png" width="200"  />
+                        </a>
+                    </div>
+
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="navbar-collapse">
+                        <ul class="nav navbar-nav float-right">
+                             <li><a href="PAGE_0.html">Index</a></li>
+                            <li><a href="../../B_EXAM/Phase 1/SELECT EXAM.html">Assignments</a></li>
+                            <li><a href="PAGE_COLOR.html">Color Picker</a></li>
+                            <li><a href="../../A_MAIN/3_COMPILER.html">Compiler</a></li>
+                        </ul>
+                    </div><!-- /.navbar-collapse -->
+                </div><!-- /.container-fluid -->
+            </nav>
+             <section class="jumbotron">
+                <div class="container">
+                    <p><center><img src="PHASES/CSS.png" height="150" width="150"></center></p>
+                    <p class="lead"><center><b><h3> Welcome to Phase 2 : The Basics of CSS</h3></b></center></p>
+                </div>
+            </section>
+           
+            <section class="container">
+                <div class="row">
+                <div class="col-sm-12">
+                        <div class="box2">
+                        <h1>CSS Padding</h1>
+                        </div>
+					</div>
+		
+<div class="col-sm-12">
+<div class="box6">
+	<h3><center><b>CSS Padding</b></center></h3>
+	<p><center>The CSS <code>padding</code> properties are used to generate space around an element's content, inside of any defined borders.</center></p>
+	<p><center>With CSS, you have full control over the padding. There are properties for setting the padding for each side of an element (top, right, bottom, and left).</center></p><br>
+<div class="col-sm-12">
+<div class="box6">
+	<h3><center><b>Padding - Individual Sides</b></center></h3>
+<p>CSS has properties for specifying the padding for each side of an element:</p>
+<br>
+<li><code>padding-top</code></li>
+<li><code>padding-right</code></li>
+<li><code>padding-bottom</code></li>
+<li><code>padding-left</code></li><br>
+<p>All the padding properties can have the following values:</p>
+<br>
+<li>length - specifies a padding in px, pt, cm, etc.</li>
+<li>% - specifies a padding in % of the width of the containing element</li>
+<li>inherit - specifies that the padding should be inherited from the parent element</li><br>
+<p><b>Note:</b> Negative values are not allowed.</p>
+<br>
+<div class="col-sm-6">
+<div class="box6">
+	<h4><center><b>EXAMPLE</b></center></h4>
+	<p><center>Set different padding for all four sides of a &lt;div&gt; element:  </center></p><hr>
+	<table>
+		<tr><td>&lt;!doctype html&gt;</td></tr> 
+		<tr><td>&lt;html&gt;</td></tr> 
+		<tr><td>&lt;head&gt;</td></tr> 
+		<tr><td>&lt;style&gt;</td></tr> 
+		<tr><td>div {</td></tr>
+		<tr><td> border: 1px solid black;</td></tr>
+		<tr><td> background-color: goldenrod;</td></tr>
+		<tr><td> padding-top: 50px;</td></tr>
+		<tr><td> padding-right: 30px;</td></tr>
+		<tr><td> padding-bottom: 50px;</td></tr>
+		<tr><td> padding-left: 80px;</td></tr>
+		<tr><td>}</td></tr>
+		<tr><td>&lt;/style&gt;</td></tr> 
+		<tr><td>&lt;/head&gt;</td></tr> 
+		<tr><td>&lt;body&gt;</td></tr>
+		<tr><td>&lt;h3&gt;Using individual padding properties&lt;/h3&gt;</td></tr>
+		<tr><td>&lt;div&gt;This div element has a top padding of 50px, a right padding of 30px, a bottom padding of 50px, and a left padding of 80px.&lt;/div&gt;</td></tr>
+		<tr><td>&lt;/body&gt;</td></tr>
+		<tr><td>&lt;/html&gt;</td></tr>
+	</table>
+</div>
+</div>
+<div class="col-sm-6">
+<div class="box2">
+	<h4><center><b><u>OUTPUT</u></b></center></h4>
+	<!DOCTYPE html>
+<html>
+<head>
+<style>
+div.pa {
+  border: 1px solid black;
+  background-color: goldenrod;
+  padding-top: 50px;
+  padding-right: 30px;
+  padding-bottom: 50px;
+  padding-left: 80px;
+}
+</style>
+</head>
+<body>
+
+<h3 style="text-align: left;">Using individual padding properties</h3>
+
+<div class="pa" style="text-align: left;">This div element has a top padding of 50px, a right padding of 30px, a bottom padding of 50px, and a left padding of 80px.</div>
+
+</body>
+</html>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>					
+
+<div class="col-sm-12">
+<div class="box6">
+	<h3><center><b>CSS Padding</b></center></h3>
+<p>To shorten the code, it is possible to specify all the padding properties in one property.</p>
+<p>The padding property is a shorthand property for the following individual padding properties:</p>
+<br>
+<li><code>padding-top</code></li>
+<li><code>padding-right</code></li>
+<li><code>padding-bottom</code></li>
+<li><code>padding-left</code></li><br>
+<p>So, here is how it works:</p><br>
+
+<div class="col-sm-6">
+	<div class="box4">
+<p>If the <code>padding</code> property has four values:</p>
+<li><b>padding: 25px 50px 75px 100px;</b></li>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;~ top padding is 25px</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;~ right padding is 50px</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;~ bottom padding is 75px</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;~ left padding is 100px</p><br>
+<p>If the <code>padding</code> property has one values:</p>
+<li><b>padding: 25px;</b></li>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;~ all four paddings are 25px</p><br>
+</div>
+</div>
+
+<div class="col-sm-6">
+<div class="box4">
+<p>If the <code>padding</code> property has three values:</p>
+<li><b>padding: 25px 50px 75px;</b></li>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;~ top padding is 25px</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;~ right and left paddings are 50px</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;~ bottom padding is 75px</p><br>
+<p>If the <code>padding</code> property has two values:</p>
+<li><b>padding: 25px 50px;</b></li>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;~ top and bottom paddings are 25px</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;~ right and left paddings are 50px</p><br>
+</div>
+</div>
+
+<div class="col-sm-6">
+<div class="box6">
+	<h4><center><b>EXAMPLE</b></center></h4>
+	<p><center>Use the padding shorthand property with one value: </center></p><hr>
+	<table>
+		<tr><td>&lt;!doctype html&gt;</td></tr> 
+		<tr><td>&lt;html&gt;</td></tr> 
+		<tr><td>&lt;head&gt;</td></tr> 
+		<tr><td>&lt;style&gt;</td></tr> 
+		<tr><td>div {</td></tr>
+		<tr><td>border: 1px solid black;</td></tr>
+		<tr><td>padding: 25px;</td></tr>
+		<tr><td>background-color: tan;</td></tr>
+		<tr><td>}</td></tr>
+		<tr><td>&lt;/style&gt;</td></tr> 
+		<tr><td>&lt;/head&gt;</td></tr> 
+		<tr><td>&lt;body&gt;</td></tr>
+		<tr><td>&lt;h3&gt;The padding shorthand property-1 value&lt;/h3&gt;</td></tr>
+		<tr><td>&lt;div&gt;This div element has a top, bottom, left, and right padding of 25px.&lt;/div&gt;</td></tr>
+		<tr><td>&lt;/body&gt;</td></tr>
+		<tr><td>&lt;/html&gt;</td></tr>
+	</table>
+</div>
+</div>
+<div class="col-sm-6">
+<div class="box2">
+	<h4><center><b><u>OUTPUT</u></b></center></h4>
+	<!DOCTYPE html>
+	<html>
+	<head>
+	<style>
+	div.padd {
+	  border: 1px solid black;
+	  padding: 25px;
+	  background-color: tan;
+	}
+	</style>
+	</head>
+	<body>
+	
+	<h3 style="text-align: left;">The padding shorthand property - 1 value</h3>
+	
+	<div class="padd" style="text-align: left;">This div element has a top, bottom, left, and right padding of 25px.</div>
+	
+	</body>
+	</html>	
+</div>
+</div>
+</div>
+</div>
+
+<div class="col-sm-12">
+<div class="box6">
+	<h3><center><b>All CSS Padding Properties</b></center></h3><br>
+	<table class="roundedCorners" align="center">
+        <tr>
+            <th>Property</th>
+            <th>Description</th>
+        </tr>
+        <tr>
+            <td><code>padding</code></td>
+            <td>A shorthand property for setting all the padding properties in one declaration</td>
+        </tr>
+        <tr>
+            <td><code>padding-bottom</code></td>
+            <td>Sets the bottom padding of an element</td>
+        </tr>
+        <tr>
+            <td><code>padding-left</code></td>
+            <td>Sets the left padding of an element</td>
+        </tr>
+        <tr>
+            <td><code>padding-right</code></td>
+            <td>Sets the right padding of an element</td>
+        </tr>
+        <tr>
+            <td><code>padding-top</code></td>
+            <td>Sets the top padding of an element</td>
+		</tr>
+		</table>
+		<br>
+</div>
+</div>
+  </div>
+</section>
+			
+			<section class="container">
+                <div class="row">
+				<div class="col-sm-2">
+                        <div class="box5">
+							<a href="PAGE_8.html">
+								<p style="color:white;">PREVIOUS</p>
+							</a>
+                        </div>
+					</div>
+					
+					<div class="col-sm-8">
+                        <div class="box2">
+                        </div>
+					</div>
+					
+					<div class="col-sm-2">
+                        <div class="box5">
+							<a href="PAGE_10.html">
+								<p style="color:white;">NEXT</p>
+							</a>
+                        </div>
+					</div>
+				</div>
+			</section>
+            
+                       
+                           
+                            
+                            
+	           
+                      
+                    
+            <!--<div id="push"></div>-->
+        </div>
+        <footer class="container-fluid" style="background:#002739;padding:70px 0px 0px 0px;">
+            <div class="row">
+                <div class="container" style="padding-bottom:40px;">
+                    <div class="row">
+                        <div class="col-sm-12 text-center">
+                            <a href="#">
+                                <img src="images/logo-2.png"  width="200" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+</body>
+</html>

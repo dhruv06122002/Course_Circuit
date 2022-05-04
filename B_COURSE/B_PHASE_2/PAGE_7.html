@@ -1,0 +1,744 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/Style.css" rel="stylesheet" />
+</head>
+<body>
+    <div id="wrapper">
+        <div class="main">
+            <header class="container-fluid topHeader">
+                <div class="row">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <ul class="list-inline">
+                                    <li><a href="#"><span class="glyphicon glyphicon-envelope"></span> courcecircuit@gmail.com</a></li>
+                                    <li><a href="#"><span class="glyphicon glyphicon-phone"></span>+91 000000000</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </header>
+            <nav class="navbar navbar-default">
+                <div class="container">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="../1_HTML,CSS,PHP for web-development.html">
+                            <img src="images/logo1.png" width="200"  />
+                        </a>
+                    </div>
+
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="navbar-collapse">
+                        <ul class="nav navbar-nav float-right">
+                             <li><a href="PAGE_0.html">Index</a></li>
+                            <li><a href="../../B_EXAM/Phase 2/SELECT EXAM.html">Assignments</a></li>
+                            <li><a href="../B_PHASE_1/PAGE_COLOR.html">Color Picker</a></li>
+                            <li><a href="../../A_MAIN/3_COMPILER.html">Compiler</a></li>
+                        </ul>
+                    </div><!-- /.navbar-collapse -->
+                </div><!-- /.container-fluid -->
+            </nav>
+             <section class="jumbotron">
+                <div class="container">
+                    <p><center><img src="PHASES/CSS.png" height="150" width="150"></center></p>
+                    <p class="lead"><center><b><h3>Welcome to Phase 2 : The Basics of CSS</h3></b></center></p>
+                </div>
+            </section>
+           
+            <section class="container">
+                <div class="row">
+                <div class="col-sm-12">
+                        <div class="box2">
+                        <h1>CSS Borders</h1>
+                        </div>
+                    </div>
+                    
+
+                        
+            <div class="col-sm-12">
+            <div class="box6">
+                <h3><center><b>CSS Border Properties</b></center></h3>
+                <p><center>The CSS <code>border</code> properties allow you to specify the style, width, and color of an element's border.</center></p><br>
+                <!--<center><img src="images/border_1.PNG" height="300" width="900"> </center><br>-->
+
+                <div class="col-sm-12">
+                <div class="box6">
+                <h3><center><b>CSS Border Style</b></center></h3>  <br> 
+                <p>The <code>border-style</code> property specifies what kind of border to display.</p>
+                <p>The following values are allowed: </p><br>
+                <li><code>dotted</code> - Defines a dotted border</li>
+                <li><code>dashed</code> - Defines a dashed border</li>
+                <li><code>solid</code> - Defines a solid border</li>
+                <li><code>double</code> - Defines a double border</li>
+                <li><code>groove</code> - Defines a 3D grooved border. The effect depends on the border-color value</li>
+                <li><code>ridge</code> - Defines a 3D ridged border. The effect depends on the border-color value</li>
+                <li><code>inset</code> - Defines a 3D inset border. The effect depends on the border-color value</li>
+                <li><code>outset</code> - Defines a 3D outset border. The effect depends on the border-color value</li>
+                <li><code>none</code> - Defines no border</li>
+                <li><code>hidden</code> - Defines a hidden border</li><br>
+                <p>The <code>border-style</code> property can have from one to four values (for the top border, right border, bottom border, and the left border).</p><br><br>
+                
+                    <div class="col-sm-6">
+                    <div class="box6">
+                        <h4><center><b>EXAMPLE</b></center></h4>  
+                        <p><center>Demonstration of the different border styles:</center></p><hr>
+                        <table>
+                            <tr><td>&lt;!doctype html&gt;</td></tr> 
+                            <tr><td>&lt;html&gt;</td></tr> 
+                            <tr><td>&lt;head&gt;</td></tr> 
+                            <tr><td>&lt;style&gt;</td></tr> 
+                            <tr><td>p.dotted {border-style: dotted;}</td></tr>
+                            <tr><td>p.dashed {border-style: dashed;}</td></tr>
+                            <tr><td>p.solid {border-style: solid;}</td></tr>
+                            <tr><td>p.double {border-style: double;}</td></tr>
+                            <tr><td>p.groove {border-style: groove;}</td></tr>
+                            <tr><td>p.ridge {border-style: ridge;}</td></tr>
+                            <tr><td>p.inset {border-style: inset;}</td></tr>
+                            <tr><td>p.outset {border-style: outset;}</td></tr>
+                            <tr><td>p.none {border-style: none;}</td></tr>
+                            <tr><td>p.hidden {border-style: hidden;}</td></tr>
+                            <tr><td>p.mix {border-style: dotted dashed solid double;}</td></tr>
+                            <tr><td>&lt;/style&gt;</td></tr> 
+                            <tr><td>&lt;/head&gt;</td></tr> 
+                            <tr><td>&lt;body&gt;</td></tr>
+                            <tr><td>&lt;h3&gt;The border-style Property&lt;/h3&gt;</td></tr>
+                            <tr><td>&lt;p&gt;This property specifies what kind of border to display:&lt;/p&gt;</td></tr>
+                            <tr><td>&lt;p class="dotted"&gt;A dotted border.&lt;/p&gt;</td></tr>
+                            <tr><td>&lt;p class="dashed"&gt;A dashed border.&lt;/p&gt;</td></tr>
+                            <tr><td>&lt;p class="solid"&gt;A solid border.&lt;/p&gt;</td></tr>
+                            <tr><td>&lt;p class="double"&gt;A double border.&lt;/p&gt;</td></tr>
+                            <tr><td>&lt;p class="groove"&gt;A groove border.&lt;/p&gt;</td></tr>
+                            <tr><td>&lt;p class="ridge"&gt;A ridge border.&lt;/p&gt;</td></tr>
+                            <tr><td>&lt;p class="inset"&gt;An inset border.&lt;/p&gt;</td></tr>
+                            <tr><td>&lt;p class="outset"&gt;An outset border.&lt;/p&gt;</td></tr>
+                            <tr><td>&lt;p class="none"&gt;No border.&lt;/p&gt;</td></tr>
+                            <tr><td>&lt;p class="hidden"&gt;A hidden border.&lt;/p&gt;</td></tr>
+                            <tr><td>&lt;p class="mix"&gt;A mixed border.&lt;/p&gt;</td></tr>
+                            <tr><td>&lt;/body&gt;</td></tr>
+                            <tr><td>&lt;/html&gt;</td></tr>
+                        </table> 
+                    </div>
+                    </div>
+
+                    <div class="col-sm-6">
+                    <div class="box2">
+                        <h4><center><b><u>OUTPUT</u></b></center></h4>   
+                        <h1>&nbsp;</h1>
+                        <!DOCTYPE html>
+<html>
+<head>
+<style>
+p.dotted {border-style: dotted;}
+p.dashed {border-style: dashed;}
+p.solid {border-style: solid;}
+p.double {border-style: double;}
+p.groove {border-style: groove;}
+p.ridge {border-style: ridge;}
+p.inset {border-style: inset;}
+p.outset {border-style: outset;}
+p.none {border-style: none;}
+p.hidden {border-style: hidden;}
+p.mix {border-style: dotted dashed solid double;}
+</style>
+</head>
+<body>
+
+<h2 style="text-align: left;">The border-style Property</h2>
+<p style="text-align: left;">This property specifies what kind of border to display:</p>
+
+<p class="dotted" style="text-align: left;">A dotted border.</p>
+<p class="dashed" style="text-align: left;">A dashed border.</p>
+<p class="solid" style="text-align: left;">A solid border.</p>
+<p class="double" style="text-align: left;">A double border.</p>
+<p class="groove" style="text-align: left;">A groove border.</p>
+<p class="ridge" style="text-align: left;">A  ridge border.</p>
+<p class="inset" style="text-align: left;">An inset border.</p>
+<p class="outset" style="text-align: left;">An outset border.</p>
+<p class="none" style="text-align: left;">No border.</p>
+<p class="hidden" style="text-align: left;">A hidden border.</p>
+<p class="mix" style="text-align: left;">A mixed border.</p>
+
+</body>
+</html>
+
+                    </div>
+                    </div>
+            </div>
+            </div>
+    </div>
+  </div>
+
+
+    <div class="col-sm-12">
+    <div class="box6">
+        <h3><center><b>CSS Border Width</b></center></h3> 
+        <p><center>The <code>border-width</code> property specifies the width of the four borders.</center></p>
+        <p><center>The width can be set as a specific size (in px, pt, cm, em, etc) or by using one of the three pre-defined values: thin, medium, or thick:</center></p><br>
+
+        <div class="col-sm-6">
+        <div class="box6">
+            <h4><center><b>EXAMPLE</b></center></h4>  
+            <p><center>Demonstration of the different border widths:</center></p><hr>   
+            <table>
+                <tr><td>&lt;!doctype html&gt;</td></tr> 
+                <tr><td>&lt;html&gt;</td></tr> 
+                <tr><td>&lt;head&gt;</td></tr> 
+                <tr><td>&lt;style&gt;</td></tr> 
+                <tr><td>p.one {</td></tr>
+                <tr><td>border-style: solid;</td></tr>
+                <tr><td>border-width: 5px;</td></tr>
+                <tr><td>}</td></tr>
+                <tr><td>p.two {</td></tr>
+                <tr><td>border-style: solid;</td></tr>
+                <tr><td>border-width: medium;</td></tr>
+                <tr><td>}</td></tr>
+                <tr><td>p.three {</td></tr>
+                <tr><td>border-style: dotted;</td></tr>
+                <tr><td>border-width: 2px;</td></tr>
+                <tr><td>}</td></tr>
+                <tr><td>p.one {</td></tr>
+                <tr><td>border-style: dotted;</td></tr>
+                <tr><td>border-width: thick;</td></tr>
+                <tr><td>}</td></tr>
+                <tr><td>&lt;/style&gt;</td></tr> 
+                <tr><td>&lt;/head&gt;</td></tr> 
+                <tr><td>&lt;body&gt;</td></tr>
+                <tr><td>&lt;h2&gt;The border-width Property&lt;/h2&gt;</td></tr>
+                <tr><td>&lt;p&gt;This property specifies the width of the four borders:&lt;/p&gt;</td></tr>
+                <tr><td>&lt;p class="one"&gt;Some text.&lt;/p&gt;</td></tr>
+                <tr><td>&lt;p class="two"&gt;Some text.&lt;/p&gt;</td></tr>
+                <tr><td>&lt;p class="three"&gt;Some text.&lt;/p&gt;</td></tr>
+                <tr><td>&lt;p class="four"&gt;Some text.&lt;/p&gt;</td></tr>
+                <tr><td>&lt;p&gt;&lt;b&gt;NOTE:&lt;/b&gt;The "border-width" property does not work if it is used alone. Always specify the "border-style" property to set the borders first.&lt;/p&gt;</td></tr>
+                <tr><td>&lt;/body&gt;</td></tr>
+                <tr><td>&lt;/html&gt;</td></tr>
+            </table>
+        </div>
+        </div>
+        
+        <div class="col-sm-6">
+        <div class="box2">
+            <h4><center><b><u>OUTPUT</u></b></center></h4>  
+            <!DOCTYPE html>
+<html>
+<head>
+<style>
+p.one {
+  border-style: solid;
+  border-width: 5px;
+}
+
+p.two {
+  border-style: solid;
+  border-width: medium;
+}
+
+p.three {
+  border-style: dotted;
+  border-width: 2px;
+}
+
+p.four {
+  border-style: dotted;
+  border-width: thick;
+}
+div.back{
+    background-color: white;
+    border-style: solid;
+    border-radius: 12px;
+    border-color: lightskyblue;
+}
+
+</style>
+</head>
+<body>
+
+<h2 style="text-align: left;">The border-width Property</h2>
+<p style="text-align: left;">This property specifies the width of the four borders:</p><br>
+
+<p class="one" style="text-align: left;">Some text.</p>
+<p class="two" style="text-align: left;">Some text.</p>
+<p class="three" style="text-align: left;">Some text.</p>
+<p class="four" style="text-align: left;">Some text.</p><br>
+
+<p style="text-align: left;"><b>Note:</b> The "border-width" property does not work if it is used alone. 
+Always specify the "border-style" property to set the borders first.</p><br><br>
+
+<div class="back">
+     <h3><center><b>Specific Side Widths</b></center></h3>
+     <p>The <code>border-width</code> property can have from one to four values (for the top border, right border, bottom border, and the left border):</p><br>
+     <li>For that you can add CSS like given below :</li>
+     <p style="text-align: left;">&nbsp;&nbsp;&nbsp;p.one {</p>
+        <p style="text-align: left;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;border-style: solid;</p>
+        <p style="text-align: left;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;border-width: 25px 10px 4px 35px;</p>
+      <p style="text-align: left;">&nbsp;&nbsp;&nbsp;}</p><br>
+      <li>Value will always be assigned in order like given in above example 25px top, 10px right, 4px bottom and 35px left</li><br>
+    </div>
+</body>
+</html>
+        </div>
+        </div>
+    </div>
+    </div>
+
+
+
+<div class="col-sm-12">
+<div class="box6">
+    <h3><center><b>CSS Border Color</b></center></h3><br>
+    <p>The <code>border-color</code> property is used to set the color of the four borders.</p>
+    <p>The color can be set by:</p><br>
+    <li>name - specify a color name, like "red"</li>
+    <li>HEX - specify a HEX value, like "#ff0000"</li>
+    <li>RGB - specify a RGB value, like "rgb(255,0,0)"</li>
+    <li>HSL - specify a HSL value, like "hsl(0, 100%, 50%)"</li>
+    <li>transparent</li><br>
+    <p><b>Note:</b> If <code>border-color</code> is not set, it inherits the color of the element.</p><br>
+
+    <div class="col-sm-6">
+        <div class="box6">
+            <h4><center><b>EXAMPLE</b></center></h4>  
+            <p><center>Demonstration of the different border widths:</center></p><hr>   
+            <table>
+                <tr><td>&lt;!doctype html&gt;</td></tr> 
+                <tr><td>&lt;html&gt;</td></tr> 
+                <tr><td>&lt;head&gt;</td></tr> 
+                <tr><td>&lt;style&gt;</td></tr> 
+                <tr><td>p.one {</td></tr>
+                <tr><td>border-style: solid;</td></tr>
+                <tr><td> border-color: red;</td></tr>
+                <tr><td>}</td></tr>
+                <tr><td>p.two {</td></tr>
+                <tr><td>border-style: dotted;</td></tr>
+                <tr><td>border-color: blue;</td></tr>
+                <tr><td>}</td></tr>
+                <tr><td>&lt;/style&gt;</td></tr> 
+                <tr><td>&lt;/head&gt;</td></tr> 
+                <tr><td>&lt;body&gt;</td></tr>
+                <tr><td>&lt;h2&gt;The border-color Property&lt;/h2&gt;</td></tr>
+                <tr><td>&lt;p&gt;This property specifies the color of the four borders:&lt;/p&gt;</td></tr>
+                <tr><td>&lt;p class="one"&gt;A solid red border&lt;/p&gt;</td></tr>
+                <tr><td>&lt;p class="two"&gt;A dotted blue border&lt;/p&gt;</td></tr>
+                <tr><td>&lt;p&gt;&lt;b&gt;NOTE:&lt;/b&gt;The "border-color" property does not work if it is used alone. Use the "border-style" property to set the borders first.&lt;/p&gt;</td></tr>
+                <tr><td>&lt;/body&gt;</td></tr>
+                <tr><td>&lt;/html&gt;</td></tr>
+            </table>
+        </div>
+        </div>
+<div class="col-sm-6">
+    <div class="box2">
+        <h4><center><b><u>OUTPUT</u></b></center></h4>  
+        <!DOCTYPE html>
+<html>
+<head>
+<style>
+p.on {
+  border-style: solid;
+  border-color: red;
+}
+
+p.tw {
+  border-style: dotted;
+  border-color: blue;
+} 
+</style>
+</head>
+<body>
+
+<h2 style="text-align: left;">The border-color Property</h2>
+<p style="text-align: left;">This property specifies the color of the four borders:</p>
+
+<p class="on" style="text-align: left;">A solid red border</p>
+<p class="tw" style="text-align: left;">A dotted blue border</p>
+
+<p style="text-align: left;"><b>Note:</b> The "border-color" property does not work if it is used alone. Use the "border-style" property to set the borders first.</p>
+
+</body>
+</html>
+
+        </div>
+    </div>
+    <div class="col-sm-6">
+        <div class="box6">
+            <h4><center><b>Specific Side Colors</b></center></h4>
+            <p><center>The <code>border-color</code> property can have from one to four values (top border, right border, bottom border, and the left border). </center></p>
+             <li>Syntax to define specific colors to border</li><br>
+             <p>p.one {</p>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;border-style: solid;</p>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;border-color: red green blue pink;</p>
+             <p>&nbsp;&nbsp; }</p><br>
+            <img src="images/border_2.PNG">
+              
+        </div>
+        </div>
+
+    
+</div>
+</div>
+
+
+<div class="col-sm-12">
+<div class="box6">
+    <h3><center><b>Specific Side Colors</b></center></h3><br>
+    <p>In CSS, there are also properties for specifying each of the borders (top, right, bottom, and left)</p>
+    <p>So, here is how it works:</p><br>
+    <div class="col-sm-6">
+        <div class="box4">
+    <p>If the <code>border-style</code> property has four values:</p>
+    <li><b>border-style: dotted solid double dashed;</b></li>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;~ top border is dotted</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;~ right border is solid</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;~ bottom border is double</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;~ left border is dashed</p><br>
+    <p>If the <code>border-style</code> property has one values:</p>
+    <li><b>border-style: dotted;</b></li>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;~ all four borders are dotted</p><br>
+    </div>
+</div>
+
+<div class="col-sm-6">
+    <div class="box4">
+        <p>If the <code>border-style</code> property has three values:</p>
+    <li><b>border-style: dotted solid double;</b></li>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;~ top border is dotted</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;~ right and left borders are solid</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;~ bottom border is double</p><br>
+    <p>If the <code>border-style</code> property has two values:</p>
+    <li><b>border-style: dotted solid;</b></li>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;~ top and bottom borders are dotted</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;~ right and left borders are solid</p><br>
+    
+</div>
+</div>
+
+<div class="col-sm-6">
+    <div class="box6">
+        <h4><center><b>EXAMPLE</b></center></h4>  
+        <table>
+            <tr><td>&lt;!doctype html&gt;</td></tr> 
+            <tr><td>&lt;html&gt;</td></tr> 
+            <tr><td>&lt;head&gt;</td></tr> 
+            <tr><td>&lt;style&gt;</td></tr> 
+            <tr><td>body {</td></tr>
+            <tr><td>text-align: center;</td></tr>
+            <tr><td>}</td></tr>
+            <tr><td>p.four {</td></tr>
+            <tr><td>border-style: dotted solid double dashed;</td></tr>
+            <tr><td>}</td></tr>
+            <tr><td>p.three {</td></tr>
+                <tr><td>border-style: dotted solid double;</td></tr>
+                <tr><td>}</td></tr>
+                <tr><td>p.two {</td></tr>
+                    <tr><td>  border-style: dotted solid;</td></tr>
+                    <tr><td>}</td></tr>
+                    <tr><td>p.one {</td></tr>
+                        <tr><td>border-style: dotted;</td></tr>
+                        <tr><td>}</td></tr>
+            <tr><td>&lt;/style&gt;</td></tr> 
+            <tr><td>&lt;/head&gt;</td></tr> 
+            <tr><td>&lt;body&gt;</td></tr>
+            <tr><td>&lt;h2&gt;Individual Border Sides&lt;/h2&gt;</td></tr>
+            <tr><td>&lt;p class="four"&gt;4 different border styles.&lt;/p&gt;</td></tr>
+            <tr><td>&lt;p class="three"&gt;3 different border styles.&lt;/p&gt;</td></tr>
+            <tr><td>&lt;p class="two"&gt;2 different border styles.&lt;/p&gt;</td></tr>
+            <tr><td>&lt;p class="one"&gt;1 border style.&lt;/p&gt;</td></tr>
+            <tr><td>&lt;/body&gt;</td></tr>
+            <tr><td>&lt;/html&gt;</td></tr>
+        </table>  
+</div>
+</div>
+<div class="col-sm-6">
+    <div class="box2">
+        <h4><center><b><u>OUTPUT</u></b></center></h4>  
+        <!DOCTYPE html>
+<html>
+<head>
+<style>
+p.fou {
+  border-style: dotted solid double dashed;
+}
+p.thre {
+  border-style: dotted solid double;
+}
+p.twoo {
+  border-style: dotted solid;
+}
+p.onee {
+  border-style: dotted;
+}
+</style>
+</head>
+<body>
+
+<h2>Individual Border Sides</h2>
+<p class="fou">4 different border styles.</p>
+<p class="thre">3 different border styles.</p>
+<p class="twoo">2 different border styles.</p>
+<p class="onee">1 border style.</p>
+<br><br><br><br><br><br><br><br>
+</body>
+</html>
+
+        </div>
+        </div>
+<div class="col-sm-6">
+    <div class="box6">
+        <br><br>
+        <h4><b><center>NOTE:</center></b></h4>
+        <p><center>The <code>border-style</code> property is used in the example above. However, it also works with <code>border-width</code> and <code>border-color</code>.</center></p><br><br><br>
+        </div>
+        </div>
+
+</div>
+</div>
+
+
+<div class="col-sm-12">
+    <div class="box6">
+        <h3><center><b>CSS Rounded Borders</b></center></h3>
+        <p><center>The <code>border-radius</code> property is used to add rounded borders to an element:</center></p><br>
+
+<div class="col-sm-6">
+    <div class="box6">
+        <h4><center><b>EXAMPLE</b></center></h4>  
+        <table>
+            <tr><td>&lt;!doctype html&gt;</td></tr> 
+            <tr><td>&lt;html&gt;</td></tr> 
+            <tr><td>&lt;head&gt;</td></tr> 
+            <tr><td>&lt;style&gt;</td></tr> 
+            <tr><td>p.normal {</td></tr>
+            <tr><td> border: 2px solid red;</td></tr>
+            <tr><td>}</td></tr>
+            <tr><td>p.round1 {</td></tr>
+                <tr><td>border: 2px solid red;</td></tr>
+                <tr><td>border-radius: 5px;</td></tr>
+                <tr><td>}</td></tr>
+                <tr><td>p.round2 {</td></tr>
+                    <tr><td>border: 2px solid red;</td></tr>
+                    <tr><td>border-radius: 8px;</td></tr>
+                    <tr><td>}</td></tr>
+                    <tr><td>p.round3 {</td></tr>
+                        <tr><td>border: 2px solid red;</td></tr>
+                        <tr><td>border-radius: 12px;</td></tr>
+                        <tr><td>}</td></tr>
+            <tr><td>&lt;/style&gt;</td></tr> 
+            <tr><td>&lt;/head&gt;</td></tr> 
+            <tr><td>&lt;body&gt;</td></tr>
+            <tr><td>&lt;h2&gt;The border-radius Property&lt;/h2&gt;</td></tr>
+            <tr><td>&lt;p&gt;The border-radius Property&lt;/p&gt;</td></tr>
+            <tr><td>&lt;p class="normal"&gt;Normal border&lt;/p&gt;</td></tr>
+            <tr><td>&lt;p class="round1"&gt;Round border&lt;/p&gt;</td></tr>
+            <tr><td>&lt;p class="round2"&gt;Rounder border&lt;/p&gt;</td></tr>
+            <tr><td>&lt;p class="round3"&gt;Roundest border&lt;/p&gt;</td></tr>
+            <tr><td>&lt;/body&gt;</td></tr>
+            <tr><td>&lt;/html&gt;</td></tr>
+        </table>
+    </div>
+    </div>
+
+    <div class="col-sm-6">
+        <div class="box2">
+            <h4><center><b><u>OUTPUT</u></b></center></h4>  
+            <!DOCTYPE html>
+<html>
+<head>
+<style>
+p.normal {
+  border: 2px solid red;
+}
+
+p.round1 {
+  border: 2px solid red;
+  border-radius: 5px;
+}
+
+p.round2 {
+  border: 2px solid red;
+  border-radius: 8px;
+}
+
+p.round3 {
+  border: 2px solid red;
+  border-radius: 12px;
+}
+</style>
+</head>
+<body>
+
+<h2 style="text-align: left;">The border-radius Property</h2>
+<p style="text-align: left;">This property is used to add rounded borders to an element:</p>
+
+<p class="normal" style="text-align: left;">Normal border</p>
+<p class="round1" style="text-align: left;">Round border</p>
+<p class="round2" style="text-align: left;">Rounder border</p>
+<p class="round3" style="text-align: left;">Roundest border</p>
+
+</body>
+</html>
+
+
+            </div>
+            </div>
+    </div>
+</div>
+
+
+<div class="col-sm-12">
+<div class="box6">
+    <h3><center><b>All CSS Border Properties</b></center></h3><br>
+    <table class="roundedCorners" align="center">
+        <tr>
+            <th>Property</th>
+            <th>Description</th>
+        </tr>
+        <tr>
+            <td><code>border</code></td>
+            <td>Sets all the border properties in one declaration</td>
+        </tr>
+        <tr>
+            <td><code>border-bottom</code></td>
+            <td>Sets all the bottom border properties in one declaration</td>
+        </tr>
+        <tr>
+            <td><code>border-bottom-color</code></td>
+            <td>Sets the color of the bottom border</td>
+        </tr>
+        <tr>
+            <td><code>border-bottom-style</code></td>
+            <td>Sets the style of the bottom border</td>
+        </tr>
+        <tr>
+            <td><code>border-bottom-width</code></td>
+            <td>Sets the width of the bottom border</td>
+        </tr>
+        <tr>
+            <td><code>border-color</code></td>
+            <td>Sets the color of the four borders</td>
+        </tr>
+        <tr>
+            <td><code>border-left</code></td>
+            <td>Sets all the left border properties in one declaration</td>
+        </tr>
+        <tr>
+            <td><code>border-left-color</code></td>
+            <td>Sets the color of the left border</td>
+        </tr>
+        <tr>
+            <td><code>border-left-style</code></td>
+            <td>Sets the style of the left border</td>
+        </tr>
+        <tr>
+            <td><code>border-left-width</code></td>
+            <td>Sets the width of the left border</td>
+        </tr>
+        <tr>
+            <td><code>border-radius</code></td>
+            <td>Sets all the four border-*-radius properties for rounded corners</td>
+        </tr>
+        <tr>
+            <td><code>border-right</code></td>
+            <td>Sets all the right border properties in one declaration</td>
+        </tr>
+        <tr>
+            <td><code>border-right-color</code></td>
+            <td>Sets the color of the right border</td>
+        </tr>
+        <tr>
+            <td><code>border-right-style</code></td>
+            <td>Sets the style of the right border</td>
+        </tr>
+        <tr>
+            <td><code>border-right-width</code></td>
+            <td>Sets the width of the right border</td>
+        </tr>
+        <tr>
+            <td><code>border-style</code></td>
+            <td>Sets the style of the four borders</td>
+        </tr>
+        <tr>
+            <td><code>border-top</code></td>
+            <td>Sets all the top border properties in one declaration</td>
+        </tr>
+        <tr>
+            <td><code>border-top-color</code></td>
+            <td>Sets the color of the top border</td>
+        </tr>
+        <tr>
+            <td><code>border-top-style</code></td>
+            <td>Sets the style of the top border</td>
+        </tr>
+        <tr>
+            <td><code>border-top-width</code></td>
+            <td>Sets the width of the top border</td>
+        </tr>
+        <tr>
+            <td><code>border-width</code></td>
+            <td>Sets the width of the four borders</td>
+        </tr>
+    </table>
+    <br>
+    </div>
+    </div>
+
+
+</div>
+</section>               
+
+
+
+
+<section class="container">
+                    <div class="col-sm-2">
+                        <div class="box5">
+							<a href="PAGE_6.html">
+								<p style="color:white;">PREVIOUS</p>
+							</a>
+                        </div>
+					</div>
+					
+					<div class="col-sm-8">
+                        <div class="box2">
+                        </div>
+					</div>
+					
+					<div class="col-sm-2">
+                        <div class="box5">
+							<a href="PAGE_8.html">
+								<p style="color:white;">NEXT</p>
+							</a>
+                        </div>
+					</div>
+			</section>
+            
+                       
+                           
+                            
+                            
+	           
+                      
+                    
+            <!--<div id="push"></div>-->
+        </div>
+        <footer class="container-fluid" style="background:#002739;padding:70px 0px 0px 0px;">
+            <div class="row">
+                <div class="container" style="padding-bottom:40px;">
+                    <div class="row">
+                        <div class="col-sm-12 text-center">
+                            <a href="#">
+                                <img src="images/logo-2.png"  width="200" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+</body>
+</html>

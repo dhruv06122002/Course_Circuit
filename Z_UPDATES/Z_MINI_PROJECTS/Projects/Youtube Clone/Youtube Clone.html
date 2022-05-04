@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>YouTube Clone</title>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+   <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="Youtube%20Clone.js"></script>
+  </head>
+  <body>
+     
+    <div class="topnav">
+      <div class="navbar">
+        <div class="logo">
+          <img src="https://static.wixstatic.com/media/c287e1_753ff5405b334bbabed7ae9c66e32f2c~mv2.png/v1/fill/w_570,h_175,al_c,lg_1/c287e1_753ff5405b334bbabed7ae9c66e32f2c~mv2.png"
+          />
+        </div>
+
+        <div class="icon avatar">
+          <img onclick="alert('Sign in YouTube!')"
+            src="https://icon-library.net/images/no-profile-picture-icon/no-profile-picture-icon-29.jpg"
+          />
+        </div>
+
+        <div class="icon" id="search-icon">
+          <img src="https://cdn.pixabay.com/photo/2016/09/05/10/50/app-1646213_960_720.png" class="back-button">
+          <input
+            type="text"
+            class="search-box"
+            placeholder="Search YouTube"
+            onchange="search();"
+          />
+          <i class="material-icons">search</i>
+        </div>
+
+        <div class="icon">
+          <i class="material-icons" onclick="alert('Sign in YouTube!')">videocam</i>
+        </div>
+
+        <div class="icon">
+          <i class="material-icons" onclick="alert('No device found!')">cast_connected</i>
+        </div>
+      </div>
+
+      <div class="tabs">
+        <div class="tab1" onclick='ck(1);searchTrending("")'>
+          All
+        </div>
+
+        <div class="tab2" onclick='ck(2);searchTrending("iphone")'>
+          Web Development
+        </div>
+
+        <div class="tab3" onclick='ck(3);searchTrending("macbook pro")'>
+          HTML5
+        </div>
+
+        <div class="tab4" onclick='ck(4);searchTrending("JavaScript")'>
+          CSS3
+        </div>
+
+        <div class="tab5" onclick='ck(5);searchTrending("Pewdiepie")'>
+        Javascript
+        </div>
+
+        <div class="tab6" onclick='ck(6);searchTrending("music")'>
+         Courses
+        </div>
+
+        <div class="tab7" onclick='ck(7);searchTrending("mark rober")'>
+         Web Design
+        </div>
+
+        <div class="sendfb" onclick="alert('We know we are the best, Team YouTube')">
+          SEND FEEDBACK
+        </div>
+      </div>
+    </div>
+    <div class="container">
+     <a target="_blank" style="text-decoration:none;" href="https://youtu.be/cvvwkgp4HBg"><div class="result"><img src="https://i.ytimg.com/vi/vrQlEhmVFDA/maxresdefault.jpg" class="thumbnail"><h4 class="title">Installing VS Code, Extensions & Setup | JavaScript Tutorial In Hindi #1</h4><h5 class="user">Free Code Camp</h5><img src="https://yt3.ggpht.com/a/AATXAJw2A_6sf-5CPlppwkqz80CXExCKGVPNrKNScg=s900-c-k-c0xffffffff-no-rj-mo" class="channelArt"></div></a><a target="_blank" style="text-decoration:none;" href="https://youtu.be/DKlTBBuc32c"><div class="result"><img src="https://i.ytimg.com/vi/UzVvW2Msu-E/maxresdefault.jpg" class="thumbnail"><h4 class="title">HTML CSS Tutorial - Live | Creating a website using HTML CSS | Web Development Training | Edureka</h4><h5 class="user">Edureka </h5><img src="https://d1jnx9ba8s6j9r.cloudfront.net/imgver.1590146772/img/site/edureka_1362740598.png" class="channelArt"></div></a><a target="_blank" style="text-decoration:none;" href="https://youtu.be/BNmtuZpvT6w"><div class="result"><img src="https://i6q2k2f7.stackpathcdn.com/upload/course_thumbnail/css.svg" class="thumbnail"><h4 class="title">CSS List-Style-Type String Tutorial in Hindi / Urdu</h4><h5 class="user">Yahoo Baba</h5><img src="https://yt3.ggpht.com/a/AATXAJy6aLqbRXfdpRLLRUgqqerlfo4kNnY9z2MYQg=s900-c-k-c0xffffffff-no-rj-mo" class="channelArt"></div></a><a target="_blank" style="text-decoration:none;" href="https://youtu.be/8DeZ2rLfv9w"><div class="result"><img src="https://i.ytimg.com/vi/F_xWv0Q_dLE/maxresdefault.jpg" class="thumbnail"><h4 class="title">URL Dispatcher or URL Pattern inside Project in Django (Hindi)</h4><h5 class="user">Geeky Shows</h5><img src="data:image/png;base64,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" class="channelArt"></div></a><a target="_blank" style="text-decoration:none;" href="https://youtu.be/paMmgo4MhQ8"><div class="result"><img src="https://i.ytimg.com/vi/paMmgo4MhQ8/maxresdefault.jpg" class="thumbnail"><h4 class="title">
+CSS Grid: Moving From CSS Frameworks To CSS Grid (2018 and beyond)</h4><h5 class="user">Coding Tech</h5><img src="https://yt3.ggpht.com/a/AGF-l78qFJuAlbvzkEvnoYRUVkDs0aDqhcXl7AGBCA=s900-c-k-c0xffffffff-no-rj-mo" class="channelArt"></div></a><a target="_blank" style="text-decoration:none;" href="https://youtu.be/APSx9uzhz6o"><div class="result"><img src="https://i.ytimg.com/vi/ke-MRPy-RJw/maxresdefault.jpg" class="thumbnail"><h4 class="title">Hash Maps in Java | Internal Working & Implementation of Hash Maps | Java Placement Course | Lec 48</h4><h5 class="user">Apni Kaksha</h5><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSRHalrAMPpceLbqV3Oe6rZfq9D-grTsbIKJHKoKvrCmm8UkW3G&usqp=CAU" class="channelArt"></div></a><a target="_blank" style="text-decoration:none;" href="https://youtu.be/ObZWaCEE8DA"><div class="result"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQPnIIFDLlyCg0GK3yj5elEcVNw40UnrZDayB3EfjeiNkwKPoSp&usqp=CAU" class="thumbnail"><h4 class="title">Dear YouTube... The Most EPIC JavaScript CHALLENGE Ever MAY 25th ($20,000 GIVEAWAY)</h4><h5 class="user">Clever Programmer</h5><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQPnIIFDLlyCg0GK3yj5elEcVNw40UnrZDayB3EfjeiNkwKPoSp&usqp=CAU" class="channelArt"></div></a><a target="_blank" style="text-decoration:none;" href="https://youtu.be/tcBRvjYw5xQ"><div class="result"><img src="https://i.ytimg.com/vi/tcBRvjYw5xQ/maxresdefault.jpg" class="thumbnail"><h4 class="title">CSS Units - Which ones to use and which to stop using! - HTML CSS Tutorial</h4><h5 class="user">Free Code Academy</h5><img src="https://i.ytimg.com/vi/tcBRvjYw5xQ/maxresdefault.jpg" class="channelArt"></div></a> 
+    </div>
+    <div class="bottomnav">
+      <div class="item active">
+        <i class="material-icons" onclick='searchTrending("");cc(1);' id="text1">home</i>
+        <div class="text1">
+          Home
+        </div>
+      </div>
+
+      <div class="item">
+        <i class="material-icons"  onclick = 'searchTrending("Trending");cc(2);' id="text2">whatshot</i>
+        <div class="text2">
+          Trending
+        </div>
+      </div>
+
+      <div class="item">
+        <i class="material-icons" onclick="alert('Sign in real YouTube!')" id="text3">video_library</i>
+        <div class="text3">
+          Library
+        </div>
+      </div>
+    </div>
+    <div class="LoaderBG" style="filter:opacity(1);">
+    <img src="https://www.techadvisor.co.uk/cmsdata/features/3681165/youtube-logo-png-2069_thumb1200_16-9.png" class="YTLogo"></div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+     
+  </body>
+</html>

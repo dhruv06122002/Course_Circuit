@@ -1,0 +1,457 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/Style.css" rel="stylesheet" />
+</head>
+<body>
+    <div id="wrapper">
+        <div class="main">
+            <header class="container-fluid topHeader">
+                <div class="row">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <ul class="list-inline">
+                                    <li><a href="#"><span class="glyphicon glyphicon-envelope"></span> courcecircuit@gmail.com</a></li>
+                                    <li><a href="#"><span class="glyphicon glyphicon-phone"></span>+91 000000000</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </header>
+            <nav class="navbar navbar-default">
+                <div class="container">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="../1_HTML,CSS,PHP for web-development.html">
+                            <img src="images/logo1.png" width="200"  />
+                        </a>
+                    </div>
+
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="navbar-collapse">
+                        <ul class="nav navbar-nav float-right">
+                             <li><a href="PAGE_0.html">Index</a></li>
+                            <li><a href="../../B_EXAM/Phase 2/SELECT EXAM.html">Assignments</a></li>
+                            <li><a href="../B_PHASE_1/PAGE_COLOR.html">Color Picker</a></li>
+                            <li><a href="../../A_MAIN/3_COMPILER.html">Compiler</a></li>
+                        </ul>
+                    </div><!-- /.navbar-collapse -->
+                </div><!-- /.container-fluid -->
+            </nav>
+             <section class="jumbotron">
+                <div class="container">
+                    <p><center><img src="PHASES/CSS.png" height="150" width="150"></center></p>
+                    <p class="lead"><center><b><h3>Welcome to Phase 2 : The Basics of CSS</h3></b></center></p>
+                </div>
+            </section>
+           
+            <section class="container">
+                <div class="row">
+                <div class="col-sm-12">
+                        <div class="box2">
+                        <h1>CSS Selectors</h1>
+                        </div>
+					</div>    
+					
+					<div class="col-sm-12">
+                        <div class="box6">
+
+							
+                            <ol>
+                                <center>CSS selectors are used to "find" (or select) the HTML elements you want to style.</center>
+							    <center>We can divide CSS selectors into five categories:</center>
+                                <p>	
+                                <li><u>Simple selectors</u> (select elements based on name, id, class)</li>
+                                </p>
+                                <p>		
+                                <li><u>Combinator selectors</u> (select elements based on a specific relationship between them)</li>
+                                </p>
+                                <p>		
+                                <li><u>Pseudo-class selectors</u> (select elements based on a certain state)</li>
+                                </p>
+                                <p>		
+                                <li><u>Pseudo-elements selectors</u> (select and style a part of an element)</li>
+                                </p>
+                                <p>		
+                                <li><u>Attribute selectors</u> (select elements based on an attribute or attribute value)</li>
+                                </p>
+                                <center>This page will explain the most basic CSS selectors.</center>
+							</ol>
+							
+                        </div>
+                    </div> 
+
+                    
+
+					<div class="col-sm-12">
+						<div class="box6">
+                    <center><h3><b>The CSS element Selector</b></h3></center>
+                    <center>The element selector selects HTML elements based on the element name.</center><br>
+	
+					<div class="col-sm-6">
+					<div class="box6">
+					<table class="roundedCorners1" align="center">
+
+    <h4><center><b>EXAMPLE</b></center></h4>       
+    <center>Here, all &lt;p&gt; elements on the page will be center-aligned, with a blue text color: </center><hr>          
+	<tr><td>&lt;!doctype html&gt;</td></tr> 
+	<tr><td>&lt;html&gt;         </td></tr> 
+	<tr><td>&lt;head&gt;</td></tr>
+	<tr><td>&lt;style&gt;</td></tr>
+	<tr><td>p {</td></tr>
+	<tr><td>color: blue;</td></tr>
+	<tr><td>text-align: center;</td></tr>
+	<tr><td>}</td></tr>
+	<tr><td>&lt;/style&gt;</td></tr>
+	<tr><td>&lt;/head&gt;</td></tr>
+	<tr><td>&lt;body&gt;</td></tr>
+	<tr><td>&lt;p&gt;Every paragraph will be affected by the style.&lt;/p&gt;</td></tr>
+    <tr><td>&lt;p id="para1"&gt;Me too!!&lt;/p&gt;</td></tr>
+    <tr><td>&lt;p&gt;And me!!&lt;/p&gt;</td></tr>
+	<tr><td>&lt;/body&gt;</td></tr>
+	<tr><td>&lt;/html&gt;</td></tr>
+						</table>
+						<h5>&nbsp;</h5>
+						</div>
+						</div>
+	
+						<div class="col-sm-6">
+					<div class="box2">
+					<h4><b><u>OUTPUT</u></b></h4>
+					<h1>&nbsp;</h1>						    						
+	<!DOCTYPE html>
+	<html>
+	<head>
+	<style>
+	p {
+	  color: blue;
+	  text-align: center;
+	} 
+	</style>
+	</head>
+	<body>
+        <p>Every paragraph will be affected by the style.</p>
+        <p id="para1">Me too!</p>
+        <p>And me!</p>
+	</body>
+	</html>
+	
+							</div>
+						</div>
+					<h5>&nbsp;</h5>
+						</div>
+					</div>
+
+
+
+                    <div class="col-sm-12">
+						<div class="box6">
+                    <center><h3><b>The CSS id Selector</b></h3></center>
+                    <center>The id selector uses the id attribute of an HTML element to select a specific element. 
+                    The id of an element is unique within a page, so the id selector is used to select one unique element! 
+                    To select an element with a specific id, write a hash (#) character, followed by the id of the element.</center><br>
+	
+					<div class="col-sm-6">
+					<div class="box6">
+					<table class="roundedCorners1" align="center">
+
+    <h4><center><b>EXAMPLE</b></center></h4>       
+    <center>The CSS rule below will be applied to the HTML element with id="para1": </center>         
+    <center><mark><b>Note:</b> An id name cannot start with a number!</mark></center><hr>
+	<tr><td>&lt;!doctype html&gt;</td></tr> 
+	<tr><td>&lt;html&gt;         </td></tr> 
+	<tr><td>&lt;head&gt;</td></tr>
+	<tr><td>&lt;style&gt;</td></tr>
+	<tr><td>#para1 {</td></tr>
+	<tr><td>color: blue;</td></tr>
+	<tr><td>text-align: center;</td></tr>
+	<tr><td>}</td></tr>
+	<tr><td>&lt;/style&gt;</td></tr>
+	<tr><td>&lt;/head&gt;</td></tr>
+	<tr><td>&lt;body&gt;</td></tr>
+    <tr><td>&lt;p id="para1"&gt;This paragraph is affected by the style.&lt;/p&gt;</td></tr>
+    <tr><td>&lt;p&gt;This paragraph is not affected by the style!!&lt;/p&gt;</td></tr>
+	<tr><td>&lt;/body&gt;</td></tr>
+	<tr><td>&lt;/html&gt;</td></tr>
+						</table>
+						<h5>&nbsp;</h5>
+						</div>
+						</div>
+	
+						<div class="col-sm-6">
+					<div class="box2">
+					<h4><b><u>OUTPUT</u></b></h4>
+					<h1>&nbsp;</h1>						    						
+	<!DOCTYPE html>
+	<html>
+	<head>
+	<style>
+	#para1 {
+	  color: blue;
+	  text-align: center;
+	} 
+    .para {
+      color: black;
+      text-align: left;
+    }
+	</style>
+	</head>
+	<body>
+        <p id="para1">This paragraph is affected by the style.</p>
+        <p class="para">This paragraph is not affected by the style!!</p>
+	</body>
+	</html>
+	
+							</div>
+						</div>
+					<h5>&nbsp;</h5>
+						</div>
+                    </div>
+                    
+
+
+                    <div class="col-sm-12">
+						<div class="box6">
+                    <center><h3><b>The CSS class Selector</b></h3></center>
+                    <center>The class selector selects HTML elements with a specific class attribute.
+                    To select elements with a specific class, write a period (.) character, followed by the class name.
+                    You can also specify that only specific HTML elements should be affected by a class.
+                    HTML elements can also refer to more than one class.</center><br>
+	
+					<div class="col-sm-6">
+					<div class="box6">
+					<table class="roundedCorners1" align="center">
+
+    <h4><center><b>EXAMPLE</b></center></h4>       
+    <center>In this example all HTML elements with class="center" will be red and center-aligned: </center>
+    <center><mark><b>Note:</b> An class name cannot start with a number!</mark></center><hr>  
+
+	<tr><td>&lt;!doctype html&gt;</td></tr> 
+	<tr><td>&lt;html&gt;         </td></tr> 
+	<tr><td>&lt;head&gt;</td></tr>
+	<tr><td>&lt;style&gt;</td></tr>
+	<tr><td>.center {</td></tr>
+	<tr><td>color: red;</td></tr>
+	<tr><td>text-align: center;</td></tr>
+	<tr><td>}</td></tr>
+	<tr><td>&lt;/style&gt;</td></tr>
+	<tr><td>&lt;/head&gt;</td></tr>
+	<tr><td>&lt;body&gt;</td></tr>
+    <tr><td>&lt;h1 class="center"&gt;Red and center-aligned heading &lt;/h1&gt;</td></tr>
+    <tr><td>&lt;p class="center"&gt;Red and center-aligned paragraph.&lt;/p&gt;</td></tr>
+	<tr><td>&lt;/body&gt;</td></tr>
+	<tr><td>&lt;/html&gt;</td></tr>
+						</table>
+						<h5>&nbsp;</h5>
+						</div>
+						</div>
+	
+						<div class="col-sm-6">
+					<div class="box2">
+					<h4><b><u>OUTPUT</u></b></h4>
+					<h1>&nbsp;</h1>						    						
+	<!DOCTYPE html>
+	<html>
+	<head>
+	<style>
+	
+    .center {
+      color: red;
+      text-align: center;
+    }
+	</style>
+	</head>
+	<body>
+        <h1 class="center">Red and center-aligned heading</h1>
+        <p class="center">Red and center-aligned paragraph.</p> 
+	</body>
+	</html>
+	
+							</div>
+						</div>
+					<h5>&nbsp;</h5>
+						</div>
+                    </div>
+                    
+
+                    <div class="col-sm-12">
+						<div class="box6">
+                    <center><h3><b>The CSS Universal Selector</b></h3></center>
+                    <center>The universal selector (*) selects all HTML elements on the page.</center><br>
+	
+					<div class="col-sm-6">
+					<div class="box6">
+					<table class="roundedCorners1" align="center">
+
+    <h4><center><b>EXAMPLE</b></center></h4>       
+    <center>The CSS rule below will affect every HTML element on the page:</center><hr>
+    
+	<tr><td>&lt;!doctype html&gt;</td></tr> 
+	<tr><td>&lt;html&gt;         </td></tr> 
+	<tr><td>&lt;head&gt;</td></tr>
+	<tr><td>&lt;style&gt;</td></tr>
+	<tr><td>* {</td></tr>
+	<tr><td>color: blue;</td></tr>
+	<tr><td>text-align: center;</td></tr>
+	<tr><td>}</td></tr>
+	<tr><td>&lt;/style&gt;</td></tr>
+	<tr><td>&lt;/head&gt;</td></tr>
+	<tr><td>&lt;body&gt;</td></tr>
+    <tr><td>&lt;h1&gt;Hello World!&lt;/h1&gt;</td></tr>
+    <tr><td>&lt;p&gt;Every element on page will be affected by the style.&lt;/p&gt;</td></tr>
+    <tr><td>&lt;p id="para1" &gt;Me too!&lt;/p&gt;</td></tr>
+    <tr><td>&lt;p&gt;And me!&lt;/p&gt;</td></tr>
+    <tr><td>&lt;/body&gt;</td></tr>
+	<tr><td>&lt;/html&gt;</td></tr>
+						</table>
+						<h5>&nbsp;</h5>
+						</div>
+						</div>
+	
+						<div class="col-sm-6">
+					<div class="box2">
+					<h4><b><u>OUTPUT</u></b></h4>
+					<h1>&nbsp;</h1>						    						
+	<!DOCTYPE html>
+	<html>
+	<head>
+	<style>
+	
+    p.color {
+      color: blue;
+      text-align: center;
+    }
+    h1.color {
+      color: blue;
+      text-align: center;
+    }
+	</style>
+	</head>
+	<body>
+        <h1 class="color">Hello world!</h1>
+        <p class="color">Every element on page will be affected by the style.</p>
+        <p id="para1">Me too!</p>
+        <p class="color">And me!</p>
+	</body>
+	</html>
+	
+							</div>
+						</div>
+					<h5>&nbsp;</h5>
+						</div>
+                    </div>
+                    
+
+
+                    <div class="col-sm-12">
+						<div class="box6">
+                    <center><h3><b>The CSS Grouping Selector</b></h3></center>
+                    <center>The grouping selector selects all the HTML elements with the same style definitions.
+                        It will be better to group the selectors, to minimize the code.
+                        To group selectors, separate each selector with a comma.</center><br>
+	
+					<div class="col-sm-6">
+					<div class="box6">
+					<table class="roundedCorners1" align="center">
+
+    <h4><center><b>EXAMPLE</b></center></h4>       
+    <center>In this example we have grouped the selectors: </center><hr>
+    
+	<tr><td>&lt;!doctype html&gt;</td></tr> 
+	<tr><td>&lt;html&gt;</td></tr> 
+	<tr><td>&lt;head&gt;</td></tr>
+	<tr><td>&lt;style&gt;</td></tr>
+	<tr><td>h1, h2, p {</td></tr>
+	<tr><td>color: red;</td></tr>
+	<tr><td>text-align: center;</td></tr>
+	<tr><td>}</td></tr>
+	<tr><td>&lt;/style&gt;</td></tr>
+	<tr><td>&lt;/head&gt;</td></tr>
+	<tr><td>&lt;body&gt;</td></tr>
+    <tr><td>&lt;h1&gt;Hello World!&lt;/h1&gt;</td></tr>
+    <tr><td>&lt;h2&gt;This is a Smaller heading.&lt;/h2&gt;</td></tr>
+    <tr><td>&lt;p&gt; -- -- - This is a paragraph. Hello There! - -- -- &lt;/p&gt;</td></tr>
+    <tr><td>&lt;/body&gt;</td></tr>
+	<tr><td>&lt;/html&gt;</td></tr>
+						</table>
+						<h5>&nbsp;</h5>
+						</div>
+						</div>
+	
+						<div class="col-sm-6">
+					<div class="box2">
+					<h4><b><u>OUTPUT</u></b></h4>
+					<h1>&nbsp;</h1>						    						
+	<!DOCTYPE html>
+	<html>
+	<body>
+        <h1 style= "color:red; text-align: center;">Hello World!</h1>
+        <h2 style= "color:red; text-align: center;">This is a Smaller heading!</h2>
+        <p style= "color:red; text-align: center;"> -- -- - This is a paragraph. Hello There! - -- -- </p>
+	</body>
+	</html>
+	
+							</div>
+						</div>
+					<h5>&nbsp;</h5>
+						</div>
+					</div>
+
+
+
+
+						</div>
+			</section></div>
+                </div>
+
+	<section class="container">
+                <div class="row">
+				<div class="col-sm-2">
+                        <div class="box5">
+							<a href="PAGE_2.html">
+								<p style="color:white;">PREVIOUS</p>
+							</a>
+                        </div>
+					</div>
+					
+					<div class="col-sm-8">
+                        <div class="box2">
+                        </div>
+					</div>
+					
+					<div class="col-sm-2">
+                        <div class="box5">
+							<a href="PAGE_4.html">
+								<p style="color:white;">NEXT</p>
+							</a>
+                        </div>
+					</div>
+		</div>
+			</section>
+            
+                    
+            <!--<div id="push"></div>-->
+        <div>
+        <footer class="container-fluid" style="background:#002739;padding:70px 0px 0px 0px;">
+            <div class="row">
+                <div class="container" style="padding-bottom:40px;">
+                    <div class="row">
+                        <div class="col-sm-12 text-center">
+                            <a href="#">
+                                <img src="images/logo-2.png"  width="200" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+</body>
+</html>

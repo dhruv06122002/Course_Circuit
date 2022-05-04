@@ -1,0 +1,447 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/Style.css" rel="stylesheet" />
+</head>
+<body>
+    <div id="wrapper">
+        <div class="main">
+            <header class="container-fluid topHeader">
+                <div class="row">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <ul class="list-inline">
+                                    <li><a href="#"><span class="glyphicon glyphicon-envelope"></span> courcecircuit@gmail.com</a></li>
+                                    <li><a href="#"><span class="glyphicon glyphicon-phone"></span>+91 000000000</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </header>
+            <nav class="navbar navbar-default">
+                <div class="container">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="../1_HTML,CSS,PHP for web-development.html">
+                            <img src="images/logo1.png" width="200"  />
+                        </a>
+                    </div>
+
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="navbar-collapse">
+                        <ul class="nav navbar-nav float-right">
+                             <li><a href="PAGE_0.html">Index</a></li>
+                            <li><a href="../../B_EXAM/Phase 1/SELECT EXAM.html">Assignments</a></li>
+                            <li><a href="PAGE_COLOR.html">Color Picker</a></li>
+                            <li><a href="../../A_MAIN/3_COMPILER.html">Compiler</a></li>
+                        </ul>
+                    </div><!-- /.navbar-collapse -->
+                </div><!-- /.container-fluid -->
+            </nav>
+            <section class="jumbotron">
+                <div class="container">
+                    <p><center><img src="PHASES/CSS.png" height="150" width="150"></center></p>
+                    <p class="lead"><center><b><h3>Welcome to Phase 2 : The Basics of CSS</h3></b></center></p>
+                </div>
+            </section>
+            
+            <section class="container">
+                <div class="row">
+                <div class="col-sm-12">
+                        <div class="box2">
+                        <h1>CSS Text</h1>
+                        </div>
+                    </div>
+                    
+                    <div class="col-sm-12">
+                        <div class="box6">
+                            <h3><center><b>Text Color</b></center></h3><br>
+                            <p>The <code>color</code> property is used to set the color of the text. The color is specified by:</p><br>
+                            <li>a color name - like "red"</li>
+                            <li>a HEX value - like "#ff0000"</li>
+                            <li>an RGB value - like "rgb(255,0,0)"</li><br>
+                            <p>The default text color for a page is defined in the body selector.</p><br>
+
+<div class="col-sm-6">
+<div class="box6">
+    <h4><center><b>EXAMPLE</b></center></h4>
+    <table>
+		<tr><td>&lt;!doctype html&gt;</td></tr> 
+		<tr><td>&lt;html&gt;</td></tr> 
+		<tr><td>&lt;head&gt;</td></tr> 
+		<tr><td>&lt;style&gt;</td></tr> 
+		<tr><td>body {</td></tr>
+		<tr><td> color: blue;</td></tr>
+		<tr><td> background-color: lightgrey;</td></tr>
+        <tr><td>}</td></tr>
+        <tr><td>h2 {</td></tr>
+            <tr><td> color: green;</td></tr>
+            <tr><td>}</td></tr>
+		<tr><td>&lt;/style&gt;</td></tr> 
+		<tr><td>&lt;/head&gt;</td></tr> 
+		<tr><td>&lt;body&gt;</td></tr>
+		<tr><td>&lt;h2&gt;This is heading 1&lt;/h2&gt;</td></tr>
+		<tr><td>&lt;p&gt;his is an ordinary paragraph. Notice that this text is blue. The default text color for a page is defined in the body selector.&lt;/p&gt;</td></tr>
+        <tr><td>&lt;p&gt;Another paragraph.&lt;/p&gt;</td></tr>
+        <tr><td>&lt;/body&gt;</td></tr>
+		<tr><td>&lt;/html&gt;</td></tr>
+	</table>
+</div>
+</div>
+<div class="col-sm-6">
+<div class="box2">
+    <h4><center><b><u>OUTPUT</u></b></center></h4>
+    <!DOCTYPE html>
+<html>
+<head>
+<style>
+div.tcolor {
+  color: blue;
+  background-color: lightgrey;
+}
+
+h2.tcol {
+  color: green;
+  text-align: left;
+}
+</style>
+</head>
+<body>
+<div class="tcolor">
+<h2 class="tcol">This is heading 1</h2>
+<p style="text-align: left;">This is an ordinary paragraph. Notice that this text is blue. The default text color for a page is defined in the body selector.</p>
+<p style="text-align: left;">Another paragraph.</p>
+<br><br><br><br><br><br><br><br><br><br><br><br><br>
+</div>
+</body>
+</html>
+
+</div>
+</div>
+</div>
+</div>
+   
+<div class="col-sm-12">
+<div class="box6">
+    <h3><center><b>Text Alignment</b></center></h3><br>
+<p>The <code>text-align</code> property is used to set the horizontal alignment of a text.</p>
+<p>A text can be left or right aligned, centered, or justified.</p>
+<p>The following example shows center aligned, and left and right aligned text (left alignment is default if text direction is left-to-right, and right alignment is default if text direction is right-to-left):</p><br>
+<p>When the <code>text-align</code> property is set to "justify", each line is stretched so that every line has equal width, and the left and right margins are straight (like in magazines and newspapers):</p><br>
+
+<div class="col-sm-6">
+<div class="box4">
+    <h3><center><b>Text Direction</b></center></h3>
+    <p><center>The <code>direction</code> and <code>unicode-bidi</code> properties can be used to change the text direction of an element.</center></p><br>
+</div>
+</div>
+
+<div class="col-sm-6">
+<div class="box4">
+    <h3><center><b>Vertical Alignment</b></center></h3>
+    <p><center>The <code>vertical-align</code> property sets the vertical alignment of an element.</center></p><br>
+</div>
+</div>
+
+<div class="col-sm-6">
+<div class="box6">
+    <h4><center><b>EXAMPLE</b></center></h4>
+    <p><center>Ths example contain all three properties given above:</center></p><hr>
+    <table>
+		<tr><td>&lt;!doctype html&gt;</td></tr> 
+		<tr><td>&lt;html&gt;</td></tr> 
+		<tr><td>&lt;head&gt;</td></tr> 
+		<tr><td>&lt;style&gt;</td></tr> 
+		<tr><td>h2 {</td></tr>
+		<tr><td> text-align: center;</td></tr>
+        <tr><td>}</td></tr>
+        <tr><td>img.middle {</td></tr>
+            <tr><td> vertical-align: middle;</td></tr>
+            <tr><td>}</td></tr>
+            <tr><td>p.ex1 {</td></tr>
+                <tr><td>direction: rtl; </td></tr>
+                <tr><td>unicode-bidi: bidi-override; </td></tr>
+                <tr><td>}</td></tr>
+		<tr><td>&lt;/style&gt;</td></tr> 
+		<tr><td>&lt;/head&gt;</td></tr> 
+		<tr><td>&lt;body&gt;</td></tr>
+		<tr><td>&lt;h2&gt;Heading 1 (center)&lt;/h2&gt;</td></tr>
+        <tr><td>&lt;p&gt;The three headings above are aligned center, left and right.&lt;/p&gt;</td></tr>
+        <tr><td>&lt;p&gt;An &lt;img class="middle" src="images/logo1.png"  width="270" height="50"&gt; image with a middle alignment.&lt;/p&gt;<br></td></tr>
+        <tr><td>&lt;p&gt;This is the default text direction.&lt;/p&gt;</td></tr>
+        <tr><td>&lt;p class="ex1"&gt;This is right-to-left text direction.&lt;/p&gt;</td></tr>
+        <tr><td>&lt;/body&gt;</td></tr>
+		<tr><td>&lt;/html&gt;</td></tr>
+	</table>
+</div>
+</div>
+
+<div class="col-sm-6">
+<div class="box2">
+    <h4><center><b><u>OUTPUT</u></b></center></h4>
+    <!DOCTYPE html>
+<html>
+<head>
+<style>
+h2 {
+  text-align: center;
+}
+img.middle {
+  vertical-align: middle;
+}
+p.ex1 {
+  direction: rtl;
+  unicode-bidi: bidi-override;
+}
+</style>
+</head>
+<body>
+
+<h2>Heading 1 (center)</h2>
+<p style="text-align: left;">The three headings above are aligned center, left and right.</p><br>
+
+<p style="text-align: left;">An <img class="middle" src="images/logo1.png" width="160" height="40"> image with a middle alignment.</p><br>
+
+<p style="text-align: left;">This is the default text direction.</p>
+<p style="text-align: right;" class="ex1"> This is right-to-left text direction.</p>
+</body>
+</html>
+</div>
+</div>
+</div>
+</div>
+
+
+<div class="col-sm-12">
+<div class="box6">
+    <h3><center><b>Text Decoration</b></center></h3><br>
+    <p>The <code>text-decoration</code> property is used to set or remove decorations from text.</p>
+    <p>The value <code>text-decoration: none;</code> is often used to remove underlines from links</p><br>
+    <p>Othe values you can use in <code>text-decoration</code> property:</p><br>
+    <li>overline</li>
+    <li>line-through</li>
+    <li>underline</li><br>
+   
+<br>
+<div class="col-sm-6">
+<div class="box6">
+    <h4><center><b>EXAMPLE</b></center></h4>
+    <table>
+		<tr><td>&lt;!doctype html&gt;</td></tr> 
+		<tr><td>&lt;html&gt;</td></tr> 
+		<tr><td>&lt;head&gt;</td></tr> 
+		<tr><td>&lt;style&gt;</td></tr> 
+		<tr><td>a {</td></tr>
+		<tr><td> text-decoration: none;</td></tr>
+        <tr><td>}</td></tr>
+        <tr><td>h1 {</td></tr>
+            <tr><td>  text-decoration: overline;</td></tr>
+            <tr><td>}</td></tr>
+            <tr><td>h2 {</td></tr>
+                <tr><td> text-decoration: line-through;</td></tr>
+                <tr><td>}</td></tr>
+                <tr><td>h3 {</td></tr>
+                    <tr><td> text-decoration: underline;</td></tr>
+                    <tr><td>}</td></tr>
+		<tr><td>&lt;/style&gt;</td></tr> 
+		<tr><td>&lt;/head&gt;</td></tr> 
+        <tr><td>&lt;body&gt;</td></tr>
+        <tr><td>&lt;p&gt;A link with no underline: &lt;a href="https://www.CourseCircuit.com"&gt;CourseCircuit.com&lt;/a&gt;&lt;/p&gt;</td></tr>
+		<tr><td>&lt;h1&gt;This is Heading 1 &lt;/h1&gt;</td></tr>
+        <tr><td>&lt;h2&gt;This is Heading 2 &lt;/h2&gt;</td></tr>
+        <tr><td>&lt;h3&gt;This is Heading 3 &lt;/h3&gt;</td></tr>
+        <tr><td>&lt;/body&gt;</td></tr>
+		<tr><td>&lt;/html&gt;</td></tr>
+	</table>
+</div>
+</div>
+<div class="col-sm-6">
+<div class="box2">
+    <h4><center><b><u>OUTPUT</u></b></center></h4><br>
+    <!DOCTYPE html>
+<html>
+<head>
+<style>
+a {
+  text-decoration: none;
+  text-align: left;
+}
+h2.d1 {
+  text-decoration: overline;
+  text-align: left;
+}
+
+h3.d2 {
+  text-decoration: line-through;
+  text-align: left;
+}
+
+h4.d3 {
+  text-decoration: underline;
+  text-align: left;
+}
+</style>
+</head>
+<body>
+
+<p style="text-align: left;">A link with no underline: <a href="https://www.google.com">CourseCircuit.com</a></p>
+<h2 class="d1">This is heading 1</h2>
+<h3 class="d2">This is heading 2</h3>
+<h4 class="d3">This is heading 3</h4>
+<br><br><br><br><br><br><br><br><br><br>
+</body>
+</html>
+
+</div>
+</div>
+<div class="col-sm-6">
+<div class="box6">
+    <p style="background-color: lightgoldenrodyellow;padding: 15px;text-align: center;"><b>Note:</b> It is not recommended to underline text that is not a link, as this often confuses the reader.</p><br>
+</div>
+</div>
+</div>
+</div>
+
+
+<div class="col-sm-12">
+<div class="box6">
+    <h3><center><b>Text Transformation</b></center></h3><br>
+    <p><center>The <code>text-transform</code> property is used to specify uppercase and lowercase letters in a text.</center></p>
+    <p><center>It can be used to turn everything into uppercase or lowercase letters, or capitalize the first letter of each word:</center></p><br>
+
+<div class="col-sm-6">
+<div class="box6">
+    <h4><center><b>EXAMPLE</b></center></h4>
+    <table>
+		<tr><td>&lt;!doctype html&gt;</td></tr> 
+		<tr><td>&lt;html&gt;</td></tr> 
+		<tr><td>&lt;head&gt;</td></tr> 
+		<tr><td>&lt;style&gt;</td></tr> 
+        <tr><td>p.uppercase {</td></tr>
+            <tr><td> text-transform: uppercase;</td></tr>
+            <tr><td>}</td></tr>
+            <tr><td>p.lowercase {</td></tr>
+                <tr><td> text-transform: lowercase;</td></tr>
+                <tr><td>}</td></tr>
+                <tr><td>p.capitalize {</td></tr>
+                    <tr><td> text-transform: capitalize;</td></tr>
+                    <tr><td>}</td></tr>
+		<tr><td>&lt;/style&gt;</td></tr> 
+		<tr><td>&lt;/head&gt;</td></tr> 
+        <tr><td>&lt;body&gt;</td></tr>
+        <tr><td>&lt;p class="uppercase"&gt;This is some text. &lt;/p&gt;</td></tr>
+        <tr><td>&lt;p class="lowercase"&gt;This is some text. &lt;/p&gt;</td></tr>
+        <tr><td>&lt;p class="capitalize"&gt;This is some text. &lt;/p&gt;</td></tr>
+        <tr><td>&lt;/body&gt;</td></tr>
+		<tr><td>&lt;/html&gt;</td></tr>
+	</table>
+</div>
+</div>
+
+<div class="col-sm-6">
+<div class="box2">
+    <h4><center><b><u>OUTPUT</u></b></center></h4><br>
+    <!DOCTYPE html>
+<html>
+<head>
+<style>
+p.uppercase {
+  text-transform: uppercase;
+  text-align: left;
+}
+
+p.lowercase {
+  text-transform: lowercase;
+  text-align: left;
+}
+
+p.capitalize {
+  text-transform: capitalize;
+  text-align: left;
+}
+</style>
+</head>
+<body>
+
+<p class="uppercase">This is some text.</p>
+<p class="lowercase">This is some text.</p>
+<p class="capitalize">This is some text.</p>
+
+</body>
+</html>
+
+</div>
+</div>
+
+</div>
+</div>
+
+
+</div>
+</section>
+
+
+
+
+
+
+
+                    
+<section class="container">
+    <div class="row">
+    <div class="col-sm-2">
+            <div class="box5">
+                <a href="PAGE_9.html">
+                    <p style="color:white; text-align: center;">PREVIOUS</p>
+                </a>
+            </div>
+        </div>
+        
+        <div class="col-sm-8">
+            <div class="box2">
+            </div>
+        </div>
+        
+        <div class="col-sm-2">
+            <div class="box5">
+                <a href="PAGE_11.html">
+                    <p style="color:white; text-align: center;">NEXT</p>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+            
+                       
+                           
+                            
+                            
+	           
+                      
+                    
+            <!--<div id="push"></div>-->
+        </div>
+        <footer class="container-fluid" style="background:#002739;padding:70px 0px 0px 0px;">
+            <div class="row">
+                <div class="container" style="padding-bottom:40px;">
+                    <div class="row">
+                        <div class="col-sm-12 text-center">
+                            <a href="#">
+                                <img src="images/logo-2.png"  width="200" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+</body>
+</html>

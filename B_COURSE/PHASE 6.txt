@@ -1,0 +1,10 @@
+PHASE 1
+
+PAGE 0 -- INDEX
+PAGE 1 -- What is Hosting? (done)
+PAGE 2 -- What is Domain? (done)
+PAGE 3 -- Decide what type of website you want (done)
+PAGE 4 -- Choose your hosting server (done)
+PAGE 5 -- Select your hosting plan (done) 
+PAGE 6 -- Change your DNS address (done)
+PAGE 7 -- Upload your website (done)

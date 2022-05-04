@@ -1,0 +1,167 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/Style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="Projects/Project 1/2D_break_breaker_master/styles.css">
+    <style>
+p1 {
+  text-align: center;
+  font-size: 60px;
+  margin-top: 0px;
+}
+</style>
+</head>
+<body>
+    <div id="wrapper">
+        <div class="main">
+            <header class="container-fluid topHeader">
+                <div class="row">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <ul class="list-inline">
+                                    <li><a href="#"><span class="glyphicon glyphicon-envelope"></span> courcecircuit@gmail.com</a></li>
+                                    <li><a href="#"><span class="glyphicon glyphicon-phone"></span>+91 000000000</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </header>
+            <nav class="navbar navbar-default">
+                <div class="container">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="SELECT 1 BOARD.html">
+                            <img src="images/logo1.png" width="200"  />
+                        </a>
+                    </div>
+
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="navbar-collapse">
+                        <ul class="nav navbar-nav float-right">
+                             <li><a href="PAGE_0.html">Index</a></li>
+                            <li><a href="../../B_EXAM/Phase 1/SELECT EXAM.html">Assignments</a></li>
+                            <li><a href="PAGE_COLOR.html">Color Picker</a></li>
+                            <li><a href="../../A_LOGIN/5_COMPILER.html">Compiler</a></li>
+                        </ul>
+                    </div><!-- /.navbar-collapse -->
+                </div><!-- /.container-fluid -->
+            </nav>
+            <section class="jumbotron">
+                <div class="container">
+                    <p><center><img src="images/task.png" height="150" width="150"></center></p>
+                    <p class="lead"><center><b><h3>DAILY TASK</h3></b></center></p>
+                </div>
+            </section>
+            
+            <section class="container">
+                <div class="row">
+                
+                <div class="col-sm-12">
+                        <div class="box2">
+                        <p1 id="demo"></p1>
+                        </div></div>
+                        <div class="col-sm-12">
+                        <div class="box1">
+                        <h3>REGISTRATION FORM</h3>
+                        <p>Details:
+                        <div class="col-sm-4">
+                        <div class="box6">
+                       <br>HTML user :
+                       <ul>
+                       <li>FirstName , LastName , Address , Age , Gender , phone number , email address </li>
+                       <li>All fields are compulsary</li>
+                       <li>Should be in tabular form , with center alignment </li>
+                       </ul>
+                       </div></div>
+                       <div class="col-sm-4">
+                        <div class="box6">
+                       <br>HTML+PHP user :
+                       <ul>
+                       <li>SAME MENTIONED FOR HTML</li>
+                       <li>Print all data when submitted</li>
+                       </ul>
+                       <h1>&nbsp;</h1>
+                       <h4>&nbsp;</h4>
+                       </div></div>
+                       <div class="col-sm-4">
+                        <div class="box6">
+                       <br>PHP+SQL user :
+                       <ul>
+                       <li>SAME MENTIONED FOR HTML+PHP</li>
+                       <li>Save all data in database</li>
+                       <li>Print multiple user enteries in tabular form</li>
+                       </ul>
+                       <h4>&nbsp;</h4>
+                       </div></div>
+                       </p>
+                       <h1>&nbsp;</h1>
+                       <div class="col-sm-12">
+                        <div class="box6">
+                       <h3>FOR ANY QUERY OR ANY KIND OF HELP FEEL FREE TO CONTACT.</h3>
+                       <h3>TO SUBMIT YOUR WORK MAIL US ON www.coursecircuit.com</h3>
+                        </div>
+					</div>
+                   </div></div>
+                    
+			</div>
+			</section>         
+                            
+	           <script>
+// Set the date we're counting down to
+
+var countDownDate = new Date("Jan 1, 2025 24:00:00").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+    
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+    
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+  // Output the result in an element with id="demo"
+  document.getElementById("demo").innerHTML = hours + "h "
+  + minutes + "m " + seconds + "s ";
+    
+  // If the count down is over, write some text 
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "EXPIRED";
+  }
+}, 1000);
+</script>
+
+                      
+                    
+            <!--<div id="push"></div>-->
+        </div>
+        <footer class="container-fluid" style="background:#002739;padding:70px 0px 0px 0px;">
+            <div class="row">
+                <div class="container" style="padding-bottom:40px;">
+                    <div class="row">
+                        <div class="col-sm-12 text-center">
+                            <a href="#">
+                                <img src="images/logo-2.png"  width="200" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+</body>
+</html>

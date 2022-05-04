@@ -1,0 +1,225 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/Style.css" rel="stylesheet" />
+</head>
+<body>
+    <div id="wrapper">
+        <div class="main">
+            <header class="container-fluid topHeader">
+                <div class="row">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <ul class="list-inline">
+                                    <li><a href="#"><span class="glyphicon glyphicon-envelope"></span> courcecircuit@gmail.com</a></li>
+                                    <li><a href="#"><span class="glyphicon glyphicon-phone"></span>+91 000000000</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </header>
+            <nav class="navbar navbar-default">
+                <div class="container">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="../1_HTML,CSS,PHP for web-development.html">
+                            <img src="images/logo1.png" width="200"  />
+                        </a>
+                    </div>
+
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="navbar-collapse">
+                        <ul class="nav navbar-nav float-right">
+                             <li><a href="PAGE_0.html">Index</a></li>
+                            <li><a href="../../B_EXAM/Phase 3/SELECT EXAM.html">Assignments</a></li>
+                            <li><a href="../B_PHASE_1/PAGE_COLOR.html">Color Picker</a></li>
+                            <li><a href="../../A_MAIN/3_COMPILER.html">Compiler</a></li>
+                        </ul>
+                    </div><!-- /.navbar-collapse -->
+                </div><!-- /.container-fluid -->
+            </nav>
+             <section class="jumbotron">
+                <div class="container">
+                    <p><center><img src="PHASES/Advance CSS.png" height="150" width="150"></center></p>
+                    <p class="lead"><center><b><h3>Welcome to Phase 3 : Advance CSS</h3></b></center></p>
+                </div>
+            </section>
+           
+            <section class="container">
+                <div class="row">
+                <div class="col-sm-12">
+                        <div class="box2">
+                        <h1>CSS Media Queries</h1>
+                        </div>
+  </div>
+                        
+                                        <div class="col-sm-12">
+                        <div class="box6">
+							<table class="roundedCorners1" align="center">
+								<tr>
+									<td align="center">CSS2 Introduced Media Types</td>
+								</tr>
+								<tr>
+									<td align="center">The <b>@media</b> rule, introduced in CSS2, made it possible to define different style rules for different media types.
+<br>
+Examples: You could have one set of style rules for computer screens, one for printers, one for handheld devices, one for television-type devices, and so on.
+<br>
+Unfortunately these media types never got a lot of support by devices, other than the print media type.</td>
+								</tr>
+								</table>
+					</div></div></div></section>
+											<section class="container">
+                <div class="row">
+					<div class="col-sm-12">
+                        <div class="box6">
+												<h3>CSS3 Introduced Media Queries</h3>
+							<h6>&nbsp;</h6>
+												<h4>Media queries in CSS3 extended the CSS2 media types idea: Instead of looking for a type of device, they look at the capability of the device.
+												Media queries can be used to check many things, such as:</h4>
+												<ul><li>width and height of the viewport</li>
+													<li>width and height of the device</li>
+													<li>orientation (is the tablet/phone in landscape or portrait mode?)</li>
+													<li>resolution</li>
+												</ul>
+											<h5>&nbsp;</h5>
+						</div></div></div></section>
+			
+			<section class="container">
+                <div class="row">
+					<div class="col-sm-12">
+                        <div class="box6">
+												<h3>Media Query Syntax</h3>
+							<h6>&nbsp;</h6>
+												<h4>A media query consists of a media type and can contain one or more expressions, which resolve to either true or false.</h4>
+							<code>@media not|only mediatype and (expressions) {
+  CSS-Code;
+}</code>
+							<h4>The result of the query is true if the specified media type matches the type of device the document is being displayed on and all expressions in the media query are true. When a media query is true, the corresponding style sheet or style rules are applied, following the normal cascading rules.
+<br>
+Unless you use the not or only operators, the media type is optional and the all type will be implied.
+<br>
+You can also have different stylesheets for different media:</h4>
+							<code>&lt;link rel="stylesheet" media="mediatype and|not|only (expressions)" href="print.css"&gt;</code>
+											<h5>&nbsp;</h5>
+						</div></div></div></section>
+												
+												
+												
+												
+		<section class="container">
+                <div class="row">
+				<div class="col-sm-12">
+                        <div class="box6">
+							<h3>CSS3 Media Types</h3>
+							<table class="roundedCorners" align="center">
+								<tr>
+								<td align="center"><b>Value</b></td>
+								<td align="center"><b>Description</b></td>
+								</tr>
+								<tr><td>all</td><td>	Used for all media type devices</td></tr>
+<tr><td>print</td><td>	Used for printers</td></tr>
+<tr><td>screen</td><td>	Used for computer screens, tablets, smart-phones etc.</td></tr>
+<tr><td>speech</td><td>	Used for screenreaders that "reads" the page out loud</td></tr>
+							</table>
+							<h2>&nbsp;</h2>
+							</div></div></div></section> 
+			
+		<section class="container">
+                <div class="row">
+				<div class="col-sm-12">
+                        <div class="box6">
+							<table  class="roundedCorners" align="center">
+												<tr><td colspan="2" align="center"><h3>Media Queries Simple Examples</h3></td></tr>
+												<tr><td colspan="2" align="center">One way to use media queries is to have an alternate CSS section right inside your style sheet.
+<br>
+The following example changes the background-color to #00afef if the viewport is 480 pixels wide or wider (if the viewport is less than 480 pixels, the background-color will be #2d3e50):</td></tr>
+											<tr>
+												<td><br>&lt;!DOCTYPE html&gt;
+<br>&lt;html&gt;
+<br>&lt;head&gt;
+<br>&lt;style&gt;
+<br>body1 {
+<br>  background-color: #2d3e50;
+<br>}
+<br>
+<br>@media screen and (min-width: 900px) {
+<br>  body {
+<br>    background-color: #00afef;
+<br>  }
+<br>}
+<br>&lt;/style&gt;
+<br>&lt;/head&gt;
+<br>&lt;body&gt;
+<br>
+<br>&lt;h1&gt;Resize the browser window to see the effect!&lt;/h1&gt;
+<br>&lt;p&gt;The media query will only apply if the media type is screen and the viewport is 480px wide or wider.&lt;/p&gt;
+<br>
+<br>&lt;/body&gt;
+<br>&lt;/html&gt;
+												</td></tr>
+								<tr>
+												<td align="center"><video src="media/mediatag.mp4" height="500" width="800"  controls loop></video></td>
+												</tr>
+												
+								</table><h5>&nbsp;</h5>
+							</div></div></div></section>
+												
+												
+		
+				<section class="container">
+                <div class="row">
+				<div class="col-sm-2">
+                        <div class="box5">
+							<a href="PAGE_11.html">
+								<p style="color:white;">PREVIOUS</p>
+							</a>
+                        </div>
+					</div>
+					
+					<div class="col-sm-8">
+                        <div class="box2">
+                        </div>
+					</div>
+					
+					<div class="col-sm-2">
+                        <div class="box5">
+							<a href="../../B_EXAM/Phase 3/SELECT EXAM.html">
+								<p style="color:white;">EXAM</p>
+							</a>
+                        </div>
+					</div>
+					</div>
+			</section>
+            
+                       
+                           
+                            
+                            
+	           
+                      
+                    
+            <!--<div id="push"></div>-->
+        </div>
+        <footer class="container-fluid" style="background:#002739;padding:70px 0px 0px 0px;">
+            <div class="row">
+                <div class="container" style="padding-bottom:40px;">
+                    <div class="row">
+                        <div class="col-sm-12 text-center">
+                            <a href="#">
+                                <img src="images/logo-2.png"  width="200" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+</body>
+</html>

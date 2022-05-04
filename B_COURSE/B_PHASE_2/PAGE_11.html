@@ -1,0 +1,239 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/Style.css" rel="stylesheet" />
+</head>
+<body>
+    <div id="wrapper">
+        <div class="main">
+            <header class="container-fluid topHeader">
+                <div class="row">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <ul class="list-inline">
+                                    <li><a href="#"><span class="glyphicon glyphicon-envelope"></span> courcecircuit@gmail.com</a></li>
+                                    <li><a href="#"><span class="glyphicon glyphicon-phone"></span>+91 000000000</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </header>
+            <nav class="navbar navbar-default">
+                <div class="container">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="../1_HTML,CSS,PHP for web-development.html">
+                            <img src="images/logo1.png" width="200"  />
+                        </a>
+                    </div>
+
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="navbar-collapse">
+                        <ul class="nav navbar-nav float-right">
+                             <li><a href="PAGE_0.html">Index</a></li>
+                            <li><a href="../../B_EXAM/Phase 2/SELECT EXAM.html">Assignments</a></li>
+                            <li><a href="../B_PHASE_1/PAGE_COLOR.html">Color Picker</a></li>
+                            <li><a href="../../A_MAIN/3_COMPILER.html">Compiler</a></li>
+                        </ul>
+                    </div><!-- /.navbar-collapse -->
+                </div><!-- /.container-fluid -->
+            </nav>
+             <section class="jumbotron">
+                <div class="container">
+                    <p><center><img src="PHASES/CSS.png" height="150" width="150"></center></p>
+                    <p class="lead"><center><b><h3>Welcome to Phase 2 : The Basics of CSS</h3></b></center></p>
+                </div>
+            </section>
+           
+            <section class="container">
+                <div class="row">
+                <div class="col-sm-12">
+                        <div class="box2">
+                        <h1>CSS Fonts</h1>
+                        </div>
+                        </div>
+
+<div class="col-sm-12">
+<div class="box6">
+
+    <div class="col-sm-12">
+    <div class="box4">
+    <h3><center><b>Font Selection is Important</b></center></h3>
+<li>Choosing the right font has a huge impact on how the readers experience a website.</li>
+<li>The right font can create a strong identity for your brand.</li>
+<li>Using a font that is easy to read is important. The font adds value to your text. It is also important to choose the correct color and text size for the font.</li><br>
+    </div>
+    </div>
+    <div class="col-sm-12">
+    <div class="box4">
+    <h3><center><b>Generic Font Families</b></center></h3>
+    <p>In CSS there are five generic font families:</p><br>
+    <ol>
+    <li><b>Serif</b> fonts have a small stroke at the edges of each letter. They create a sense of formality and elegance.</li>
+    <li><b>Sans-serif</b> fonts have clean lines (no small strokes attached). They create a modern and minimalistic look.</li>
+    <li><b>Monospace</b> fonts - here all the letters have the same fixed width. They create a mechanical look. </li>
+    <li><b>Cursive</b> fonts imitate human handwriting.</li>
+    <li><b>Fantasy</b> fonts are decorative/playful fonts.</li>
+    </ol><br>
+    <p>All the different font names belong to one of the generic font families. </p><br>
+    <h3><center><b>Difference Between Serif and Sans-serif Fonts</b></center></h3><br>
+    <center><img src="images/font.png" hright="300" width="600"></center><br>
+    <p style="background-color: lightgoldenrodyellow;padding: 15px;text-align: center;"><b>Note:</b> On computer screens, sans-serif fonts are considered easier to read than serif fonts.</p><br>
+        </div>
+        </div>
+
+        <div class="col-sm-12">
+        <div class="box4">
+            <h3><center><b>Some Font Examples</b></center></h3><br>
+            <center><img src="images/font_1.PNG" height="500" width="850"></center><br>
+        </div>
+        </div>
+</div>
+</div>
+
+<div class="col-sm-12">
+<div class="box6">
+    <h3><center><b>The CSS font-family Property</b></center></h3><br>
+    <p>In CSS, we use the <code>font-family</code> property to specify the font of a text.</p>
+<p>The <code>font-family</code> property should hold several font names as a "fallback" system, to ensure maximum compatibility between browsers/operating systems. Start with the font you want, and end with a generic family (to let the browser pick a similar font in the generic family, if no other fonts are available). The font names should be separated with comma.</p><br>
+<p style="background-color: lightgoldenrodyellow;padding: 15px;text-align: center;"><b>Note:</b> If the font name is more than one word, it must be in quotation marks, like: "Times New Roman".</p><br>
+
+<div class="col-sm-6">
+    <div class="box6">
+        <h4><center><b>EXAMPLE</b></center></h4>
+        <p><center>Specify some different fonts for three paragraphs:</center></p><hr>
+        <table>
+            <tr><td>&lt;!doctype html&gt;</td></tr> 
+            <tr><td>&lt;html&gt;</td></tr> 
+            <tr><td>&lt;head&gt;</td></tr> 
+            <tr><td>&lt;style&gt;</td></tr> 
+            <tr><td>.p1 {</td></tr>
+            <tr><td>font-family: "Times New Roman", Times, serif;</td></tr>
+            <tr><td>}</td></tr>
+            <tr><td>.p2 {</td></tr>
+                <tr><td>font-family: Arial, Helvetica, sans-serif;</td></tr>
+                <tr><td>}</td></tr>
+                <tr><td>.p3 {</td></tr>
+                    <tr><td>font-family: "Lucida Console", "Courier New", monospace;</td></tr>
+                    <tr><td>}</td></tr>
+            <tr><td>&lt;/style&gt;</td></tr> 
+            <tr><td>&lt;/head&gt;</td></tr> 
+            <tr><td>&lt;body&gt;</td></tr>
+            <tr><td>&lt;h1&gt;CSS font-family&lt;/h1&gt;</td></tr>
+            <tr><td>&lt;p class="p1"&gt;This is a paragraph, shown in the Times New Roman font.&lt;/p&gt;</td></tr>
+            <tr><td>&lt;p class="p2"&gt;This is a paragraph, shown in the Arial font.&lt;/p&gt;</td></tr>
+            <tr><td>&lt;p class="p3"&gt;This is a paragraph, shown in the Lucida Console font.&lt;/p&gt;</td></tr>
+            <tr><td>&lt;/body&gt;</td></tr>
+            <tr><td>&lt;/html&gt;</td></tr>
+        </table>
+    </div>
+    </div>
+
+    <div class="col-sm-6">
+    <div class="box2">
+        <h4><center><b><u>OUTPUT</u></b></center></h4>
+        <!DOCTYPE html>
+<html>
+<head>
+<style>
+.p1 {
+  font-family: "Times New Roman", Times, serif;
+  text-align: left;
+}
+
+.p2 {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: left;
+}
+
+.p3 {
+  font-family: "Lucida Console", "Courier New", monospace;
+  text-align: left;
+}
+</style>
+</head>
+<body>
+
+<h2 style="text-align: left;">CSS font-family</h2><br>
+<p class="p1">This is a paragraph, shown in the Times New Roman font.</p><br>
+<p class="p2">This is a paragraph, shown in the Arial font.</p><br>
+<p class="p3">This is a paragraph, shown in the Lucida Console font.</p><br>
+
+</body>
+</html>
+
+    </div>
+    </div>
+
+</div>
+</div>
+
+
+
+</div>
+</section>
+        
+        
+
+
+
+
+
+
+		<section class="container">
+                <div class="row">
+                </div>
+				<div class="col-sm-2">
+                        <div class="box5">
+							<a href="PAGE_10.html">
+								<p style="color:white;">PREVIOUS</p>
+							</a>
+                        </div>
+					</div>
+					
+					<div class="col-sm-8">
+                        <div class="box2">
+                        </div>
+					</div>
+					
+					<div class="col-sm-2">
+                        <div class="box5">
+							<a href="PAGE_12.html">
+								<p style="color:white;">NEXT</p>
+							</a>
+                        </div>
+					</div>
+			</section>
+            
+                      
+                           
+                            
+                            
+	           
+                      
+                    
+            <!--<div id="push"></div>-->
+        </div>
+        <footer class="container-fluid" style="background:#002739;padding:70px 0px 0px 0px;">
+            <div class="row">
+                <div class="container" style="padding-bottom:40px;">
+                    <div class="row">
+                        <div class="col-sm-12 text-center">
+                            <a href="#">
+                                <img src="images/logo-2.png"  width="200" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+</body>
+</html>

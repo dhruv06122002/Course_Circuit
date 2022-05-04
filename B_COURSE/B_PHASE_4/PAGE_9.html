@@ -1,0 +1,714 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/Style.css" rel="stylesheet" />
+</head>
+<body>
+    <div id="wrapper">
+        <div class="main">
+            <header class="container-fluid topHeader">
+                <div class="row">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <ul class="list-inline">
+                                    <li><a href="#"><span class="glyphicon glyphicon-envelope"></span> courcecircuit@gmail.com</a></li>
+                                    <li><a href="#"><span class="glyphicon glyphicon-phone"></span>+91 000000000</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </header>
+            <nav class="navbar navbar-default">
+                <div class="container">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="../1_HTML,CSS,PHP for web-development.html">
+                            <img src="images/logo1.png" width="200"  />
+                        </a>
+                    </div>
+
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="navbar-collapse">
+                        <ul class="nav navbar-nav float-right">
+                             <li><a href="PAGE_0.html">Index</a></li>
+                            <li><a href="../../B_EXAM/Phase 4/SELECT EXAM.html">Assignments</a></li>
+                            <li><a href="../B_PHASE_1/PAGE_COLOR.html">Color Picker</a></li>
+                            <li><a href="../../A_MAIN/3_COMPILER.html">Compiler</a></li>
+                        </ul>
+                    </div><!-- /.navbar-collapse -->
+                </div><!-- /.container-fluid -->
+            </nav>
+            <section class="jumbotron">
+                <div class="container">
+                    <p><center><img src="PHASES/php.png" height="150" width="150"></center></p>
+                    <p class="lead"><center><b><h3>Welcome to Phase 4 : PHP</h3></b></center></p>
+                </div>
+            </section>
+            
+            <section class="container">
+                <div class="row">
+                <div class="col-sm-12">
+                        <div class="box2">
+                        <h1>PHP Functions</h1>
+                        </div>
+					</div>
+                    <div class="col-sm-12">
+                        <div class="box4">
+                        <center><h2>String Functions</h2></center>
+<table class="roundedCorners" align="center">
+  <tr>
+    <th style="width:30%">Function</th>
+    <th style="width:70%">Description</th>
+  </tr>
+  <tr>
+    <td>addcslashes()</td>
+    <td>Returns a string with backslashes in front of the specified characters</td>
+  </tr>
+  <tr>
+    <td>addslashes()</td>
+    <td>Returns a string with backslashes in front of predefined characters</td>
+  </tr>
+  <tr>
+    <td>bin2hex()</td>
+    <td>Converts a string of ASCII characters to hexadecimal values</td>
+  </tr>
+  <tr>
+    <td>chop()</td>
+    <td>Removes whitespace or other characters from the right end of a string</td>
+  </tr>
+  <tr>
+    <td>chr()</td>
+    <td>Returns a character from a specified ASCII value</td>
+  </tr>
+  <tr>
+    <td>chunk_split()</td>
+    <td>Splits a string into a series of smaller parts</td>
+  </tr>
+  <tr>
+    <td>convert_cyr_string()</td>
+    <td>Converts a string from one Cyrillic character-set to another</td>
+  </tr>
+  <tr>
+    <td>convert_uudecode()</td>
+    <td>Decodes a uuencoded string</td>
+  </tr>
+  <tr>
+    <td>convert_uuencode()</td>
+    <td>Encodes a string using the uuencode algorithm</td>
+  </tr>
+  <tr>
+    <td>count_chars()</td>
+    <td>Returns information about characters used in a string</td>
+  </tr>
+  <tr>
+    <td>crc32()</td>
+    <td>Calculates a 32-bit CRC for a string</td>
+  </tr>
+  <tr>
+    <td>crypt()</td>
+    <td>One-way string hashing</td>
+  </tr>
+  <tr>
+    <td>echo()</td>
+    <td>Outputs one or more strings</td>
+  </tr>
+  <tr>
+    <td>explode()</td>
+    <td>Breaks a string into an array</td>
+  </tr>
+  <tr>
+    <td>fprintf()</td>
+    <td>Writes a formatted string to a specified output stream</td>
+  </tr>
+  <tr>
+    <td>get_html_translation_table()</td>
+    <td>Returns the translation table used by htmlspecialchars() and htmlentities()</td>
+  </tr>
+  <tr>
+    <td style="height: 31px">hebrev()</td>
+    <td style="height: 31px">Converts Hebrew text to visual text</td>
+  </tr>
+  <tr>
+    <td>hebrevc()</td>
+    <td>Converts Hebrew text to visual text and new lines (\n) into &lt;br&gt;</td>
+  </tr>
+   <tr>
+    <td>hex2bin()</td>
+    <td>Converts a string of hexadecimal values to ASCII characters</td>
+  </tr>
+  <tr>
+    <td>html_entity_decode()</td>
+    <td>Converts HTML entities to characters</td>
+  </tr>
+  <tr>
+    <td>htmlentities()</td>
+    <td>Converts characters to HTML entities</td>
+  </tr>
+  <tr>
+    <td>htmlspecialchars_decode()</td>
+    <td>Converts some predefined HTML entities to characters</td>
+  </tr>
+  <tr>
+    <td>htmlspecialchars()</td>
+    <td>Converts some predefined characters to HTML entities</td>
+  </tr>
+  <tr>
+    <td>implode()</td>
+    <td>Returns a string from the elements of an array</td>
+  </tr>
+  <tr>
+    <td>join()</td>
+    <td>Alias of implode()</td>
+  </tr>
+  <tr>
+    <td>lcfirst()</td>
+    <td>Converts the first character of a string to lowercase</td>
+  </tr>
+  <tr>
+    <td>levenshtein()</td>
+    <td>Returns the Levenshtein distance between two strings</td>
+  </tr>
+  <tr>
+    <td>localeconv()</td>
+    <td>Returns locale numeric and monetary formatting information</td>
+  </tr>
+  <tr>
+    <td>ltrim()</td>
+    <td>Removes whitespace or other characters from the left side of a string</td>
+  </tr>
+  <tr>
+    <td>md5()</td>
+    <td>Calculates the MD5 hash of a string</td>
+  </tr>
+  <tr>
+    <td>md5_file()</td>
+    <td>Calculates the MD5 hash of a file</td>
+  </tr>
+  <tr>
+    <td>metaphone()</td>
+    <td>Calculates the metaphone key of a string</td>
+  </tr>
+  <tr>
+    <td>money_format()</td>
+    <td>Returns a string formatted as a currency string</td>
+  </tr>
+  <tr>
+    <td>nl_langinfo()</td>
+    <td>Returns specific local information</td>
+  </tr>
+  <tr>
+    <td>nl2br()</td>
+    <td>Inserts HTML line breaks in front 
+of each newline in a string</td>
+  </tr>
+  <tr>
+    <td>number_format()</td>
+    <td>Formats a number with grouped thousands</td>
+  </tr>
+  <tr>
+    <td>ord()</td>
+    <td>Returns the ASCII value of the first character of a string</td>
+  </tr>
+  <tr>
+    <td>parse_str()</td>
+    <td>Parses a query string into variables</td>
+  </tr>
+  <tr>
+    <td>print()</td>
+    <td>Outputs one or more strings</td>
+  </tr>
+  <tr>
+    <td>printf()</td>
+    <td>Outputs a formatted string</td>
+  </tr>
+  <tr>
+    <td>quoted_printable_decode()</td>
+    <td>Converts a quoted-printable string to an 8-bit string</td>
+  </tr>
+  <tr>
+    <td>quoted_printable_encode()</td>
+    <td>Converts an 8-bit string to a quoted printable string</td>
+  </tr>
+  <tr>
+    <td>quotemeta()</td>
+    <td>Quotes meta characters</td>
+  </tr>
+  <tr>
+    <td>rtrim()</td>
+    <td>Removes whitespace or other characters from the right side of a string</td>
+  </tr>
+  <tr>
+    <td>setlocale()</td>
+    <td>Sets locale information</td>
+  </tr>
+  <tr>
+    <td>sha1()</td>
+    <td>Calculates the SHA-1 hash of a string</td>
+  </tr>
+  <tr>
+    <td>sha1_file()</td>
+    <td>Calculates the SHA-1 hash of a file</td>
+  </tr>
+  <tr>
+    <td>similar_text()</td>
+    <td>Calculates the similarity between two strings</td>
+  </tr>
+  <tr>
+    <td>soundex()</td>
+    <td>Calculates the soundex key of a string</td>
+  </tr>
+  <tr>
+    <td>sprintf()</td>
+    <td>Writes a formatted string to a variable</td>
+  </tr>
+  <tr>
+    <td>sscanf()</td>
+    <td>Parses input from a string according to a format</td>
+  </tr>
+   <tr>
+    <td>str_getcsv()</td>
+    <td>Parses a CSV string into an array</td>
+  </tr>
+  <tr>
+    <td>str_ireplace()</td>
+    <td>Replaces some characters in a string (case-insensitive)</td>
+  </tr>
+  <tr>
+    <td>str_pad()</td>
+    <td>Pads a string to a new length</td>
+  </tr>
+  <tr>
+    <td>str_repeat()</td>
+    <td>Repeats a string a specified number of times</td>
+  </tr>
+  <tr>
+    <td>str_replace()</td>
+    <td>Replaces some characters in a string (case-sensitive)</td>
+  </tr>
+  <tr>
+    <td>str_rot13()</td>
+    <td>Performs the ROT13 encoding on a string</td>
+  </tr>
+  <tr>
+    <td>str_shuffle()</td>
+    <td>Randomly shuffles all characters in a string</td>
+  </tr>
+  <tr>
+    <td>str_split()</td>
+    <td>Splits a string into an array</td>
+  </tr>
+  <tr>
+    <td>str_word_count()</td>
+    <td>Count the number of words in a string</td>
+  </tr>
+  <tr>
+    <td>strcasecmp()</td>
+    <td>Compares two strings (case-insensitive)</td>
+  </tr>
+  <tr>
+    <td>strchr()</td>
+    <td>Finds the first occurrence of a string inside another string (alias of strstr())</td>
+  </tr>
+  <tr>
+    <td>strcmp()</td>
+    <td>Compares two strings (case-sensitive)</td>
+  </tr>
+  <tr>
+    <td>strcoll()</td>
+    <td>Compares two strings (locale based string comparison)</td>
+  </tr>
+  <tr>
+    <td>strcspn()</td>
+    <td>Returns the number of characters found in a string before any part of some specified characters are found</td>
+  </tr>
+  <tr>
+    <td>strip_tags()</td>
+    <td>Strips HTML and PHP tags from a string</td>
+  </tr>
+  <tr>
+    <td>stripcslashes()</td>
+    <td>Unquotes a string quoted with addcslashes()</td>
+  </tr>
+  <tr>
+    <td>stripslashes()</td>
+    <td>Unquotes a string quoted with addslashes()</td>
+  </tr>
+  <tr>
+    <td>stripos()</td>
+    <td>Returns the position of the first occurrence of a string inside another string (case-insensitive)</td>
+  </tr>
+  <tr>
+    <td>stristr()</td>
+    <td>Finds the first occurrence of a string inside another string (case-insensitive)</td>
+  </tr>
+  <tr>
+    <td>strlen()</td>
+    <td>Returns the length of a string</td>
+  </tr>
+  <tr>
+    <td>strnatcasecmp()</td>
+    <td>Compares two strings using a &quot;natural order&quot; algorithm (case-insensitive)</td>
+  </tr>
+  <tr>
+    <td>strnatcmp()</td>
+    <td>Compares two strings using a &quot;natural order&quot; algorithm (case-sensitive)</td>
+  </tr>
+  <tr>
+    <td>strncasecmp()</td>
+    <td>String comparison of the first n characters (case-insensitive)</td>
+  </tr>
+  <tr>
+    <td>strncmp()</td>
+    <td>String comparison of the first n characters (case-sensitive)</td>
+  </tr>
+  <tr>
+    <td>strpbrk()</td>
+    <td>Searches a string for any of a set of characters</td>
+  </tr>
+  <tr>
+    <td>strpos()</td>
+    <td>Returns the position of the first occurrence of a string inside another string (case-sensitive)</td>
+  </tr>
+  <tr>
+    <td>strrchr()</td>
+    <td>Finds the last occurrence of a string inside another string</td>
+  </tr>
+  <tr>
+    <td>strrev()</td>
+    <td>Reverses a string</td>
+  </tr>
+  <tr>
+    <td>strripos()</td>
+    <td>Finds the position of the last occurrence of a string inside another string (case-insensitive)</td>
+  </tr>
+  <tr>
+    <td>strrpos()</td>
+    <td>Finds the position of the last occurrence of a string inside another string (case-sensitive)</td>
+  </tr>
+  <tr>
+    <td>strspn()</td>
+    <td>Returns the number of characters found in a string that contains only characters from a specified charlist</td>
+  </tr>
+  <tr>
+    <td>strstr()</td>
+    <td>Finds the first occurrence of a string inside another string (case-sensitive)</td>
+  </tr>
+  <tr>
+    <td>strtok()</td>
+    <td>Splits a string into smaller strings</td>
+  </tr>
+  <tr>
+    <td>strtolower()</td>
+    <td>Converts a string to lowercase letters</td>
+  </tr>
+  <tr>
+    <td>strtoupper()</td>
+    <td>Converts a string to uppercase letters</td>
+  </tr>
+  <tr>
+    <td>strtr()</td>
+    <td>Translates certain characters in a string</td>
+  </tr>
+  <tr>
+    <td>substr()</td>
+    <td>Returns a part of a string</td>
+  </tr>
+  <tr>
+    <td>substr_compare()</td>
+    <td>Compares two strings from a specified start position (binary safe and optionally case-sensitive)</td>
+  </tr>
+  <tr>
+    <td>substr_count()</td>
+    <td>Counts the number of times a substring occurs in a string</td>
+  </tr>
+  <tr>
+    <td>substr_replace()</td>
+    <td>Replaces a part of a string with another string</td>
+  </tr>
+  <tr>
+    <td>trim()</td>
+    <td>Removes whitespace or other characters from both sides of a string</td>
+  </tr>
+  <tr>
+    <td>ucfirst()</td>
+    <td>Converts the first character of a string to uppercase</td>
+  </tr>
+  <tr>
+    <td>ucwords()</td>
+    <td>Converts the first character of each word in a string to uppercase</td>
+  </tr>
+  <tr>
+    <td>vfprintf()</td>
+    <td>Writes a formatted string to a specified output stream</td>
+  </tr>
+  <tr>
+    <td>vprintf()</td>
+    <td>Outputs a formatted string</td>
+  </tr>
+  <tr>
+    <td>vsprintf()</td>
+    <td>Writes a formatted string to a variable</td>
+  </tr>
+  <tr>
+    <td>wordwrap()</td>
+    <td>Wraps a string to a given number of characters</td>
+  </tr>
+</table>
+<h6>&nbsp;</h6>
+</div>
+						
+                        </div>
+					</div>
+					</section>
+                    
+                    <section class="container">
+                <div class="row">
+                <div class="col-sm-12">
+                        <div class="box4">
+                <center><h2>Math Functions</h2></center>
+                <table class="roundedCorners" align="center">
+  <tr>
+    <th style="width:25%">Function</th>
+    <th style="width:75%">Description</th>
+  </tr>
+  <tr>
+    <td>abs()</td>
+    <td>Returns the absolute (positive) value of a number</td>
+  </tr>
+  <tr>
+    <td>base_convert()</td>
+    <td>Converts a number from one number base to another</td>
+  </tr>
+  <tr>
+    <td>ceil()</td>
+    <td>Rounds a number up to the nearest integer</td>
+  </tr>
+  <tr>
+    <td>cos()</td>
+    <td>Returns the cosine of a number</td>
+  </tr>
+  <tr>
+    <td>exp()</td>
+    <td>Calculates the exponent of e</td>
+  </tr>
+  <tr>
+    <td>expm1()</td>
+    <td>Returns exp(x) - 1</td>
+  </tr>
+  <tr>
+    <td>floor()</td>
+    <td>Rounds a number down to the nearest integer</td>
+  </tr>
+  <tr>
+    <td>fmod()</td>
+    <td>Returns the remainder of x/y</td>
+  </tr>
+  <tr>
+    <td>hexdec()</td>
+    <td>Converts a hexadecimal number to a decimal number</td>
+  </tr>
+  <tr>
+    <td>log()</td>
+    <td>Returns the natural logarithm of a number</td>
+  </tr>
+  <tr>
+    <td>max()</td>
+    <td>Returns the highest value in an array, or the highest value of several specified values</td>
+  </tr>
+  <tr>
+    <td>min()</td>
+    <td>Returns the lowest value in an array, or the lowest value of several specified values</td>
+  </tr>
+  <tr>
+    <td>octdec()</td>
+    <td>Converts an octal number to a decimal number</td>
+  </tr>
+  <tr>
+    <td>pi()</td>
+    <td>Returns the value of PI</td>
+  </tr>
+  <tr>
+    <td>pow()</td>
+    <td>Returns x raised to the power of y</td>
+  </tr>
+  <tr>
+    <td>rad2deg()</td>
+    <td>Converts a radian value to a degree value</td>
+  </tr>
+  <tr>
+    <td>rand()</td>
+    <td>Generates a random integer</td>
+  </tr>
+  <tr>
+    <td>round()</td>
+    <td>Rounds a floating-point number</td>
+  </tr>
+  <tr>
+    <td>sin()</td>
+    <td>Returns the sine of a number</td>
+  </tr>
+  <tr>
+    <td>sinh()</td>
+    <td>Returns the hyperbolic sine of a number</td>
+  </tr>
+  <tr>
+    <td>sqrt()</td>
+    <td>Returns the square root of a number</td>
+  </tr>
+  <tr>
+    <td>srand()</td>
+    <td>Seeds the random number generator</td>
+  </tr>
+  <tr>
+    <td>tan()</td>
+    <td>Returns the tangent of a number</td>
+  </tr>
+  <tr>
+    <td>tanh()</td>
+    <td>Returns the hyperbolic tangent of a number</td>
+  </tr>
+</table>
+<h6>&nbsp;</h6>
+</div>
+</div>
+</div></section>
+<section class="container">
+                <div class="row">
+                <div class="col-sm-12">
+                        <div class="box4">
+<center><h2>Date/Time Functions</h2></center>
+<table class="roundedCorners" align="center">
+  <tr>
+    <th style="width:37%">Function</th>
+    <th style="width:63%">Description</th>
+  </tr>
+  <tr>
+    <td>checkdate()</td>
+    <td>Validates a Gregorian date</td>
+  </tr>
+  <tr>
+    <td>date_add()</td>
+    <td>Adds days, months, years, hours, minutes, and seconds to a date</td>
+  </tr>
+  <tr>
+    <td>date_diff()</td>
+    <td>Returns the difference between two dates</td>
+  </tr>
+    <tr>
+    <td>date_format()</td>
+    <td>Returns a date formatted according to a specified format</td>
+    </tr>
+  <tr>
+    <td>date_modify()</td>
+    <td>Modifies the timestamp</td>
+  </tr>
+  <tr>
+    <td>date_time_set()</td>
+    <td>Sets the time</td>
+  </tr>
+  <tr>
+    <td>date_timezone_set()</td>
+    <td>Sets the time zone for the DateTime object</td>
+  </tr>
+  <tr>
+    <td>date()</td>
+    <td>Formats a local date and time</td>
+  </tr>
+  <tr>
+    <td>getdate()</td>
+    <td>Returns date/time information of a timestamp or the current local date/time</td>
+  </tr>
+  <tr>
+    <td>localtime()</td>
+    <td>Returns the local time</td>
+  </tr>
+  <tr>
+    <td>microtime()</td>
+    <td>Returns the current Unix timestamp with microseconds</td>
+  </tr>
+  <tr>
+    <td>mktime()</td>
+    <td>Returns the Unix timestamp for a date</td>
+  </tr>
+  <tr>
+    <td>strftime()</td>
+    <td>Formats a local time and/or date according to locale settings</td>
+  </tr>
+  <tr>
+    <td>strptime()</td>
+    <td>Parses a time/date generated with strftime()</td>
+  </tr>
+  <tr>
+    <td>strtotime()</td>
+    <td>Parses an English textual datetime into a Unix timestamp</td>
+  </tr>
+  <tr>
+    <td>time()</td>
+    <td>Returns the current time as a Unix timestamp</td>
+  </tr>
+  <tr>
+    <td>timezone_version_get()</td>
+    <td>Returns the version of the timezonedb</td>
+  </tr>
+</table>
+<h6>&nbsp;</h6>
+</div></div></div></section>
+
+                    <section class="container">
+                <div class="row">
+				<div class="col-sm-2">
+                        <div class="box5">
+							<a href="PAGE_8.html">
+								<p style="color:white;">PREVIOUS</p>
+							</a>
+                        </div>
+					</div>
+					
+					<div class="col-sm-8">
+                        <div class="box2">
+                        
+                        </div>
+					</div>
+					
+					<div class="col-sm-2">
+                        <div class="box5">
+							<a href="PAGE_10.html">
+								<p style="color:white;">NEXT</p>
+							</a>
+                        </div>
+					</div>
+				</div>
+			</section>
+            
+                       
+                           
+                            
+                            
+	           
+                      
+                    
+            <!--<div id="push"></div>-->
+        </div>
+        <footer class="container-fluid" style="background:#002739;padding:70px 0px 0px 0px;">
+            <div class="row">
+                <div class="container" style="padding-bottom:40px;">
+                    <div class="row">
+                        <div class="col-sm-12 text-center">
+                            <a href="#">
+                                <img src="images/logo-2.png"  width="200" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+</body>
+</html>

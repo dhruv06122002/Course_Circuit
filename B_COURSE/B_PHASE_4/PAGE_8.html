@@ -1,0 +1,242 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/Style.css" rel="stylesheet" />
+</head>
+<body>
+    <div id="wrapper">
+        <div class="main">
+            <header class="container-fluid topHeader">
+                <div class="row">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <ul class="list-inline">
+                                    <li><a href="#"><span class="glyphicon glyphicon-envelope"></span> courcecircuit@gmail.com</a></li>
+                                    <li><a href="#"><span class="glyphicon glyphicon-phone"></span>+91 000000000</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </header>
+            <nav class="navbar navbar-default">
+                <div class="container">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="SELECT 1 BOARD.html">
+                            <img src="images/logo1.png" width="200"  />
+                        </a>
+                    </div>
+
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="navbar-collapse">
+                        <ul class="nav navbar-nav float-right">
+                             <li><a href="PAGE_0.html">Index</a></li>
+                            <li><a href="../B_EXAM/Phase 4/SELECT EXAM.html">Assignments</a></li>
+                            <li><a href="../B_PHASE_1/PAGE_COLOR.html">Color Picker</a></li>
+                            <li><a href="../../A_LOGIN/5_COMPILER.html">Compiler</a></li>
+                        </ul>
+                    </div><!-- /.navbar-collapse -->
+                </div><!-- /.container-fluid -->
+            </nav>
+            <section class="jumbotron">
+                <div class="container">
+                    <p><center><img src="PHASES/php.png" height="150" width="150"></center></p>
+                    <p class="lead"><center><b><h3>Welcome to Phase 4 : PHP</h3></b></center></p>
+                </div>
+            </section>
+            
+            <section class="container">
+                
+                <div class="row">
+                <div class="col-sm-12">
+                        <div class="box2">
+                        <h1>PHP Array</h1>
+                        </div>
+					</div>
+                   
+                    <div class="col-sm-12">
+                        <div class="box4">
+
+                            <p><center>An array stores multiple values in one single variable:</center></p><br>
+
+                            <div class="col-sm-3">
+                                <div class="box">
+                                </div>
+                            </div>
+
+                            <div class="col-sm-6">
+                                <div class="box4">
+                                    <table class="roundedCorners1" align="center">
+                                        <tr><td>&lt;!doctype html&gt;</td></tr> 
+                                        <tr><td>&lt;html&gt;</td></tr> 
+                                        <tr><td>&lt;body&gt;</td></tr>
+                                        <tr><td>&lt;?php</td></tr>
+                                        <tr><td>$cars = array("Volvo", "BMW", "Toyota"); </td></tr>
+                                        <tr><td>echo "I like " . $cars[0] . ", " . $cars[1] . " and " . $cars[2] . ".";</td></tr>
+                                        <tr><td>?&gt;</td></tr>
+                                        <tr><td>&lt;/body&gt;</td></tr>
+                                        <tr><td>&lt;/html&gt;</td></tr>
+                                    </table>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-3">
+                                <div class="box">
+                                </div>
+                            </div>
+                        
+                        </div>
+					</div> 
+                </div>
+                
+                
+
+                <div class="col-sm-12">
+                    <div class="box6">
+               <h2><center>What is an Array?</center></h2>
+               <p>An array is a special variable, which can hold more than one value at a time.</p>
+               <p>If you have a list of items (a list of car names, for example), storing the cars in single variables could look like this:</p>
+                        <div class="box4">
+                            <p>$cars1 = "Volvo";</p>
+                            <p>$cars2 = "BMW";</p>
+                            <p>$cars3 = "Toyota";</p>
+                        </div>
+                <p>However, what if you want to loop through the cars and find a specific one? And what if you had not 3 cars, but 300?</p>
+                <p>The solution is to create an array!</p>
+                <p>An array can hold many values under a single name, and you can access the values by referring to an index number.</p><br>
+                <h2><center>Create an Array in PHP</center></h2>
+                <p>In PHP, the <code>array()</code> function is used to create an array:</p>
+                    <p><b>Syntax:</b> array();</p>
+                <p>In PHP, there are three types of arrays:</p>
+                <ol>
+                    <li><b>Indexed arrays -</b> Arrays with a numeric index</li>
+                    <li><b>Associative arrays -</b> Arrays with named keys</li>
+                    <li><b>Multidimensional arrays -</b> Arrays containing one or more arrays</li>
+                </ol>
+                <br>
+            </div>
+        </div> 
+
+
+<div class="col-sm-12">
+    <div class="box6">
+        <h2><center>Array Sort Functions</center></h2>
+        <p><center>The elements in an array can be sorted in alphabetical or numerical order, descending or ascending.</center></p><br>
+        <table class="roundedCorners" align="center">
+            <tr>
+            <th style="width:12%">Function</th>
+            <th style="width:30%">Description</th>
+            <th style="width:35%">Example</th>
+            <th style="width:35%">Result</th>
+            </tr>
+            <tr>
+            <td>sort()</td>
+            <td>sort arrays in ascending order</td>
+            <td><p>$cars = array("Volvo", "BMW", "Toyota");</p>
+                <p>sort($cars);</p></td>
+            <td><p>BMW</p>
+                <p>Toyota</p>
+                <p>Volvo</p></td>
+            </tr>
+            <tr>
+            <td>rsort()</td>
+            <td>sort arrays in descending order</td>
+            <td><p>$numbers = array(4, 2, 22, 11);</p>
+                <p>rsort($numbers);</p></td>
+            <td><p>22</p>
+                <p>11</p>
+                <p>4</p>
+                <p>2</p></td>
+            </tr>
+            <tr>
+            <td>asort()</td>
+            <td>sort associative arrays in ascending order, according to the value</td>
+            <td><p>$age = array("Peter"=>"35", "Ben"=>"37", "Joe"=>"43");</p>
+                <p>arsort($age);</p></td>
+            <td><p>Key=Joe, Value=43</p>
+                <p>Key=Ben, Value=37</p>
+                <p>Key=Peter, Value=35</p></td>
+            </tr>
+            <tr>
+            <td>ksort()</td>
+            <td>sort associative arrays in ascending order, according to the key</td>
+            <td><p>$age = array("Peter"=>"35", "Ben"=>"37", "Joe"=>"43");</p>
+                <p>ksort($age);</p></td>
+            <td><p>Key=Ben, Value=37</p>
+                <p>Key=Joe, Value=43</p>
+                <p>Key=Peter, Value=35</p></td>
+            </tr>
+            <tr>
+            <td>arsort()</td>
+            <td>sort associative arrays in descending order, according to the value</td>
+            <td><p>$age = array("Peter"=>"35", "Ben"=>"37", "Joe"=>"43");</p>
+                <p>arsort($age);</p></td>
+            <td><p>Key=Joe, Value=43</p>
+                <p>Key=Ben, Value=37</p>
+                <p>Key=Peter, Value=35</p></td>
+            </tr>
+            <tr>
+            <td>krsort()</td>
+            <td>sort associative arrays in descending order, according to the key</td>
+            <td><p>$age = array("Peter"=>"35", "Ben"=>"37", "Joe"=>"43");</p>
+                <p>krsort($age);</p></td>
+            <td><p>Key=Peter, Value=35</p>
+                <p>Key=Joe, Value=43</p>
+                <p>Key=Ben, Value=37</p></td>
+            </tr>
+            </table>
+            <hr>
+            
+            
+    </div>
+</div>
+
+				
+				<div class="col-sm-2">
+                        <div class="box5">
+							<a href="PAGE_7.html">
+								<p style="color:white;">PREVIOUS</p>
+							</a>
+                        </div>
+					</div>
+					
+					<div class="col-sm-8">
+                        <div class="box2">
+                        </div>
+					</div>
+					
+					<div class="col-sm-2">
+                        <div class="box5">
+							<a href="PAGE_9.html">
+								<p style="color:white;">NEXT</p>
+							</a>
+                        </div>
+					</div>
+			</section>
+            
+                                 
+            <!--<div id="push"></div>-->
+        </div>
+        <footer class="container-fluid" style="background:#002739;padding:70px 0px 0px 0px;">
+            <div class="row">
+                <div class="container" style="padding-bottom:40px;">
+                    <div class="row">
+                        <div class="col-sm-12 text-center">
+                            <a href="#">
+                                <img src="images/logo-2.png"  width="200" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+</body>
+</html>
